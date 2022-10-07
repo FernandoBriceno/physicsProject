@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    display: flex;
+}
+
+.page-content {
+    width: 100%;
+    height: 100%;
+    
+    align-items: center;
+    /*display: flex;*/
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: auto;
+  }
+  
+.page-content img{
+      display: block;
+      margin: auto;
+    }
+  
+.page-content h1{
+      text-align: center;
+  }
+
