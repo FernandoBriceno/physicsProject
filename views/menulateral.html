@@ -142,7 +142,6 @@
   <section class="home-section">
     <div class="home-content">
         <i class='bx bxs-chevron-right'></i>
-        <i class='bx bxs-chevron-left' ></i>
     </div>
   </section>
 
@@ -155,14 +154,9 @@
     });
   }
   let sidebar = document.querySelector(".sidebar");
-  let sidebarOpen = document.querySelector(".bxs-chevron-right");
-  let sidebarClose = document.querySelector(".bxs-chevron-left");
-  console.log(sidebarOpen);
-  sidebarOpen.addEventListener("click", ()=>{
-    sidebar.classList.toggle("close");
-  });
-  console.log(sidebarClose);
-  sidebarClose.addEventListener("click", ()=>{
+  let sidebarBtn = document.querySelector(".bxs-chevron-right");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("close");
   });
   </script>
