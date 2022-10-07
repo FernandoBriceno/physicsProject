@@ -138,7 +138,7 @@
 }
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
   padding: 5px 0;
   white-space: nowrap;
   opacity: 0.6;
@@ -275,6 +275,19 @@
     display: none;
   }
 
+.sidebar ~ .home-section .home-content img{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+  }
+.sidebar.close ~ .home-section .home-content img{
+    display: flex;
+  }
+
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
@@ -296,4 +309,18 @@
   }
 
   
+}
+
+.page-content {
+  display: block;
+  align-items: center;
+}
+
+.page-content img{
+    display: block;
+    margin: auto;
+  }
+
+.page-content h1{
+    text-align: center;
 }
