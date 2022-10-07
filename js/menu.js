@@ -2,8 +2,8 @@ class Menu extends HTMLElement{
     constructor(){
         super();
         this.innerHTML= ` <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
-        <link rel="stylesheet" href="../css/menu.css">
-        <link rel="stylesheet" href="../css/latex.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/latex.css">
         <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,13 @@ class Menu extends HTMLElement{
 
         <div class="logo-details">
             <div class="gato_estirado">
-                <img class='bx bxl-c-plus-plus'  src="../img/physicsLogoGatoBlanco.png" style="margin: 14px;">
+                <img class='bx bxl-c-plus-plus'  src="img/physicsLogoGatoBlanco.png" style="margin: 14px;">
     
             </div>
             <div class="gato_sentado">
-                <img class='bx bxl-c-plus-plus'  src="../img/gatoSentadoBlanco.png" style="margin: 14px;">
+                <img class='bx bxl-c-plus-plus'  src="img/gatoSentadoBlanco.png" style="margin: 14px;">
             </div>
-          <img class='logo_name'  src="../img/physicsLogoTextoBlanco.png" style="margin: -7px;">
+          <img class='logo_name'  src="img/physicsLogoTextoBlanco.png" style="margin: -7px;">
         </div>
     
     
