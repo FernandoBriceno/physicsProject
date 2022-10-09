@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
     <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/latex.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,25 +121,27 @@
   </section>
 
   <script>
-  let arrow = document.querySelectorAll(".arrow");
-  for (var i = 0; i < arrow.length; i++) {
-    arrow[i].addEventListener("click", (e)=>{
-   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-   arrowParent.classList.toggle("showMenu");
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=>{
+    let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+    arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarOpen = document.querySelector(".bxs-chevron-right");
+    let sidebarClose = document.querySelector(".bxs-chevron-left");
+    console.log(sidebarOpen);
+    sidebarOpen.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
     });
-  }
-  let sidebar = document.querySelector(".sidebar");
-  let sidebarOpen = document.querySelector(".bxs-chevron-right");
-  let sidebarClose = document.querySelector(".bxs-chevron-left");
-  console.log(sidebarOpen);
-  sidebarOpen.addEventListener("click", ()=>{
-    sidebar.classList.toggle("close");
-  });
-  console.log(sidebarClose);
-  sidebarClose.addEventListener("click", ()=>{
-    sidebar.classList.toggle("close");
-  });
+    console.log(sidebarClose);
+    sidebarClose.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
   </script>
+
+
 
   
 </body>

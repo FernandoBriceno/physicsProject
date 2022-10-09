@@ -295,14 +295,14 @@
     display: none;
   }
   .sidebar{
-    width: 78px;
+    width: 260px;
   }
   .sidebar.close{
     width: 0;
   }
   .home-section{
-    left: 78px;
-    width: calc(100% - 78px);
+    left:  260px;
+    width: calc(100% - 260px);
     z-index: 100;
   }
   .sidebar.close ~ .home-section{
