@@ -26,10 +26,14 @@ body{
     /*margin-top: 40px;*/
   }
   
-.page-content img{
+.img-center{
       display: block;
       margin: auto;
     }
+.img-ecuacion {
+    display: flex;
+    margin: 0;
+}
   
 .page-content h1{
       text-align: center;
@@ -49,9 +53,11 @@ body{
 }
 
 .creator {
+    display: block;
+    margin: auto;
     width: 20%;
-    margin:35px;
     border-radius:50%;
+    
 }
 
 .contact-links a i{
