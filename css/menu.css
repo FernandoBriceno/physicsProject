@@ -122,6 +122,7 @@
   font-weight: 400;
   color: #fff;
   transition: all 0.4s ease;
+  margin: 15px 0px 15px  0px;
 }
 .sidebar.close .nav-links li a .link_name{
   opacity: 0;
@@ -258,7 +259,7 @@
 }
 .home-section .home-content .bxs-chevron-right,
 .home-section .home-content .bxs-chevron-left{
-  margin: 0 15px;
+  margin: 0 0px;
   cursor: pointer;
 }
 .home-section .home-content .text{
