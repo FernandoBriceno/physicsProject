@@ -81,6 +81,7 @@
   display: none;
 }
 .sidebar .nav-links li{
+  margin: 15px 0px 15px  0px;
   position: relative;
   list-style: none;
   transition: all 0.4s ease;
@@ -122,7 +123,8 @@
   font-weight: 400;
   color: #fff;
   transition: all 0.4s ease;
-  margin: 15px 0px 15px  0px;
+  /*
+  margin: 15px 0px 15px  0px;*/
 }
 .sidebar.close .nav-links li a .link_name{
   opacity: 0;
