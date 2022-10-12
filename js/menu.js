@@ -5,7 +5,7 @@ function mostrarContenido(archivoRuta){
   return archivoHTML.responseText;
 }
 
-var componenteMenu = mostrarContenido('../views/menu.html');
+var componenteMenu = mostrarContenido('./views/menu.html');
 
 class Menu extends HTMLElement{
     constructor(){
