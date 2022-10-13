@@ -306,11 +306,29 @@
   .home-section{
     left:  260px;
     width: calc(100% - 260px);
-    z-index: 100;
+    z-index: 1;
   }
   .sidebar.close ~ .home-section{
     width: 100%;
     left: 0;
+  }
+
+  .page-content {
+    
+    width: calc(100% - 260px);
+    height: 100%;
+    
+    align-items: center;
+    /*display: flex;*/
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: auto;
+    margin-left: 128px;
+    margin-right: 25px;
+    /*margin-top: 40px;*/
   }
 
   
