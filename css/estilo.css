@@ -1,14 +1,22 @@
 *{
     margin: 0px;
     padding: 0px;
+    
+    
 }
+
 
 
 body{
     display: flex;
 }
+.page-content h1,h2{
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+}
 
 .page-content {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
     
     width: calc(100% - 128px);
     height: 100%;

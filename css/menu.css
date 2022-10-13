@@ -4,15 +4,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 .sidebar{
+  font-family: 'Poppins', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 260px;
-  background: #11101d;
+  background: #2e2a62;
+  /*
+  background: #332d79;
+  background: #11101d;*/
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -257,7 +260,7 @@
 .home-section .home-content .bxs-chevron-right,
 .home-section .home-content .bxs-chevron-left,
 .home-section .home-content .text{
-  color: #11101d;
+  color: #2e2a62;
   font-size: 35px;
 }
 .home-section .home-content .bxs-chevron-right,
