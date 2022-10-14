@@ -17,7 +17,7 @@ body{
 .page-content {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 20px;
-    
+    text-align: justify;
     width: calc(100% - 128px);
     height: 100%;
     
@@ -30,7 +30,7 @@ body{
 
     margin: auto;
     margin-left: 128px;
-    margin-right: 25px;
+    margin-right: 50px;
     /*margin-top: 40px;*/
   }
   
@@ -83,4 +83,25 @@ body{
     align-items: center;
     text-align: center;
     margin: auto;
+}
+
+.equation{
+    display: flex;
+}
+
+.ref{
+    font-size: 70%;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: -2px;
+    word-spacing: -8px;
+    
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+.bibliografia li{
+    list-style-type:decimal;
 }

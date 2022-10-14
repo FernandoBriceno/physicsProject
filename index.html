@@ -18,8 +18,12 @@
     
     <script src="./js/insertar.js" defer></script>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- MathJax to equations https://www.mathjax.org/#gettingstarted -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+    <script id="MathJax-script" async src="./js/mathJax/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});</script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
    
 </head>
 <body>
@@ -28,11 +32,12 @@
     
     <div class="page-content" >
         <h1>Vienvenidos a</h1>
+        <br><br>
         <img src="./img/logo/physicsLogo.png" width="80%" class="img-center">
+        <br><br>
         <div style="align-items: center; margin:auto;">
             <p style="width: 80%; text-align: center;margin:auto;">Un sitio donde encontrarás recursos de aprendizaje en el campo de la física, tanto de nivel escolar, como universitaria. Te invito a navegar en el menú de la izquierda para encontrar lo que buscas. Suerte en este viaje.</p>
         </div>
-        
     </div>
  
     
