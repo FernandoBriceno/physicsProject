@@ -115,9 +115,18 @@ a:link, a:visited, a:active {
 
 }
 .doblecolumn div{
-    width: 40%;
+    width: 45%;
     margin:auto;
     margin-top: 0;
-
-
 }
+
+@media (max-width: 800px) {
+
+    .doblecolumn {
+        display: block;
+    }
+    .doblecolumn div{
+        width: 100%;
+    }
+    
+  }
