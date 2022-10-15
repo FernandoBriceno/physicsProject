@@ -14,7 +14,57 @@
 
 <br>
 
-<p>En la concepción de la teoría electromagnética de Maxwel, la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ es la energia total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(p.395-396, H. Hayt)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
+<p>En la concepción de la teoría electromagnética de Maxwel, la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ es la energia total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(p.395-396, H. Hayt)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
+<br>
+
+<p>Como vimos en el párrafo anterior, según la teoría electromagnética clásica, la energía de una onda se encuentra almacenada en los campos eléctricos y magnéticos por lo que podemos plantear un hamiltoniano de la forma</p> 
+        
+<p>$$H = \frac{ \epsilon E^2}{2}+\frac{  B^2}{\mu 2}$$</p>
+
+<p>De esta manera, la equipartición de la energía, también llamado <b>teorema de equipartición</b>  de la energía mecánica clásica, propone que al calcular la energía media de la onda $\left \langle E \right \rangle$, se adicionará $\frac{ 1}{2}\kappa T$ por cada grado de libertad<a href="#ref1" class="ref">(Serway, Moses, Moyer, 2005, p. 343)</a>, donde $\kappa = 1,380649 \times 10^{-23} \: J/K$ es la <b>constante de Boltzmann</b>; en este caso, para la onda los grados de libertad son 2, uno para $E$ y otro para $B$, lo que es</p> 
+
+<p>$$\left \langle E \right \rangle = \frac{ 1}{2}\kappa T+\frac{ 1}{2}\kappa T = \kappa T$$</p>
+
+<p>De aquí se puede interpretar que "todos los osciladores deben tener la misma energía media en equilibrio, cualquiera que sea su frecuencia" <a href="#ref1" class="ref">(L. de la Peña, 2014, p. 3)</a>  y su valor será $\left \langle E \right \rangle = \kappa T$. Sin embargo esto no es aplicable a nuestro estudio de la densidad de energía por unidad de frecuencia, dicha aplicación nos llevará a la muy conocida "Catrástofe ultravioleta" como veremos acontinuación.</p> 
+<br>
+<div class="doblecolumn">
+    <div>
+        <h3>Distribución Continua</h3>
+        <br>
+        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que la expresión para la energía promedio será</p>
+
+        <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
+        <br>
+
+        <p>Con lo cual hemos llegado al mismo resultado planteado por el teorema de Equipartición. Si aplicamos este valor medio en nuestra ecuación de densidad espectral obtenemos</p>
+
+        <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}} \nu^{2}  \kappa T $$</p>
+
+        <p>Este resultado es conocido como la <strong>Ley de Rayleigh-Jeans</strong>. Se puede ver claramente que el término cuadrádo de la frecuencia hace tender el resultado rápidamente al infinito y si comparamos con el resultado experimental vemos que da una buena aproximación para bajas frecuencias, pero un resultado erróneo para frecuencias mas grandes. A este resultado es al que s ele conoce como la <strong>Catástrofe ultravioleta</strong>.</p>
+        <br>
+        <img src="./img/contenido/mecanicaCuantica/densidadEnergiaClasica.PNG" style="width: 300px;"  alt="Ecuaciones de movimiento circular." class="img-center">
+        <br>
+    </div>
+
+    <div>
+        <h3>Distribución Discreta</h3>
+        <br>
+        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que la expresión para la energía promedio será</p>
+
+        <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
+        <br>
+
+        <p>Con lo cual hemos llegado al mismo resultado planteado por el teorema de Equipartición. Si aplicamos este valor medio en nuestra ecuación de densidad espectral obtenemos</p>
+
+        <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}} \nu^{2}  \kappa T $$</p>
+
+        <p>Este resultado es conocido como la <strong>Ley de Rayleigh-Jeans</strong>. Se puede ver claramente que el término cuadrádo de la frecuencia hace tender el resultado rápidamente al infinito y si comparamos con el resultado experimental vemos que da una buena aproximación para bajas frecuencias, pero un resultado erróneo para frecuencias mas grandes. A este resultado es al que s ele conoce como la <strong>Catástrofe ultravioleta</strong>.</p>
+        <br>
+        <img src="./img/contenido/mecanicaCuantica/densidadEnergiaCuantica.PNG" style="width: 300px;"  alt="Ecuaciones de movimiento circular." class="img-center">
+        <br>
+        
+    </div>
+</div>
 
 
 <!--120,331-->
@@ -24,15 +74,18 @@
     <h2>Referencias</h2>
     <br>
     <ul>
-        <li id="ref1"><a href="#">H. Hayt William; Teoría electromagnética. 2nd Edicion en español, McGraw-Hill, México, 1991.</a></li>
+        <li id="ref1"><a href="#">H. Hayt, <span style="font-style: italic;">Teoría electromagnética</span> . 2nd Edicion en español, McGraw-Hill, México; 1991.</a></li>
         <br>
-        <li id="ref2"><a href="#">A. Serway, J.Moses, A. Moyer;  Física Moderna. 3nd Edicion..., 1991.</a></li>
+        <li id="ref2"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">A. Serway, J.Moses, A. Moyer (2005) <span style="font-style: italic;">Modern Physics</span>, Third Edition.</a></li>
         <br>
-        <li id="ref3"><a href="#">F. Reif, Fundamentos de física estadistica y térmica. Ed. del Castillo, S.A, Madrid, 1968.</a></li>
+        <li id="ref3"><a href="#">F. Reif, <span style="font-style: italic;">Fundamentos de física estadistica y térmica</span>. Ed. del Castillo, S.A, Madrid; 1968.</a></li>
         <br>
-        <li id="ref4"><a href="#">F. Reif, Fundamentos de física estadistica y térmica. Ed. del Castillo, S.A, Madrid, 1968.</a></li>
+        <li id="ref4"><a href="https://libgen.rocks/ads.php?md5=BA60B76C22DEF1AE734B55470AA20453">C. Cohen-Tannoudji, B. Diu , F. Laloë, <span style="font-style: italic;">Quantum Mechanics Volume 1</span>, 2nd Edition, Wiley; 2019</a></li>
         <br>
-        <li id="ref5"><a href="#">David K. Cheng, Fundamentos de electromagnetismo para ingeniería. Ed. Addison W. Iberoamericana de México, 1998</a></li>
+        <li id="ref5"><a href="#">K. Cheng, <span style="font-style: italic;">Fundamentos de electromagnetismo para ingeniería</span>. Ed. Addison W. Iberoamericana de México; 1998</a></li>
+        <br>
+        <li id="ref6"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">L. de la Peña (2014) <span style="font-style: italic;">Introducción a la mecánica cuántica</span>, 3nd Edición, UNAM, México</a></li>
+
     </ul>
 
 </div>
