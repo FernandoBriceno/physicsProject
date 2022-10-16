@@ -242,7 +242,8 @@
 .home-section{
   position:relative;
   background: #ffffff;
-  height: 100vh;
+  /*
+  height: 100vh;*/
   margin: auto;
   left: 260px;
   width: calc(100% - 260px);
@@ -254,7 +255,7 @@
 }
 .home-section .home-content{
   height: 60px;
-  display: flex;
+  display: fixed;
   align-items: center;
   position:fixed;
 }
