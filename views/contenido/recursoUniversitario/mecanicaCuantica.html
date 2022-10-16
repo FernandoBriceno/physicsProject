@@ -10,7 +10,7 @@
 <img src="./img/contenido/mecanicaCuantica/cuerpoNegro.jpeg" style="width: 300px;"  alt="Cuerpo Negro." class="img-center">
 <br>
 
-<p>La potencia radiada de un cuerpo negro es proporcional a $T^4$, esto se supo gracias a que en 1897 el físico austriaco Josef Stefan, enontró experimentalmente la potencia total emitida por unidad de area para todas las frecuencias $u _A= \int _{0}^{\infty } u _f df = \sigma T^4$ <a href="#ref1" class="ref">(p.69, A. Serway)</a> donde $\sigma =5,67 \times  10^{-8}\frac{W}{m^2K^4}$ es la constante de Stefan-Boltzmann. Este hecho experimental fue confirmado solo cinco años después por el físico austriaco Ludwig E. Boltzman teóricamente, quien lo dedujo de la termodinámica y las ecuaciones de Maxwel, por lo que hoy es conocida como la ley de Stefan-Boltzmann. </p>
+<p>La potencia radiada de un cuerpo negro es proporcional a $T^4$, esto se supo gracias a que en 1897 el físico austriaco Josef Stefan, enontró experimentalmente la potencia total emitida por unidad de area para todas las frecuencias $u _A= \int _{0}^{\infty } u _f df = \sigma T^4$ <a href="#ref1" class="ref">(Serway, Moses, Moyer, 2005, p. 69)</a> donde $\sigma =5,67 \times  10^{-8}\frac{W}{m^2K^4}$ es la constante de Stefan-Boltzmann. Este hecho experimental fue confirmado solo cinco años después por el físico austriaco Ludwig E. Boltzman teóricamente, quien lo dedujo de la termodinámica y las ecuaciones de Maxwel, por lo que hoy es conocida como la ley de Stefan-Boltzmann. </p>
 
 <br>
 <h2>La catástrofe Ultravioleta</h2>
@@ -18,7 +18,7 @@
 
 <div class="doblecolumn">
     
-    <div style=" width: auto; margin-right: 50px;">
+    <div style=" width: auto;">
         <p>Un concepto importante en el nacimiento de la mecánica clásica fue el de la <b>densidad de energía espectral de radiación</b> o  densidad de energía por unidad de volumen por unidad de frecuencia de readiación, para la radiación contenidad dentro de un cuerpo negro, la cuál denominaremos como</p>
 
         <p >$$\rho = \rho (\nu , T)$$</p>
@@ -28,7 +28,7 @@
         <p>$$ \rho (\nu , T)=N\left \langle E \right \rangle$$</p>
     </div>
     <div style="margin: auto;">
-        <img src="./img/contenido/mecanicaCuantica/densidadEspectral.PNG" style="width: 400px; margin-top: auto;"  alt="Ecuaciones de movimiento circular." class="img-center">
+        <img src="./img/contenido/mecanicaCuantica/densidadEspectral.PNG" style="width: 350px;"  alt="Ecuaciones de movimiento circular." class="img-center">
     </div>
     
 </div>
@@ -44,17 +44,18 @@
         
 <p>$$H = \frac{ \epsilon E^2}{2}+\frac{  B^2}{\mu 2}$$</p>
 
-<p>De esta manera, la equipartición de la energía, también llamado <b>teorema de equipartición</b>  de la energía mecánica clásica, propone que al calcular la energía media de la onda $\left \langle E \right \rangle$, se adicionará $\frac{ 1}{2}\kappa T$ por cada grado de libertad<a href="#ref1" class="ref">(Serway, Moses, Moyer, 2005, p. 343)</a>, donde $\kappa = 1,380649 \times 10^{-23} \: J/K$ es la <b>constante de Boltzmann</b>; en este caso, para la onda los grados de libertad son 2, uno para $E$ y otro para $B$, lo que es</p> 
+<p>De esta manera, la equipartición de la energía, también llamado <b>teorema de equipartición</b>  de la energía mecánica clásica, propone que al calcular la energía media de la onda $\left \langle E \right \rangle$, se adicionará $\frac{ 1}{2}\kappa T$ por cada grado de libertad<a href="#ref1" class="ref">(Serway, 2005, p. 343)</a>, donde $\kappa = 1,380649 \times 10^{-23} \: J/K$ es la <b>constante de Boltzmann</b>; en este caso, para la onda los grados de libertad son 2, uno para $E$ y otro para $B$, lo que es</p> 
 
 <p>$$\left \langle E \right \rangle = \frac{ 1}{2}\kappa T+\frac{ 1}{2}\kappa T = \kappa T$$</p>
 
 <p>De aquí se puede interpretar que "todos los osciladores deben tener la misma energía media en equilibrio, cualquiera que sea su frecuencia" <a href="#ref1" class="ref">(L. de la Peña, 2014, p. 3)</a>  y su valor será $\left \langle E \right \rangle = \kappa T$. Sin embargo esto no es aplicable a nuestro estudio de la densidad de energía por unidad de frecuencia, dicha aplicación nos llevará a la muy conocida <b>Catrástofe ultravioleta</b> como veremos acontinuación.</p> 
 <br>
+<p>De la física estadísitca podemos tomar el valor promedio de una variable $X$, para un arreglo de $m$ estados probables como $\left \langle X \right \rangle = \frac{\sum_{n=1}^{m} X_nP(X_n)}{\sum_{n=1}^{m} P(X_n)}$, para nuestro caso $X=E$, por lo que  $\left \langle E \right \rangle =\frac{\sum_{n=1}^{\infty } E_nP(E_n)}{\sum_{n=1}^{m} P(E_n)}$ y $m\rightarrow \infty $.</p><br>
 <div class="doblecolumn">
     <div>
         <h3>Distribución Continua</h3>
         <br>
-        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua y que los osciladores allí intercambian energía de forma contínua con la rediación de su entorno, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que en la expresión para la energía promedio, las sumatorias deberán ser intercambiadas por integrales</p>
+        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua y que los osciladores allí intercambian energía de forma contínua con la radiación de su entorno, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que en la expresión para la energía promedio, las sumatorias deberán ser intercambiadas por integrales</p>
 
         <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
         <br>
@@ -98,7 +99,10 @@
     </div>    
 </div>
 <br><br>
+
 <h2>El efecto fotoelectrico</h2>
+<br>
+<p></p>
 
 
 <!--120,331-->
