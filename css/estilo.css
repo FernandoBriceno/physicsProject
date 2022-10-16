@@ -128,6 +128,7 @@ a:link, a:visited, a:active {
     }
     .doblecolumn div{
         width: 100%;
+        margin:auto;
     }
     
   }
