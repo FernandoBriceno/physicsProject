@@ -7,14 +7,37 @@
 <br>
 <p>Un cuerpo negro es un objeto absorve toda la radiación que recibe. Si se encuentra en equilibrio térmico y si se abre un pequeño orificio podrá su vez emitir por allí una radiación característica que depende de la temperatura de equilibrio del cuerpo negro. </p>
 <br>
-<img src="./img/contenido/mecanicaCuantica/cuerpoNegro.jpeg" style="width: 300px;"  alt="Ecuaciones de movimiento circular." class="img-center">
+<img src="./img/contenido/mecanicaCuantica/cuerpoNegro.jpeg" style="width: 300px;"  alt="Cuerpo Negro." class="img-center">
 <br>
 
 <p>La potencia radiada de un cuerpo negro es proporcional a $T^4$, esto se supo gracias a que en 1897 el físico austriaco Josef Stefan, enontró experimentalmente la potencia total emitida por unidad de area para todas las frecuencias $u _A= \int _{0}^{\infty } u _f df = \sigma T^4$ <a href="#ref1" class="ref">(p.69, A. Serway)</a> donde $\sigma =5,67 \times  10^{-8}\frac{W}{m^2K^4}$ es la constante de Stefan-Boltzmann. Este hecho experimental fue confirmado solo cinco años después por el físico austriaco Ludwig E. Boltzman teóricamente, quien lo dedujo de la termodinámica y las ecuaciones de Maxwel, por lo que hoy es conocida como la ley de Stefan-Boltzmann. </p>
 
 <br>
+<h2>La catástrofe Ultravioleta</h2>
+<br>
 
-<p>En la concepción de la teoría electromagnética de Maxwel, la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ es la energia total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(p.395-396, H. Hayt)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
+<div class="doblecolumn">
+    
+    <div style=" width: auto; margin-right: 50px;">
+        <p>Un concepto importante en el nacimiento de la mecánica clásica fue el de la <b>densidad de energía espectral de radiación</b> o  densidad de energía por unidad de volumen por unidad de frecuencia de readiación, para la radiación contenidad dentro de un cuerpo negro, la cuál denominaremos como</p>
+
+        <p >$$\rho = \rho (\nu , T)$$</p>
+
+        <p>en donde $\nu$ es la frecuencia de las ondas de radiación contenidas en el cuerpo negro y $T$ es la temperatura de equilibrio del cuerpo negro. Cuando aplicamos el concepto de resonancia en la teoría undulatoria, podemos saber que hay un <b>numero de modos</b> de estas ondas que cumplen las condiciones de frontera de la cavidad, esto es $N=\frac{8\pi }{c^{3}}\nu ^{2}$. Ahora bien, si de alguna manera consiguieramos conocer la energía promedio de esta radiación contenida en la cavidad bastaría por multiplicarlo con el numero de modos para obtener nuestra densidad energética</p> 
+
+        <p>$$ \rho (\nu , T)=N\left \langle E \right \rangle$$</p>
+    </div>
+    <div style="margin: auto;">
+        <img src="./img/contenido/mecanicaCuantica/densidadEspectral.PNG" style="width: 400px; margin-top: auto;"  alt="Ecuaciones de movimiento circular." class="img-center">
+    </div>
+    
+</div>
+
+
+<p></p>
+
+
+<p>Nos queda por lo tanto la tarea de hallar el valor de la energía promedio del espectro contenido en el cuerpo negro a determinada temperatura. Una forma de abordar este problema es por medio de los grados de libertad y el <b>teoréma de equipartición</b>; para ello revisaremos la teoría electromagnética de Maxwel, en donde la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ representa la energía total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(p.395-396, H. Hayt)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
 <br>
 
 <p>Como vimos en el párrafo anterior, según la teoría electromagnética clásica, la energía de una onda se encuentra almacenada en los campos eléctricos y magnéticos por lo que podemos plantear un hamiltoniano de la forma</p> 
@@ -25,13 +48,13 @@
 
 <p>$$\left \langle E \right \rangle = \frac{ 1}{2}\kappa T+\frac{ 1}{2}\kappa T = \kappa T$$</p>
 
-<p>De aquí se puede interpretar que "todos los osciladores deben tener la misma energía media en equilibrio, cualquiera que sea su frecuencia" <a href="#ref1" class="ref">(L. de la Peña, 2014, p. 3)</a>  y su valor será $\left \langle E \right \rangle = \kappa T$. Sin embargo esto no es aplicable a nuestro estudio de la densidad de energía por unidad de frecuencia, dicha aplicación nos llevará a la muy conocida "Catrástofe ultravioleta" como veremos acontinuación.</p> 
+<p>De aquí se puede interpretar que "todos los osciladores deben tener la misma energía media en equilibrio, cualquiera que sea su frecuencia" <a href="#ref1" class="ref">(L. de la Peña, 2014, p. 3)</a>  y su valor será $\left \langle E \right \rangle = \kappa T$. Sin embargo esto no es aplicable a nuestro estudio de la densidad de energía por unidad de frecuencia, dicha aplicación nos llevará a la muy conocida <b>Catrástofe ultravioleta</b> como veremos acontinuación.</p> 
 <br>
 <div class="doblecolumn">
     <div>
         <h3>Distribución Continua</h3>
         <br>
-        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que la expresión para la energía promedio será</p>
+        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua y que los osciladores allí intercambian energía de forma contínua con la rediación de su entorno, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que en la expresión para la energía promedio, las sumatorias deberán ser intercambiadas por integrales</p>
 
         <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
         <br>
@@ -42,29 +65,40 @@
 
         <p>Este resultado es conocido como la <strong>Ley de Rayleigh-Jeans</strong>. Se puede ver claramente que el término cuadrádo de la frecuencia hace tender el resultado rápidamente al infinito y si comparamos con el resultado experimental vemos que da una buena aproximación para bajas frecuencias, pero un resultado erróneo para frecuencias mas grandes. A este resultado es al que s ele conoce como la <strong>Catástrofe ultravioleta</strong>.</p>
         <br>
+
         <img src="./img/contenido/mecanicaCuantica/densidadEnergiaClasica.PNG" style="width: 300px;"  alt="Ecuaciones de movimiento circular." class="img-center">
         <br>
+
+        <p>La gráfica anterior, con valores arbitrarios, unicamente ilustrativos, nos muestra cómo la gráfica se ajusta muy bien para valores de frecuencia pepqueños, pero a medida que aumentan tiende hacia infinito, en la dirección creciente de las frecuencias encontramos el orden de la luz ultravioleta que se presenta al rededor de $10^{15}Hz$ a $10^{17} Hz$ aproximadamente, por eso el nombre de "Catástrofe ultravioleta".</p><br>
     </div>
 
     <div>
         <h3>Distribución Discreta</h3>
         <br>
-        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que la expresión para la energía promedio será</p>
+        <p>El gran acierto de <b>Max Planck</b> fue pensar en que los osciladores intercambiaban energía con el medio en pequeños paquetes y no de forma continua, estos paquetes debían ser un número entero de una energía fundamental $E_1=h \nu$, proporcional a la frecuencia del oscilador,  de forma que $E_n=nE_1=nh \nu$  con $n=1,2,3,...$. Para esto se valió de la <b>distribución de probabilidad de Boltzman</b> $P(E_n)=P_1e ^{-(E_n-E_1)/\kappa T}$, con $P_1$ como la probabilidad de encontrar al oscilador en su estado fundamental . De esta manera obtubo la expresión para la energía media como</p>
 
-        <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
+        <p>$$\left \langle E \right \rangle = \frac{ \sum_{n=1}^{\infty }E_n e ^{-E_n/\kappa T}}{\sum_{n=1}^{\infty } e ^{-E_n/\kappa T}}$$ </p>
+   
+        <p>$$\left \langle E \right \rangle =  \frac{ \sum_{n=1}^{\infty } nh\nu  e^{-nh \nu / \kappa T}}{\sum_{n=1}^{\infty } e^{-nh \nu / \kappa T}}= \frac{ h\nu}{e^{-h \nu / \kappa T}-1}$$</p>
         <br>
 
-        <p>Con lo cual hemos llegado al mismo resultado planteado por el teorema de Equipartición. Si aplicamos este valor medio en nuestra ecuación de densidad espectral obtenemos</p>
+        <p>Esta expresion, al ser introducida en la densidad de de energía de radiación tenemos</p>
 
-        <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}} \nu^{2}  \kappa T $$</p>
+        <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}}\frac{ h\nu^{3}}{e^{-h \nu / \kappa T}-1}$$</p>
 
-        <p>Este resultado es conocido como la <strong>Ley de Rayleigh-Jeans</strong>. Se puede ver claramente que el término cuadrádo de la frecuencia hace tender el resultado rápidamente al infinito y si comparamos con el resultado experimental vemos que da una buena aproximación para bajas frecuencias, pero un resultado erróneo para frecuencias mas grandes. A este resultado es al que s ele conoce como la <strong>Catástrofe ultravioleta</strong>.</p>
+        <p>Este resultado proporciona de forma inmediata una función que se ajusta muy bien a los valores experimentales. </p>
         <br>
-        <img src="./img/contenido/mecanicaCuantica/densidadEnergiaCuantica.PNG" style="width: 300px;"  alt="Ecuaciones de movimiento circular." class="img-center">
+        <img src="./img/contenido/mecanicaCuantica/densidadEnergia.PNG" style="width: 300px;"  alt="Ecuaciones de movimiento circular." class="img-center">
         <br>
+
+        <p>Ahora solo hacía falta ajustar de forma manual el valor de la constante $h$, la cual conocemos ahora como la <b>constante de Planck</b> y tiene un valor experimental de $h=6,626 \times 10^{-34} J.s$. </p>
+        <br>
+        <p>Observe que la constante de Planck tiene unidades de $J.s$, esto en mecánica clásica son unidades de acción $\boldsymbol{S}=\int \mathfrak{ L}(q_1,q_2,...,q_N;t) \:  dt  $, de aquí se puede sacar una conclusión importante y es que podemos conocer cuándo en un sistema los fenómenos cuánticos llegan a ser apreciables, o cuándo estamos hablando de un sistema cuántico y no clásico; esto es cuando la acción que representa al sistema es proporcional en ordenes de magnitud al valor de la constante de Planck.</p>
         
-    </div>
+    </div>    
 </div>
+<br><br>
+<h2>El efecto fotoelectrico</h2>
 
 
 <!--120,331-->

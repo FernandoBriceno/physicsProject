@@ -118,6 +118,7 @@ a:link, a:visited, a:active {
     width: 45%;
     margin:auto;
     margin-top: 0;
+    margin-right: 5%;
 }
 
 @media (max-width: 800px) {
