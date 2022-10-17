@@ -242,8 +242,8 @@
 .home-section{
   position:relative;
   background: #ffffff;
-  /*
-  height: 100vh;*/
+  
+  height: 100vh;
   margin: auto;
   left: 260px;
   width: calc(100% - 260px);
@@ -254,8 +254,8 @@
   width: calc(100% - 78px);
 }
 .home-section .home-content{
-  height: 60px;
-  display: fixed;
+  /*height: 60px;*/
+  display: flex;
   align-items: center;
   position:fixed;
 }
@@ -299,7 +299,7 @@
   }
 
   
-  
+  /*
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
@@ -325,14 +325,15 @@
     width: calc(100% - 128px);
     height:100vh;
 
+    margin: auto;
     margin-left: 128px;
-    margin-right: 25px;
-    /*margin-top: 40px;*/
+    margin-right: 50px;
+    /*margin-top: 40px;* /
     font-family: Century Gothic;
   }
 
   
-}
+} */
 
 
 
