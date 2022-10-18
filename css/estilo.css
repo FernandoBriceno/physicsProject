@@ -150,3 +150,25 @@ a:link, a:visited, a:active {
     margin-left: 0;
     padding-left: 40px;
   }
+
+/*PARA GENERAR TABLAS https://tabletag.net/es/ */
+table , td, th {
+    margin: auto;
+	border: 1px solid #595959;
+	border-collapse: collapse;
+    text-align: center;
+}
+td, th {
+	padding: 10px;
+	width: 30px;
+	height: 25px;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
