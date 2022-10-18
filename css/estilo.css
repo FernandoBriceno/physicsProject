@@ -126,17 +126,19 @@ a:link, a:visited, a:active {
         display: block;
     }
     .doblecolumn div{
-        width: calc(100% - 180px);
+        width: 100%;
         margin:auto;
     }
     .page-content {
         font-family: Century Gothic;
+        width: calc(100% - 180px)
       }
     
-  /*  img {
-        width: calc(100% - 180px) ;
+ img {
+    margin: auto;
+    
     }
-*/
+
     
   }
 
