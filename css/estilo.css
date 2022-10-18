@@ -1,7 +1,19 @@
+ /*@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright');
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Junge');
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');*/
+
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+
 *{
     margin: 0px;
     padding: 0px;
-    
+    font-family: "Scope One", serif;
+    /*font-family:"Josefin Slab", serif;
+    font-family: Junge, serif;
+    */
     
 }
 
@@ -9,14 +21,11 @@
 body{
     display: flex;
 }
-.page-content h1,h2{
+.page-content h1,h2, h3{
     font-family: 'Linux Libertine','Georgia','Times',serif;
 }
 
 .page-content {
-    /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
-    
-    font-family: Century Gothic;
     font-weight:400;
     font-size: 18px;
     text-align: justify;
