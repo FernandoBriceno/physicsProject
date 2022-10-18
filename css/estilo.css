@@ -140,12 +140,9 @@ a:link, a:visited, a:active {
         margin:auto;
     }
     .page-content {
-        font-family: Century Gothic;
         width: calc(100% - 180px)
       }
-    .page-content p{
-        font-family: Century Gothic;
-    }
+    
     
     img {
         margin: auto;
