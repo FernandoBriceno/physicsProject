@@ -140,6 +140,7 @@ a:link, a:visited, a:active {
         margin:auto;
     }
     .page-content {
+        font-family: "Scope One", serif;
         width: calc(100% - 180px)
       }
     
