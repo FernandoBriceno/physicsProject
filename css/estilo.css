@@ -124,6 +124,7 @@ a:link, a:visited, a:active {
 
     .doblecolumn {
         display: block;
+        width: 100%;
     }
     .doblecolumn div{
         width: 100%;
@@ -136,6 +137,7 @@ a:link, a:visited, a:active {
     
  img {
     margin: auto;
+    max-width: 100%;
     
     }
 
