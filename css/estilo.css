@@ -126,7 +126,7 @@ a:link, a:visited, a:active {
         display: block;
     }
     .doblecolumn div{
-        width: 100%;
+        width: calc(100% - 180px);
         margin:auto;
     }
     .page-content {
