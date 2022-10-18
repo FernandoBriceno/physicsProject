@@ -133,10 +133,10 @@ a:link, a:visited, a:active {
         font-family: Century Gothic;
       }
     
-    img {
-        max-width: calc(100% - 180px) ;
+  /*  img {
+        width: calc(100% - 180px) ;
     }
-    
+*/
     
   }
 
