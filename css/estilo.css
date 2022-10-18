@@ -134,14 +134,16 @@ a:link, a:visited, a:active {
         font-family: Century Gothic;
         width: calc(100% - 180px)
       }
-    
- img {
-    margin: auto;
-    max-width: 100%;
-    
+    .page-content p{
+        font-family: Century Gothic;
     }
-
     
+    img {
+        margin: auto;
+        max-width: 100%;
+        
+        }
+
   }
 
   .listas ul{
