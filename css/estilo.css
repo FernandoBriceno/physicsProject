@@ -71,7 +71,6 @@ body{
     margin: 10px 10px 10px 100px;
 }
 
-
 .creator img{
     display: block;
     margin: auto;
@@ -143,14 +142,10 @@ a:link, a:visited, a:active {
         font-family: "Scope One", serif;
         width: calc(100% - 180px)
       }
-    
-    
     img {
         margin: auto;
         max-width: 100%;
-        
         }
-
   }
 
   .listas ul{
@@ -179,3 +174,29 @@ th {
 .odd {
 	background: #fefcf9;
 }
+/*PARA GENERAR TABLAS https://tabletag.net/es/ */
+
+.problema {
+    background-color: #f0e6cc;
+    padding: 20px;
+}
+.problem {
+    background-color: #cecece;
+    padding: 20px;    
+    font-size: 14px;
+}
+.solucion{
+    background-color: #fdfdfd;
+    padding: 10px;
+}
+
+
+
+.abc-list {
+    list-style-type: lower-alpha;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+.abc-list li{
+    margin-bottom: 10px;
+  }
