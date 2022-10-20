@@ -1,3 +1,104 @@
+<h1>La mecánica clásica Usual</h1>
+<br>
+<p>Dentro del estudio de la mecánica clásica existe un antes y un después histórico evidente, y es la llegada de la relatividad especial de Einstein al juego de la física. Algunas de las caracterísiticas más importantes con la llegada de Einstein a la física, es la forma como medimos el espacio y el tiempo, los que dejan de ser los eternos "absolutos e inmutables" que conocíamos desde siempre. En esta sección haremos un recuento y plantearemos definiciones importantes para entender el espacio, el tiempo y la forma de medirlos, desde el punto de vista usual, es decir, antes de la relatividad especial de Einstein. Comencemos entonces por plantear algunas definiciones importantes.</p><br>
+
+<h2 id="espacioafin">El espacio afin</h2>
+<br>
+<p>Para definir un <b>espacio afin</b> debemos hablar en primer lugar de un espacio puntual que denotaremos $\mathscr{A}$ , este es un tipo de espacio cuyos elementos contenidos en él son puntos, si podemos asociar un espacio vectorial $\mathscr{V}_n$ de $n$ dimensiones a nuestro espacio puntual $\mathscr{A}$ , entonces $\mathscr{A}_n$  es el espacio puntual a fin, asociado a $\mathscr{V}_n$. La forma de asociar estos dos espacios es mediante una operación de mapeo, que le asigna a cada par de elementos $(A,B)$ con  $A, B \in \mathscr{A} $  un vector en $\mathscr{V}_n$ que corresponde al vector dirigido desde el punto $A$ hasta $B$, $\overrightarrow{AB}$, ;  dicho de otra manera un mapeo</p>
+
+<p>$$\mathscr{A}  \times \mathscr{A}  \rightarrow \mathscr{V}_n $$</p>
+<p>$$(A,B) \rightarrow \vec{v} \in \mathscr{V}_n $$</p>
+
+<p >También esta asignación debe tener las siguientes propiedades:</p>
+<br>
+
+<ul class="i-list">
+    <li>$\overrightarrow{AB} = -\overrightarrow{BA}$</li>
+    <li>$\overrightarrow{AB} = \overrightarrow{AC}  +\overrightarrow{CB}$</li>
+    <li>Para un punto $O \in \mathscr{A}$ arbitrario, y para cada vector $\vec{a} \in \mathscr{V}_n$ corresponde un solo punto $A \in \mathscr{A}$ de forma que $\overrightarrow{OA} = \vec{a} $</li>
+</ul>
+
+<br>
+<p>Si se cumplen las tres condiciones anteriores podemos decir que constituye un espacio puntual a fin de $n$ dimensiones, y será real o complejo según el conjunto sobre el cuál está definido el espacio vectorian $\mathscr{V}_n$ <a href="#ref1" class="ref">(Lichnerowicz, 1968, p. 41-42)</a></p>
+<br>
+
+<h2 id="espaciovectorialeuclidiano">Espacio vectorial euclidiano.</h2><br>
+
+<p>Es un espacio vectorial de la geometría ordinaria, definido sobre el cuerpo de los números reales, debe existir entonces para este espacio una ley de composición para cualquier par de vectores $\vec{x}$ y $\vec{y}$, en la que a dicho par se le asigna un numero real $\vec{x}\cdot \vec{y}$, dicha ley de asignación se le conoce como <b>producto escalar</b> y debe cumplir las siguientes propiedades.</p>
+<br>
+
+<ul class="i-list">
+    <li>$\vec{x}\cdot \vec{y}=\vec{y}\cdot \vec{x}$ (Ley conmutativa)</li>
+    <li>$\vec{(\alpha x)}\cdot \vec{y}=\vec{x}\cdot \vec{\alpha y}=\alpha(\vec{x}\cdot \vec{y})$ (Ley asociativa respecto a la multiplicación por un escalar $\alpha$ )</li>
+    <li>$\vec{x}\cdot (\vec{y}+\vec{z})=\vec{x}\cdot \vec{y}+\vec{x}\cdot \vec{z}$ (Ley distributiva respecto a la adición vectorial )</li>
+    <li>Si $\vec{x}\cdot \vec{y}= 0$ para cualquier valor de $\vec{x}$, entonces $\vec{y}=0$ </li>
+</ul>
+<br>
+<p>Si $\vec{x}$ y $\vec{y}$ pertenecen a un espacio vectorial de $n$ dimensiones, cuyos vectores bases son $\left \{ \hat{e_1}, \hat{e_2},. . ., \hat{e_n} \right \}$ representan una base ortonormal, y cuyas componentes son las proyecciones del vector sobre la base dada, de manera que $\vec{x}=\vec{x}(x_1,x_2, . . ., x_n) = x_1\hat{e_1}+x_2\hat{e_2}+. . .+x_n\hat{e_n}$
+y $\vec{y}=\vec{y}(y_1,y_2, . . ., y_n) = y_1\hat{e_1}+y_2\hat{e_2}+. . .+y_n\hat{e_n}$; podemos definir el <b>producto escalar</b> entre dos vectores como </p>
+
+    <p>$$\vec{x}\cdot \vec{y}=x_1y_1+x_2y_2+. . .+x_ny_n=\sum x_iy_i$$</p>
+
+   <br>
+
+<h2 id="espacioeuclideo">Espacio Euclídeo</h2><br>
+
+<p>Se denomina <b>espacio puntual euclidiano</b> a un <a href="#espacioafin">espacio puntual afín</a> asociado a un espacio vectorial euclidiano.</p>
+<p>en un espacio euclídeo se deben cumplir los cinco axiomas de Euclides:</p>
+<br>
+<ul class="number-list">
+    <li>Entre dos puntos se puede trazar una recta que los une.</li>
+    <li>Todo segmento de recta puede ser prolongado infinitamente en ambos extremos.</li>
+    <li>Para cada radio y centro dado existe una circunferencia asociada.</li>
+    <li>Los ángulos rectos son todos iguales entre sí.</li>
+    <li>Para un punto situado al lado de una recta existe una única recta que pase por ese punto y que no corte a la anterior. Esto también puede citar que si, cuando tengo dos rectas y una tercera que corta a ambas, y que a demás, si el los ángulos internos de cada recta respecto a la que corta es menor que un ángulo recto, entonces las dos rectas originales al prolongarse al infinito se cortarán en algún punto.</li>
+</ul>
+<br>
+<p>Para nuestro estudio de la mecánica clásica es útil la siguiente definición de espacio Euclídeo:</p><br>
+<center><p><b>"Un espacio euclídeo es un espacio afin dotado de una distancia euclídea."</b></p></center><br>
+<p>Hablaremos a continuación de lo que es una distancia euclídea</p>
+<br>
+
+<h2 id="distanciaeucldea">Distancia Euclídea.</h2><br>
+
+<p>La <strong>distancia euclídeana</strong> está definida gracias a la definición de <a href="#espaciovectorialeuclidiano">producto escalar</a>. Como vimos anteriormente el producto escalar entre $\vec{x}$ y $\vec{y}$ es $\vec{x}\cdot \vec{y}$, por lo tanto podemos definir a la <strong>norma de un vector</strong> como el producto escalar con sí mismo $\vec{x}\cdot \vec{x}=\left |\vec{x}  \right |$. De esta manera podemos definir la distancia entre dos puntos $p$ y $q$ del espacio afin, como la norma del vector asociado en el espacio vectorial asociado $ \overrightarrow{pq}$ , de manera que</p>
+
+<p>$$d(p,q)^2= \left |\overrightarrow{pq}  \right |$$</p>
+
+<p>Uno de los elementos importantes en la distancia euclidiana es que al momento de medir distancias, debemos hacerlo para eventos simultáneos, por lo que el tiempo no será un factor que influye en la medición de la distancia.</p>
+<br>
+
+<table>
+    <tbody>
+        <tr>
+            <th><h3>Euclídea</h3></th>
+            <th><h3>No Euclídea</h3></th>
+        </tr>
+        <tr>
+            <td>$ds^{2}=dx^{2}+dy^{2}+dz^{2} ;\: \: t$</td>
+            <td>  $d\mathscr{S}^{2}= -c^2t^2+dx^{2}+dy^{2}+dz^{2}$
+                <br> $d\mathscr{S}^{2}= -c^2t^2+d\mathscr{S}^{2}$
+            </td>
+        </tr>
+        <tr>
+            <td>No depende explícitamente del tiempo</td>
+            <td>Depende explícitamente del tiempo</td>
+        </tr>
+        
+    </tbody>
+</table><br>
+
+
+<h2 id="postuladosdelamecnicaclsicausual">Postulados de la mecánica clásica Usual</h2><br>
+
+<ul class="i-list">
+    <li>El espacio es tridimensional y <a href="#espacioeuclideo">euclídeo</a> , el tiempo es unidimensional y contínuo.</li>
+    <li>Es válido el principio de relatividad de Galileo</li>
+    <li>Es válido el principio de determinación de Newton-Laplace</li>
+</ul>
+<br>
+
+<!--*****************************************************-->
 <h1 id="coordenadasgeneralizadas">Coordenadas Generalizadas</h1>
 <br>
 
@@ -19,24 +120,6 @@
 <img src="./img/contenido/clasica/particulas.PNG"  style="width: 300px;" class="img-center">
 <br>
 
-<h2>Espacio afin</h2>
-<br>
-<p>Para definir un <b>espacio afin</b> debemos hablar en primer lugar de un espacio puntual que denotaremos $\mathscr{A}$ , este es un tipo de espacio cuyos elementos contenidos en él son puntos, si podemos asociar un espacio vectorial $\mathscr{V}_n$ de $n$ dimensiones a nuestro espacio puntual $\mathscr{A}$ , entonces $\mathscr{A}_n$  es el espacio puntual a fin, asociado a $\mathscr{V}_n$. La forma de asociar estos dos espacios es mediante una operación de mapeo, que le asigna a cada par de elementos $(A,B)$ con  $A, B \in \mathscr{A} $  un vector en $\mathscr{V}_n$ que corresponde al vector dirigido desde el punto $A$ hasta $B$, $\overrightarrow{AB}$, ;  dicho de otra manera un mapeo</p>
-
-<p>$$\mathscr{A}  \times \mathscr{A}  \rightarrow \mathscr{V}_n $$</p>
-<p>$$(A,B) \rightarrow \vec{v} \in \mathscr{V}_n $$</p>
-
-<p >También esta asignación debe tener las siguientes propiedades:</p>
-<br>
-<div class="listas">
-    <ul >
-        <li>$\overrightarrow{AB} = -\overrightarrow{BA}$</li>
-        <li>$\overrightarrow{AB} = \overrightarrow{AC}  +\overrightarrow{CB}$</li>
-        <li>Para un punto $O \in \mathscr{A}$ arbitrario, y para cada vector $\vec{a} \in \mathscr{V}_n$ corresponde un solo punto $A \in \mathscr{A}$ de forma que $\overrightarrow{OA} = \vec{a} $</li>
-    </ul>
-</div>
-<br>
-<p>Si se cumplen las tres condiciones anteriores podemos decir que constituye un espacio puntual a fin de $n$ dimensiones, y será real o complejo según el conjunto sobre el cuál está definido el espacio vectorian $\mathscr{V}_n$ <a href="#ref1" class="ref">(Lichnerowicz, 1968, p. 41-42)</a></p>
 
 
 

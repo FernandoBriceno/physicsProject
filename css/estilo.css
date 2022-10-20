@@ -191,12 +191,35 @@ th {
 }
 
 
-
+li{
+    margin-bottom: 10px;
+  }
 .abc-list {
     list-style-type: lower-alpha;
     margin-left: 0;
     padding-left: 40px;
   }
-.abc-list li{
-    margin-bottom: 10px;
+
+.i-list {
+    list-style-type:  lower-roman;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+.I-list {
+    list-style-type:  upper-roman;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+.number-list {
+    list-style-type:decimal;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+
+li::before {
+    content: " "; /* Insert content that looks like bullets */
+    padding-right: 8px;
+  }
+li::marker {
+    font-weight: bold;
   }
