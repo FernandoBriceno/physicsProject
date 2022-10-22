@@ -151,6 +151,89 @@
 
 
 <h2 id="presinhidrostatica">Presión hidrostatica.</h2><br>
-<p>Cuando nos sumergimos en un fluido, las partículas que contienen a ese fluido tienden a comprimir a los objetos sumergidos en él. Los seres humanos estamos constantemente sufriendo este tipo de fuerzas de comprensión, pues el aire es un fluido, sin embargo no podemos notar estas fuerzas ya que el interior de nuestro cuerpo está adaptado para ejercer hacia afuera una fuerza equiparable, en otras palabras la presión interna de nuestro cuerpo ejercida hacia afuera es igual a la presión que ejerce la atmosfera sobre nosotros, por lo que el resultado neto es nulo. Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro toraz para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, debemos soportar cada vez el  peso de más partículas del liquido sobre nosotros.</p><br>
+
+<p>Cuando nos sumergimos en un fluido, las partículas que contienen a ese fluido tienden a comprimir a los objetos sumergidos en él. Los seres humanos estamos constantemente sufriendo este tipo de fuerzas de comprensión, pues el aire es un fluido, sin embargo no podemos notar estas fuerzas ya que el interior de nuestro cuerpo está adaptado para ejercer hacia afuera una fuerza equiparable, en otras palabras la presión interna de nuestro cuerpo ejercida hacia afuera es igual a la presión que ejerce la atmosfera sobre nosotros, por lo que la presión neta es nula. </p><br>
+
+<img src="./img/contenido/hidrostatica/presion-hidrostatica.png" style="width: 150px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+<br>
+<p>Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro torax para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, podemos interpretar el origen de esta presión como el peso que debemos soportar de las partículas del liquido sobre nosotros y a su vez a la fuerza de acción reacción que ejerce el líquido debajo de nosotros para aguantar todo el peso sobre él, es por esto mismo que la presión aumenta con la <b>profundidad</b> que en adelante denotaremos como $h$, y se mide desde la superficie del fluido hasta la posición del objeto sumergido.</p><br>
+
+
 <h2 id="vasoscomunicantes">Vasos comunicantes.</h2><br>
-<p>Como vimos anteriormente, la presión hidrostática a cierta profundidad, depende únicamente de la profundidad a al que se mide. por esto mismo un tubo </p><br>
+
+<p>Como vimos anteriormente, la presión hidrostática a cierta profundidad, depende únicamente de la profundidad a al que se mide. por esto mismo un conjunto de diferentes tubos comunicados entre sí, al ser llenados, el liquido contenido tendrá la misma altura en cada tubo, aunque tengan formas diferentes, y aunque el área de los tubos  no sean iguales.</p><br>
+
+
+<img src="./img/contenido/hidrostatica/vasos-comunicantes-complejo.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+<br>
+
+<p>Si las alturas no fueran iguales, implicaría que las presiones son diferentes para áreas diferentes, pero la experimentación nos muestra, que la presión es indiferente al área, y depende únicamente de la profundidad a la que se mide, o a la altura del liquido contenida en el tubo, si lo que estamos midiendo es la presión del fondo. Por esto, si por ejemplo intentamos sumergirnos a una profundidad de 3 metros, sentiremos la misma presión sobre nuestro cuerpo, sea en una piscina olímpica (mucha área) o sea en la pileta del lavadero de nuestra casa (poca área).</p><br>
+
+<h2>Principio de Pascal</h2><br>
+
+
+<div class="doblecolumn">
+    <div style="width: auto;">
+        <p>Como vimos anteriormente, la presión en un líquido contenido en un recipiente, no depende del área trasversal del recipiente, depende únicamente de la altura. Ahora bien, Pascal supo usar muy bien esta propiedad y descubrió que la presión se distribuye uniformemente en todas las direcciones y en todos los puntos del fluido. El principio de pascal cita de la siguiente manera</p>
+        <br>
+        <p class="cita">"La presión ejercida sobre un fluido incompresible y en equilibrio dentro de un recipiente de paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del fluido."</p>
+
+    </div>
+    
+    <div style="margin: auto;" >
+        <img src="./img/contenido/hidrostatica/principio-pascal.png" style="width: 280px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+    </div>
+</div><br>
+
+<p>En otras palabras, si yo tengo dos émbolos sobre un líquido incompresible, cada uno en un extremo del ducto que los conecta, la presión en el punto de contacto de cualquiera de los émbolos puede ser transmitida al otro émbolo a tra vez del líquido. Como la presión es independiente del área pero sí dependiente de la altura, puedo decir que para alturas iguales, la presión es igual en ambos émbolos.</p>
+<p>$$P_1=P_2$$</p>
+<p>Por lo tanto debido a que la presión es igual a la fuerza en el punto de aplicación dividido por el área en dodne se distribuye la fuerza, tengo para $P_1=\frac{F_1}{A_1}$ y para $P_2=\frac{F_2}{A_2}$, de esta manera la expresión anterior me queda. </p>
+<p>$$\frac{F_1}{A_1}=\frac{F_2}{A_2}$$</p>
+
+<p>Esta expresión es muy útil y tiene muchas aplicaciones, pues en pro de mantener la igualdad, si un tubo tiene un area menor que el otro, la fuerza presente en el punto donde el área es menor, será también menor, y por el contrario, si el área es cada vez mayor, la fuerza en ese punto será también mayor para que se mantenga la proporción. De esta manera es que funcionan las máquinas hidráulicas, en donde con la fuerza de un simple brazo puedo levantar un vehículo de $1$ tonelada. Para hacerlo bastará con conectar dos conductos, y ubicar la carga en el émbolo de mayor área, y el operador empujará con una fuerza pequeña el émbolo en la sección de area pequeña, entonces el líquido comunicará esta presión y multiplicará la fuerza en el área mayor, así con muy poca fuerza el operador podrá levantar casi cualquier carga que desee.</p>
+<br>
+<p>Por lo tanto, para dar un uso más práctico a la ecuación anterior, podemos acomodarla algebráicamente, despejaremos entonces la fuerza en $1$, que es el lugar donde el operador ejerce la fuerza. Si la carga se coloca en el punto $2$ y esta tiene un peso igual a $F_2$, entonces podremos saber la fuerza necesaria para leventar ese peso.</p>
+
+<p>$$F_1=\frac{A_1}{A_2}F_2$$</p>
+
+<p>Así la fuerza que el operador necesita ejercer para igualar en el otro extremo el peso del vehículo, será proporcional al peso y a la proporción entre el área en $1$ y el área en $2$, así si quiero reducir la cantidad de fuerza que debo ejercer, bastará con aumentar el área $A_2$ o disminuir en proporción el área $A_2$. Veamos un ejemplo.</p>
+
+<br>
+<div class="problema">
+    
+    <div >
+
+        <div class="doblecolumn">
+    
+            <div style=" width: auto;">
+                <p>Un mecánico recibe un coche de $m_c=1000Kg$ para su reparación, para esto debe elevarlo del suelo y cuenta con un dispositivo hidráulico, cuya sección mayor, de forma circular, tiene un radio de $R=1m$ y la sección menor, también circular, tiene un radio de $r=0,1m$.</p><br>
+
+                <ol class="abc-list">
+                    <li>Calcule la fuerza que debe ejercer el mecánico en el émbolo pequeño para levantar el coche.</li>
+                    <li>Si el mecánico se lesiona, y ahora puede hacer solo la mita de la fuerza, ¿qué tan grande debe ser el radio del émbolo más grande?</li>
+                </ol>
+            </div>
+            
+            <div style="margin: auto;" >
+                <img src="./img/contenido/hidrostatica/ejercicio-pascal.png" style="width: 300px;"  alt="un hombre pierde su cartera" class="img-center">
+            <br>
+            </div>
+        </div><br>
+
+        
+
+    </div>
+    <br>
+    <h3>Solución.</h3><br>
+    <div class="solucion">
+        <p>Para resolverlo</p>
+            
+    </div>
+</div><br>
+
+<h2 id="arquimides">El principio de Arquímedes</h2>
+<br>
+
+<img src="./img/contenido/hidrostatica/volumen-desplazado.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+<br>
+

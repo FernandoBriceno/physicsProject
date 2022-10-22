@@ -223,3 +223,12 @@ li::before {
 li::marker {
     font-weight: bold;
   }
+
+.cita {
+    font-weight:100;
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
