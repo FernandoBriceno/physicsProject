@@ -37,7 +37,7 @@
 <p></p>
 
 
-<p>Nos queda por lo tanto la tarea de hallar el valor de la energía promedio del espectro contenido en el cuerpo negro a determinada temperatura. Una forma de abordar este problema es por medio de los grados de libertad y el <b>teoréma de equipartición</b>; para ello revisaremos la teoría electromagnética de Maxwel, en donde la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ representa la energía total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(p.395-396, H. Hayt)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
+<p>Nos queda por lo tanto la tarea de hallar el valor de la energía promedio del espectro contenido en el cuerpo negro a determinada temperatura. Una forma de abordar este problema es por medio de los grados de libertad y el <b>teoréma de equipartición</b>; para ello revisaremos la teoría electromagnética de Maxwel, en donde la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ representa la energía total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(Hayt, 1991, p.395-396)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
 <br>
 
 <p>Como vimos en el párrafo anterior, según la teoría electromagnética clásica, la energía de una onda se encuentra almacenada en los campos eléctricos y magnéticos por lo que podemos plantear un hamiltoniano de la forma</p> 
@@ -197,14 +197,11 @@
 <h2>Einstein y la explicación del efecto fotoeléctrico</h2>
 <br>
 
-<p>En 1905 el físico aleman de origen judío <b>Albert Einstein</b>, propuso una explicación novedosa al efecto foto eléctrico. Esto lo consigió basádo en sus vastos estudios sobre el comportamiento estadístico de la luz y la interpretacción de los resultados de Planck. einstein dedujo  que la energía contenida en el campo de radiación del cuerpo negro, estaba compuesta por paquetes de energía que pueden ser absorvidas o emitidas por los átomos, en 1926 a estos paquetes de energía serían llamados <b>fotones</b> por el físico-quimico Gilbert N. Lewis.</p><br>
+<p>En 1905 el físico aleman de origen judío <b>Albert Einstein</b>, propuso una explicación novedosa al efecto foto eléctrico. Esto lo consigió basádo en sus vastos estudios sobre el comportamiento estadístico de la luz y la interpretacción de los resultados de Planck. einstein dedujo  que la energía contenida en el campo de radiación del cuerpo negro, estaba compuesta por paquetes de energía que pueden ser absorvidas o emitidas por los átomos, en 1926 a estos <b>paquetes de energía</b> serían llamados <b>fotones</b> por el físico-quimico Gilbert N. Lewis.</p><br>
 
 <p>Lo anterior permitía concluir que cuando la luz incidía sobre las placas metálicas en el efecto fotoeléctrico, cáda átomo en la placa podía absorver la energía de un solo fotón, siempre y cuando esta energía fuera igual o mayor a la energía mínima necesaria para desprenderse del entrampamiento del núcleo. A esta energía mínima se le denominó <b>función trabajo</b> $\phi$, ya que para liberarse el electrón debía realizar un trabajo. Si recibía energía mayor a este trabajo, tendría un sobrante de energía que le permitiría adquirir una energía cinética. De aquí que la $K_{máx}$ era la diferencia de energía aportada por el fotón $h\nu $ y  el trabajo que realizaba al desprenderse, es así como</p>
 
 <p>$$K_{máx}=h\nu - \phi $$</p>
-
-
-
 
 
 
@@ -266,6 +263,23 @@
         </tr>
     </tbody>
 </table><br>
+
+
+
+<h2 id="ecuacion-independiente-tiempo">La ecuación de Schrödinger independiente del tiempo</h2><br>
+
+<p>La ecuación de Schrödinger, es una ecuación propuesta a priori como lo fue en su momento la segunda ley de Newton. Se presenta como un conjunto de soluciones conocidos como los <b>estados estacionarios</b>, que tienen una gran importancia ya que pueden ser tomados como bases para resolver el problema de forma general, por lo que <b>cualquier estado puede ser representado como una combinación lineal de los estados estacionarios</b>. dicho de otro modo, para mi ecuación general dependiente del tiempo</p>
+
+<p>$$i \hbar \frac{\partial \Psi (\vec{r},t)}{\partial t}=\frac{\hbar^{2}}{2m}\overrightarrow{\bigtriangledown}\Psi (\vec{r},t)+V (\vec{r})\Psi (\vec{r},t)$$</p>
+
+<p>De manera que si el potencial lo podemos escrbir como $V(\vec{r},t) \equiv V(\vec{r})$ independiente del tiempo, entonces podemos escribir su solución en terminos de una parte que es dependiente del tiempo y otra que no lo es, tal que</p>
+
+<p>$$\Psi (\vec{r},t)= e^{-iEt/k}\phi_E(\vec{r})$$</p>
+
+<p>Lo anterior es una forma funcional de un estado estacionario</p>
+
+
+
 
 <h2 id="algunosejercicios">Algunos ejercicios</h2><br>
 
@@ -330,7 +344,7 @@
     <h2>Referencias</h2>
     <br>
     <ul>
-        <li id="ref1"><a href="#">H. Hayt, <span style="font-style: italic;">Teoría electromagnética</span> . 2nd Edicion en español, McGraw-Hill, México; 1991.</a></li>
+        <li id="ref1"><a href="#">H. Hayt (1991), <span style="font-style: italic;">Teoría electromagnética</span> . 2nd Edicion en español, McGraw-Hill, México.</a></li>
         <br>
         <li id="ref2"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">A. Serway, J.Moses, A. Moyer (2005) <span style="font-style: italic;">Modern Physics</span>, Third Edition.</a></li>
         <br>

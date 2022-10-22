@@ -1,0 +1,156 @@
+<h1>Hidrostática</h1><br>
+
+<h2 id="lapresinqueejerceunafuerza">La presión que ejerce una fuerza.</h2><br>
+<p>Hemos venido hablando sobre la definición de fuerza y cómo ella influye sobre el movimiento de los cuerpos. Sabemos que las fuerzas son capaces de acelerar o de frenar un cuerpo, también son capaces de hacerlo rotar sobre un eje fíjo cuando estudiamos el torque. También pueden causar deformaciones en los cuerpos, como doblamientos o compresiones. </p><br>
+
+<div class="doblecolumn">
+    
+    <div >
+        <img src="./img/contenido/hidrostatica/fuerza-desplazamiento.png" style="width: 250px;"  alt="Funcion trabajo para diferentes metales." class="img-center" >
+    </div>
+    <div >
+        <img src="./img/contenido/hidrostatica/fuerza-torque.png" style="width: 250px;"  alt="Funcion trabajo para diferentes metales." class="img-center" >
+    </div>
+    
+</div><br>
+<p>El la mecánica del movimiento típicamente ignorabamos las dimensiones de los objetos que experimentaban fuerzas, es decir, no nos importaba si tuvieran altura, ancho y largo, y más bien aplicabamoslas fuerzas al centro del objeto, o en otras palabras, asumíamos el objeto como una partícula puntual. Ahora, vamos a darle importancia al punto de aplicación de la fuerza y veremos cóomo esto puede influir en el comportamiento de los cuerpos.</p><br>
+
+<h3 id="porquloscuchillospuedencortar">¿Por qué los cuchillos pueden cortar?</h3><br>
+
+<p>Puede parecer una pregunta simple pero su explicación en realidad es mucho más profunda que decir "porque tienen filo". Si tomamos un tomate y sobre él empujamos un cuchillo por el lado que tiene filo, facilmente lo va a cortar, sin embargo si le das la vuelta al cuchillo y la parte sin filo es la que ejerce presión, será demasiado dificil cortar el tomate, si no, imposible.</p><br>
+
+<div class="doblecolumn">
+    
+    <div >
+        <img src="./img/contenido/hidrostatica/tomate-punta.png" style="width: 250px;"  alt="Tomate cortado por un cuchillo con filo" class="img-center" >
+    </div>
+    
+    <div >
+        <img src="./img/contenido/hidrostatica/tomate-base.png" style="width: 250px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+    </div>
+</div><br>
+
+<p>La razón de esto es la presión, si detallas bien un cuchillo, el área que está en contacto con el tomate en el filo es mucho menor que la que no tiene filo, por lo tanto si ejerces la misma fuerza en ambos casos, pero cuando colocas el cuchillo por el lado sin filo, el tomate sentirá la fuerza distribuida en un área mayor, ya que la fuerza que aplicas se distribuye en un area de contacto más grande; cuando pones la parte filosa del cuchillo, la misima fuerza se distribuye en un área más pequeña, por lo que cada sección de piel sentirá una fuerza mayor, por ende va a romperse más facilmente. Esta relación entre la fuerza aplicada y el area de superficie donde se aplica se conoce como <b>Presión</b> y está dada por la ecuación</p>
+
+<p>$$P=\frac{F}{A} \:\: \left [\frac{N}{m^2}  \right ]$$</p>
+
+<p>Las unidades de presión $\left [\frac{N}{m^2}  \right ]$ equivalen a $[Pascales]$, también escrito como $[Pa]$. Donde  $P$ representa la presión, $F<br>$ la fuerza que aplicas y $A$ el area donde está distribuida esa fuerza. Veamos un ejemplo.</p>
+
+<br>
+<div class="problema">
+    
+    <div >
+
+        <div class="doblecolumn">
+    
+            <div style=" width: auto;">
+                <p>Un hombre que camina a la orilla de un lago congelado deja caer por accidente su cartera y no puede alcanzarla desde la orilla, el hombre no sabe si la capa de hielo es lo suficientemente gruesa para soportar su peso. ¿Cómo debería acercarse el hombre para recoger su billetera corriendo el mayor riesgo posible de romper el hielo?</p><br>
+
+                <ol class="abc-list">
+                    <li>Si el hombre tiene una masa de $90Kg$, cómo se distribuye la fuerza que ejerce sobre el hielo cuando está de pie y cómo cuando está apoyado en cuatro patas?</li>
+                    <li>Compare la presión sobre la superficie del hielo cuando el hombre está de pie, y cuando se arrastra totalmente recostado sobre el hielo. (Asuma que la suela de las botas es cuadrada y cada una mide $10cm$ de ancho por $30cm$ de largo. Asuma tambien que el cuerpo del hombre totalmente extendido cubre una superficie cuadrada de $60cm$ de ancho por $180cm$ de largo)</li>
+                    <li>¿Cómo debería acercarse el hombre para recoger su billetera corriendo el mayor riesgo posible de romper el hielo?</li>
+                </ol>
+            </div>
+            
+            <div style="margin: auto;" >
+                <img src="./img/contenido/hidrostatica/pierde-cartera.png" style="width: 300px;"  alt="un hombre pierde su cartera" class="img-center">
+            <br>
+            </div>
+        </div><br>
+
+        
+
+    </div>
+    <br>
+    <h3>Solución.</h3><br>
+    <div class="solucion">
+        
+        <ol class="abc-list">
+            <li>Cuando el hombre se encuentra parado vemos que siente tres fuerzas, la de gravedad, conocida como peso $mg$ y dos fuerzas normales, que son las que ejerce el piso como reacción al apoyo que el ejerce con sus pies sobre el suelo. En ambos casos el peso es el mismo, la diferencia radica en que al haber más puntos de apoyo, la fuerza ejercida sobre el hielo se repartirá en más puntos, y cada uno de estos puntos sentirá una menor fuerza.</li>
+            <div class="doblecolumn">
+    
+                <div >
+                    <img src="./img/contenido/hidrostatica/fuerzas-parado.png" style="width: 100px;"  alt="Tomate cortado por un cuchillo con filo" class="img-center" >
+                    <p>Veamos el caso en el que está de pie; haciendo el diagrama de cuerpo libre, podemos aplicar la primer ley de Newton,  en donde la sumatoria de fuerzas debe ser igual a cero ya que el cuerpo permanece en equilibrio. En este caso podemos omitir el análisis en el eje $x$, pue sevidente que las fuerzas presentes en la interacción son únicamente en el eje vertical $y$</p>
+                    <p>$$\sum F_y = 0$$</p>
+                    <p>$$N_1+N_2-mg=0$$</p>
+                    <p>$$N_1+N_2=mg$$</p>
+                    <p>Podemos observar que, la suma de las fuerzas normales es igual al peso del hombre. Si asumimos que se apoya con igual fuerza en ambos pies entonces $N_1=N_2$ las fuerzas normales deben ser iguales. Si reemplazamos $N_2$ por $N_1$, lo cual es válido ya que son iguales, entonces nos queda</p>
+                    <p>$$N_1+N_1=mg$$</p>
+                    <p>$$2N_1=mg$$</p>
+                    
+                    <p>$$N_1=\frac{mg}{2}$$</p>
+                    <p>$$N_1=\frac{90\times 10}{2}$$</p>
+                    
+                    <p>$$N_1=450\:  [N]$$</p>
+                    <p>Por lo tanto podemos concluir, que cada pie genera una fuerza sobre el hielo de $450\:Newtons$</p>
+                </div>
+                
+                <div >
+                    <img src="./img/contenido/hidrostatica/fuerzas-cuatro.png" style="width: 250px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+                    <p>Si ahora detallamos el caso en el que está en cuatro patas, podemos ver que el peso del hombre se distribuirá sobre el hielo, ya no en dos, sino en 6 puntos de apoyo (2 manos, 2 rodillas, 2 pies). Si asumimos que la fuerza se distribuye equitativamente en todos los puentos de apoyo, y de igual manera que hicimos el anterior análisis tendremos que </p>
+                    <p>$$\sum F_y = 0$$</p>
+                    <p>$$N_1+N_2+N_3+N_4+N_5+N_6-mg=0$$</p>
+                    <p>$$N_1+N_2+N_3+N_4+N_5+N_6=mg$$</p>
+                    <p>Como dijimos, asumiremos que la fuerza que ejerce el hombre sobre el suelo se distribuye uniformemente en los 6 puntos de apoyo, por lo tanto $N_1=N_2=N_3=N_4=N_5=N_6$, entonces podemos reemplazar todas las fuerzas normales por $N_1$ para simplificar</p>
+                    <p>$$N_1+N_1+N_1+N_1+N_1+N_1=mg$$</p>
+                    <p>$$6N_1=mg$$</p>
+                    
+                    <p>$$N_1=\frac{mg}{6}$$</p>
+                    <p>$$N_1=\frac{90\times 10}{6}$$</p>
+                    
+                    <p>$$N_1=150\:  [N]$$</p>
+                    <p>De esta manera hemos comprobado que en cada punto de apoyo ahora el hombre ejercerá una fuerza menor al distribuir la fuerza total en más puntos de apoyo, de esta manera el hielo tendrá que soportar menos fuerza en cada punto de contacto, por lo que será menos probable romperlo.</p>
+                </div>
+            </div><br>
+            <li>Para poder comparar la presion ejercida en ambos casos debemos primero calcular el área en contacto en cada caso.
+                <div class="doblecolumn">
+                    <div >
+                        <img src="./img/contenido/hidrostatica/bota.png" style="width: 150px;"  alt="Tomate cortado por un cuchillo con filo" class="img-center" >
+                        <p>Para el caso de la bota vemos que tiene una base de $10\:cm$ lo que serían $0,1\:m$ y una altura de  $30\:cm$ lo que serían $0,3\:m$, por lo tanto el área de la suela en contacto con el hielo será de  </p>
+
+                        <p>$$A_{bota}=(0,1) \times (0,3)=0,03\: m^2$$</p>
+                        <p>$$A_{botas}=A_{bota1}+A_{bota2}$$</p>
+                        <p>$$A_{botas}=(0,03) + (0,03)=0,06\: m^2$$</p>
+
+                        <p>De esta manera, la fuerza que ejerce el hombre sobre el hielo, que será igual a su peso, se distribuirá en un área de $0,06\: m^2$, que es la superficie de sus dos botas. De esta manera, podemos calcular la presión ejercida por las botas sobre la capa de hielo del lago como</p>
+                        <p>$$P_{botas}=\frac{F}{A}=\frac{mg}{A_{botas}}$$</p>
+                        <p>$$P_{botas}=\frac{90\times 10}{0,06}= 15000 \:\left [\frac{N}{m^2}  \right ] $$</p>
+                        <p>$$P_{botas}= 15000 \:[Pa] $$</p>
+                        
+                    </div>
+                    
+                    <div >
+                        <br>
+                        <img src="./img/contenido/hidrostatica/cuerpo.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+                        <br>
+                        <p>Ahora, cuando el hombre se tumba totalmente, podemos observar que la superficie se puede calcular de forma aproximada al multiplicar la base de $180\:cm$ lo que serían $1.8\:m$ y una altura de  $60\:cm$ lo que serían $0,6\:m$, esto nos da una superficie de contacto con el hielo equivalente a </p>
+
+                        <p>$$A_{cuerpo}=(1,8) \times (0,6)=1,08\: m^2$$</p>
+
+                        <p>De esta manera, la fuerza que ejerce el hombre sobre el hielo cuando está tumbado, que será igual a su peso, se distribuirá en un área de $1,08\: m^2$, que es la superficie de todo su cuerpo. De esta manera, podemos calcular la presión ejercida por el cuerpo sobre la capa de hielo del lago como</p>
+
+                        <p>$$P_{cuerpo}=\frac{F}{A}=\frac{mg}{A_{cuerpo}}$$</p>
+                        
+                        <p>$$P_{cuerpo}=\frac{90\times 10}{1,08}= 833,3 \:\left [\frac{N}{m^2}  \right ] $$</p>
+                        
+                        <p>$$P_{cuerpo}= 833,3 \:[Pa] $$</p>
+                       
+                    </div>
+                </div><br>
+                <p>Es facil evidenciar que la presión ejercida, cuando la superficie de apoyo es solo la de las botas es muchísimo mayor que cuando se distribuye todo el peso, sobre la superficie de todo el cuerpo, al extenderse sobre el hielo.</p>
+            </li>
+            <li>La conclusión anterior nos permite responder, que si el hombre, quiere alcanzar su billetera corriendo el mayor riesgo posible, deberá buscar distribuir su peso en el mayor area de contacto posible, esto puede lograrlo gateando, o aún mejor, arrastrandose con todo el cuerpo pegado al hielo. De esta manera logrará ejercer la mínima presión posible sobre el hielo y reducirá muchísimo las probabilidades de romperlo.</li>
+        </ol>
+
+    </div>
+</div><br>
+
+
+
+
+<h2 id="presinhidrostatica">Presión hidrostatica.</h2><br>
+<p>Cuando nos sumergimos en un fluido, las partículas que contienen a ese fluido tienden a comprimir a los objetos sumergidos en él. Los seres humanos estamos constantemente sufriendo este tipo de fuerzas de comprensión, pues el aire es un fluido, sin embargo no podemos notar estas fuerzas ya que el interior de nuestro cuerpo está adaptado para ejercer hacia afuera una fuerza equiparable, en otras palabras la presión interna de nuestro cuerpo ejercida hacia afuera es igual a la presión que ejerce la atmosfera sobre nosotros, por lo que el resultado neto es nulo. Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro toraz para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, debemos soportar cada vez el  peso de más partículas del liquido sobre nosotros.</p><br>
+<h2 id="vasoscomunicantes">Vasos comunicantes.</h2><br>
+<p>Como vimos anteriormente, la presión hidrostática a cierta profundidad, depende únicamente de la profundidad a al que se mide. por esto mismo un tubo </p><br>
