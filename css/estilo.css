@@ -146,6 +146,21 @@ a:link, a:visited, a:active {
         margin: auto;
         max-width: 100%;
         }
+
+    .problema ~ .abc-list, .i-list, .I-list, .number-list {
+        padding-left: 0px;
+    }
+
+    .problema {
+        padding: 5px;
+    }
+    .problem {
+        padding: 5px;    
+        
+    }
+    .solucion{
+        padding: 5px;
+    }
   }
 
   .listas ul{

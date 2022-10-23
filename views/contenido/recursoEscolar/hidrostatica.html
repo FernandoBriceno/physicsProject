@@ -150,13 +150,39 @@
 
 
 
-<h2 id="presinhidrostatica">Presión hidrostatica.</h2><br>
+<h2 id="presionhidrostatica">Presión hidrostatica.</h2><br>
 
 <p>Cuando nos sumergimos en un fluido, las partículas que contienen a ese fluido tienden a comprimir a los objetos sumergidos en él. Los seres humanos estamos constantemente sufriendo este tipo de fuerzas de comprensión, pues el aire es un fluido, sin embargo no podemos notar estas fuerzas ya que el interior de nuestro cuerpo está adaptado para ejercer hacia afuera una fuerza equiparable, en otras palabras la presión interna de nuestro cuerpo ejercida hacia afuera es igual a la presión que ejerce la atmosfera sobre nosotros, por lo que la presión neta es nula. </p><br>
 
 <img src="./img/contenido/hidrostatica/presion-hidrostatica.png" style="width: 150px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
 <br>
-<p>Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro torax para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, podemos interpretar el origen de esta presión como el peso que debemos soportar de las partículas del liquido sobre nosotros y a su vez a la fuerza de acción reacción que ejerce el líquido debajo de nosotros para aguantar todo el peso sobre él, es por esto mismo que la presión aumenta con la <b>profundidad</b> que en adelante denotaremos como $h$, y se mide desde la superficie del fluido hasta la posición del objeto sumergido.</p><br>
+<p>Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro torax para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, podemos interpretar el origen de esta presión como el peso que debemos soportar de las partículas del liquido sobre nosotros y a su vez a la fuerza de acción reacción que ejerce el líquido debajo de nosotros para aguantar todo el peso sobre él, es por esto mismo que la presión aumenta con la <b>profundidad</b> que en adelante denotaremos como $h$, y se mide desde la superficie del fluido hasta la posición del objeto sumergido. Entonces, la ecuación que me permite hallar la presión en un punto $A$, ubicado a determinada profundidad en un líquido es</p>
+<p>$$P_A=\rho g h \:\:[Pa]$$</p>
+<p>De esta manera, podemos ver que solo de la altura va a depender la presión al interior de un líquido. Entonces podremos decir siempre que cuando comparamos dos puntos diferentes, de un mismo líquido, la presión será igual a la misma altura. Si las alturas son diferentes, la presion en los dos puntos serán diferentes, y esta diferencia de presión podemos medirla por medio de la expresión.</p>
+
+<p>$$P_B-P_A=\rho g (h_B-h_A)\:\:[Pa]$$</p>
+
+<p>Pero qué pasa cunado en un recipiente se encuentran líquidos diferentes, cuyas densidades son diferentes. Para dos puntos en un mismo líquido la presión solo depende de $h$ ya que $\rho$ se considera el mismo en cualquier punto, pero esto no pasa cuando los líquidos tienen densidades diferentes, entonces si queremos calcular la presión en algún punto no basta con hallarla para la altura total, escogiendo cualquier densidad, es necesario calcular cuánta presión aporta las columnas de los otros líquidos sobre el líquido donde está el punto que queremos medir, y sumarla a la presión generada por el líquido en donde está el punto, para la profundidad medida, no desde la superficie total, sino desde el límite entre el líquido superior y el inferior. Veamos un ejemplo.</p>
+
+<br>
+
+
+<div class="doblecolumn">
+    
+    <div style="margin: auto;" >
+        <img src="./img/contenido/hidrostatica/densidades-distintas.png" style="width: 200px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
+    <br>
+    </div>
+    
+    <div style=" width: auto;">
+        <p>Si queremos calcular la presión en el punta $a$ debemos sumar las presiones aportadas por cada líquido. Vemos que en el líquido $h_3$ no ncesesariamente va hasta el fondo, sin embargo las otras $h$ sí se miden desde el inicio hasta el final de cada líquido. Por lo tanto la expresión de la presión en el punto $a$ se calcula como</p><br>
+
+        <p>$$P_a= \rho_1 g h_1 + \rho_2 g h_2 + \rho_3 g h_3$$</p>
+
+        
+    </div>
+</div><br>
+
 
 
 <h2 id="vasoscomunicantes">Vasos comunicantes.</h2><br>
@@ -164,10 +190,41 @@
 <p>Como vimos anteriormente, la presión hidrostática a cierta profundidad, depende únicamente de la profundidad a al que se mide. por esto mismo un conjunto de diferentes tubos comunicados entre sí, al ser llenados, el liquido contenido tendrá la misma altura en cada tubo, aunque tengan formas diferentes, y aunque el área de los tubos  no sean iguales.</p><br>
 
 
-<img src="./img/contenido/hidrostatica/vasos-comunicantes-complejo.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
+<img src="./img/contenido/hidrostatica/vasos-comunicantes-complejo.png" style="width: 300px;"  alt="Vasos comunicantes" class="img-center" >
 <br>
 
-<p>Si las alturas no fueran iguales, implicaría que las presiones son diferentes para áreas diferentes, pero la experimentación nos muestra, que la presión es indiferente al área, y depende únicamente de la profundidad a la que se mide, o a la altura del liquido contenida en el tubo, si lo que estamos midiendo es la presión del fondo. Por esto, si por ejemplo intentamos sumergirnos a una profundidad de 3 metros, sentiremos la misma presión sobre nuestro cuerpo, sea en una piscina olímpica (mucha área) o sea en la pileta del lavadero de nuestra casa (poca área).</p><br>
+<p>Si las alturas no fueran iguales, implicaría que las presiones son diferentes para áreas diferentes, pero la experimentación nos muestra, que la presión es indiferente al área, y depende únicamente de la profundidad a la que se mide, o a la altura del liquido contenida en el tubo, si lo que estamos midiendo es la presión del fondo. Por esto, si por ejemplo intentamos sumergirnos a una profundidad de 3 metros, sentiremos la misma presión sobre nuestro cuerpo, sea en una piscina olímpica (mucha área) o sea en la pileta del lavadero de nuestra casa (poca área). Veamos un ejemplo de aplicaión.</p><br>
+
+<div class="problema">
+    
+    <div >
+
+        <div class="doblecolumn">
+    
+            <div style=" width: auto;">
+                <p>en un tubo en forma de "U" se tienen dos líquidos contenidos, con densidades diferentes, el líquido uno (color rojo) es aceite cuya densidad es $\rho_{aceite}=750\:Kg/m^3$ yel líquido dos (color azul) es agua cuya densidad es $\rho_{agua}=1000\:Kg/m^3$.</p><br>
+
+                <p><b>Pregunta:</b> si la columna de aceite mide $h_1=10cm$, ¿cuánto mide la diferencia de altura entre la superficie del agua y el punto $b$?</p>
+            </div>
+            
+            <div style="margin: auto;" >
+                <img src="./img/contenido/hidrostatica/vasos-densidades-distintas.png" style="width: 300px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
+                
+            </div>
+        </div><br>
+
+        
+
+    </div>
+    <br>
+    <h3>Solución.</h3><br>
+    <div class="solucion">
+        <p>Para resolverlo</p>
+            
+    </div>
+</div><br>
+
+
 
 <h2>Principio de Pascal</h2><br>
 
@@ -233,7 +290,16 @@
 
 <h2 id="arquimides">El principio de Arquímedes</h2>
 <br>
+<p>Seguramente ya habrás notado que si en un recipiente con agua hasta cierta altura, idtroduces objetos, el nivel del agua sube. Esto se debe a que el objeto sumergido, al tener un volumen determinado, desplazará al liquido en proporción al volumen de dicho objeto. Este principio plantea lo siguiente.</p>
+
+<p class="cita">"Todo cuerpo sumergido, parcial o totalmente en un líquido experimentará una fuerza de empuje, en dirección vertical y hacia arriba, cuya magnitud es el peso del líquido desplazado por el cuerpo."</p>
 
 <img src="./img/contenido/hidrostatica/volumen-desplazado.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
 <br>
+
+<p>El origen de esta fuerza de empuje, se puede entender debido a que las moléculas del líquido tienden siempre a buscar acomodarse lo mejor posible a la forma del recipiente que lo contiene, buscando así estar a la menor altura que el recipiente le permita, por eso cuando movemos o sacudimos un baso de agua, el líquido contenido oscilará de un lado al otro y poco a poco la superficie tenderá a ser uniforme, y plana. Por lo tanto cuando sumerges un cuerpo en él, este líquido buscará desplazar el objeto de nuevo afuera del agua, para alcanzar su nivel mínimo en el recipiente. Como resultado, el principio de Arquímedes permite deducir la siguiente ecuación</p>
+
+<p>$$E=\rho g V \: [N]$$</p>
+
+<p>En donde $E$ es la fuerza de <b>empuje</b> y cuyas unidades son $Newtons$, $\rho$ es la densidad del liquido en donde se sumerge el objeto, $g=9.8\: m/s$ es la aceleración de la gravedad, y $V$ es el volumen del líquido desplazado. En general es fácil hallar el volumen del líquido desplazado, basta con conocer el volumen del objeto que se sumerge, o la fracción de volumen de este objeto, si se sumerge parcialmente, es común encontrar en los ejercicios, que este volumen lo indican o dan la información necesaria para calcularlo de forma simple, haciendo uso de geometría de figuras básicas (cilindors, cubos, esferas). Veamos un ejemplo.</p>
 
