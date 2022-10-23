@@ -140,15 +140,22 @@ a:link, a:visited, a:active {
     }
     .page-content {
         font-family: "Scope One", serif;
-        width: calc(100% - 180px)
+        width: calc(100% - 128px)
       }
+      
     img {
         margin: auto;
         max-width: 100%;
         }
 
-    .problema ~ .abc-list, .i-list, .I-list, .number-list {
-        padding-left: 0px;
+    .problema .abc-list, .i-list, .I-list, .number-list {
+        padding-left: 5px;
+    }
+    .problem .abc-list, .i-list, .I-list, .number-list {
+        padding-left: 5px;
+    }
+    .solucion .abc-list, .i-list, .I-list, .number-list {
+        padding-left: 5px;
     }
 
     .problema {
