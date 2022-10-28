@@ -1,1 +1,104 @@
 <h1>Hablemos de Series</h1>
+
+<h2 id="fourier">Series de Fourier.</h2><br>
+
+<p>Es una forma de expandir funciones, esta vez en un conjunto de senos y cosenos, es decir, la base en la que representamos nuestra función ahora será una base de funciones ortogonales de $sen(nx)$ y $cos(nx)$. La representación en serie de Fourier de una funcion dada $f(x)$ es</p>
+
+<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }a_{n}cos(nx) + \sum_{n=1}^{\infty }b_{n}sin(nx)$$</p>
+
+<p>Los factores $a_0$, $a_n$, $b_n$, son valores que nos indican la paridad de la función, pues bien sabemos que la función Seno es impar, mientras que la función  Coseno es par, por tanto si los elementos $b_n$ fuesen todos cero, sería porque nuestra función es puramente par y bisceversa. La forma de calcular estos pesos es con las siguientes relaciones </p>
+
+<p>$$a_n= \frac{1}{\pi } \int_{0}^{2\pi } f(x) cos(nx)dx$$</p>
+<p>$$b_n= \frac{1}{\pi } \int_{0}^{2\pi } f(x) sin(nx)dx$$</p>
+
+<p>La representación de fourier sirve para todo tipo de funciones, pero en donde su potencial es máximo, es cuando las funciones son periodicas, debido a esto, en cualquier otro tipo de función que no sea periodica, su representación será acotada, la aplicación asumirá una periodicidad para el intervalo seleccionado. Veamos un ejemplo.</p>
+<br>
+
+<div class="problema">
+    <div >
+        <div class="doblecolumn">
+            <div style=" width: auto;">
+                <p>Encuentre la serie de Fourier para la función diente de sierra</p><br>
+
+                <p>$$f(x) = \left\{\begin{matrix}
+                    x &  si & 0\leq x\leq \pi \\ 
+                     x-2\pi &  si & \pi\leq x\leq 2\pi
+                    \end{matrix}\right.$$</p>
+            </div>
+            
+            <div style="margin: auto;" >
+                <img src="./img/contenido/metodosMatematicosII/ftrozos.png" style="width: 200px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
+                
+            </div>
+        </div><br>
+    </div>
+    <br>
+    <h3>Solución.</h3><br>
+    <div class="solucion">
+        <p>Debido a que la solución está planteada a trozos, así mismo debemos plantear las integralas, separarlas en los intervalos en los que la función se divide.</p>
+
+        <p>$$a_n= \frac{1}{\pi } \left [\int_{0}^{\pi } x cos(nx)dx + \int_{\pi}^{2\pi } (x-2\pi) cos(nx)dx  \right ]$$</p>
+        <p>$$a_n=\frac{1}{\pi } \left [\dfrac{{\pi}n\sin\left({\pi}n\right)+\cos\left({\pi}n\right)-1}{n^2}+\dfrac{\cos\left(2{\pi}n\right)+{\pi}n\sin\left({\pi}n\right)-\cos\left({\pi}n\right)}{n^2}  \right ]$$</p>
+        <p>$$a_n=\frac{1}{\pi } \left [\dfrac{2\pi n\sin(\pi n) + \cos(2 \pi n) - 1}{n^2}\right ]$$</p>
+
+        <p>$$a_0=0$$</p>
+
+
+        <!-- (pi*n*sin(pi*n)+cos(pi*n)-1)/n^2 + (cos(2*pi*n)+pi*n*sin(pi*n)-cos(pi*n))/n^2 -->
+        <p>$$b_n= \frac{1}{\pi } \left [\int_{0}^{\pi } x sin(nx)dx + \int_{\pi}^{2\pi } (x-2\pi) sin(nx)dx  \right ]$$</p>
+        <p>$$b_n= \frac{1}{\pi } \left [ \frac{\sin(\pi n)-\pi n\cos(\pi n)}{n^2} + 
+
+            \frac{\sin(2{\pi}n)-\sin({\pi}n)-{\pi}n\cos({\pi}n)}{n^2}
+             \right ]$$</p>
+        <p>$$b_n =\frac{1}{\pi }  \left [\frac{\sin(2{\pi}n)-2\pi n\cos(\pi n)}{n^2}\right ]
+            $$</p>
+
+         <!-- (sin(pi*n)-pi*n*cos(pi*n))/n^2+ (sin(2*pi*n)-sin(pi*n)-pi*n*cos(pi*n))/n^2 -->
+        <p>Por lo tanto tendremos una función representada en series de fourier de la forma</p>
+
+        <p>$$f(x)=0+\sum_{n=1}^{\infty }\frac{1}{\pi } \left [\dfrac{2\pi n\sin(\pi n) + \cos(2 \pi n) - 1}{n^2}\right ]cos(nx) + \sum_{n=1}^{\infty }\frac{1}{\pi }  \left [\frac{\sin(2{\pi}n)-2\pi n\cos(\pi n)}{n^2}\right ]sin(nx)$$</p>
+
+        <p>Grafiquemos para comprobar. Utilicemos únicamente los primeros 100 términos de la serie.</p>
+
+        
+        <img src="./img/contenido/metodosMatematicosII/ftrozos-fourier.png" style="width: 300px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
+
+        <p>Observa que si cambiamos el dominio de la función, podemos definir una serie mucho más sencilla como se ve a continuación</p>
+        
+        <p>$$f(x) = \left\{\begin{matrix}
+            x &  si & 0\leq x\leq \pi \\ 
+             x-2\pi &  si & -\pi\leq x\leq 0
+            \end{matrix}\right.$$</p>
+        <p>Para este caso podemos ver que los $a_n$ son cero, esto con claridad nos indica que la función es impar, y efectivamente lo es. Para calcular los $a_n$ en este nuevo rango debemos re definir el rango de sumatoria ahora entre $(-\pi,\pi)$</p>
+
+        <p>$$a_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x cos(nx)dx =0 $$</p>
+
+        <p>Ahora si calculamos las $b_n$ en el mismo intervalo tenemos que </p>
+
+        <p>$$b_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x sin(nx)dx =\frac{2}{n}(-1)^{n+1} $$</p>
+
+        <p>Debido a esto nuestra función nos queda representada en la serie de Fourier</p>
+
+        <p>$$f(x)= \sum_{n=1}^{\infty }\frac{2}{n}(-1)^{n+1}sen(nx) $$</p>
+
+
+    </div>
+</div><br>
+
+<p>Podemos convenir entonces que la paricidad de la serie está determinada por los coeficientes $a_n$ y $b_n$.</p>
+<br>
+<div class="doblecolumn">
+    <div>
+        <h2 style="text-align: center;">Odd function</h2><br>
+        <p>Encontramos que la serie es <b>impar</b> si los coeficientes $a_n$ son cero</p>
+        <p>$$a_n=0$$</p>
+    </div>
+    
+    <div>
+        
+        <h2 style="text-align: center;">Even function</h2><br>
+        <p>Encontramos que la serie es <b>par</b> si los coeficientes $b_n$ son cero</p>
+        <p>$$b_n=0$$</p>
+        
+    </div>
+</div><br>
