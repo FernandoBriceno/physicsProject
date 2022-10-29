@@ -1,305 +1,325 @@
-<h1>Hidrostática</h1><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidrostatica</title>
+    <meta name="description" content="Aprende todos los conceptos de hidrostática para tu curso de física, como la presión, principio de pascal, principio de arquímedes y muchos más.">
+    <meta name="keywords" content="Hidrostatica, física, Arquímides, fuerza, empuje, presión, vasos comunicantes, principio, Pascal, Newtons, densidad, volumen, área, fluido">
+</head>
+<body>
+    <h1>Hidrostática</h1><br>
 
-<h2 id="lapresinqueejerceunafuerza">La presión que ejerce una fuerza.</h2><br>
-<p>Hemos venido hablando sobre la definición de fuerza y cómo ella influye sobre el movimiento de los cuerpos. Sabemos que las fuerzas son capaces de acelerar o de frenar un cuerpo, también son capaces de hacerlo rotar sobre un eje fíjo cuando estudiamos el torque. También pueden causar deformaciones en los cuerpos, como doblamientos o compresiones. </p><br>
+    <p>La <b>Hidrostática</b> y la <b>Hidrodinámica</b> son campos de estudio en la física muy presentes en nuestra día a día, preguntas como el ¿por qué los cuchillos cortan?, ¿por qué los aviones vuelan?, ¿por qué los barcos flotan?, ¿por qué peso menos en el agua? y muchas preguntas más son muestra de ello. A continuación intentaremos hacer un abordaje de la forma más sencilla posible sobre los conceptos más importantes de la hidrostatica, como lo son la <b>presión</b>, el <b>empuje</b>, el principio de <b>Pascal</b> y el principio de <b>Arquímides</b>, etc.</p><br>
 
-<div class="doblecolumn">
-    
-    <div >
-        <img src="./img/contenido/hidrostatica/fuerza-desplazamiento.png" style="width: 250px;"  alt="Funcion trabajo para diferentes metales." class="img-center" >
-    </div>
-    <div >
-        <img src="./img/contenido/hidrostatica/fuerza-torque.png" style="width: 250px;"  alt="Funcion trabajo para diferentes metales." class="img-center" >
-    </div>
-    
-</div><br>
-<p>El la mecánica del movimiento típicamente ignorabamos las dimensiones de los objetos que experimentaban fuerzas, es decir, no nos importaba si tuvieran altura, ancho y largo, y más bien aplicabamoslas fuerzas al centro del objeto, o en otras palabras, asumíamos el objeto como una partícula puntual. Ahora, vamos a darle importancia al punto de aplicación de la fuerza y veremos cóomo esto puede influir en el comportamiento de los cuerpos.</p><br>
+    <h2 id="lapresinqueejerceunafuerza">La presión que ejerce una fuerza.</h2><br>
+    <p>Hemos venido hablando sobre la definición de fuerza y cómo ella influye sobre el movimiento de los cuerpos. Sabemos que las fuerzas son capaces de acelerar o de frenar un cuerpo, también son capaces de hacerlo rotar sobre un eje fíjo cuando estudiamos el torque. También pueden causar deformaciones en los cuerpos, como doblamientos o compresiones. </p><br>
 
-<h3 id="porquloscuchillospuedencortar">¿Por qué los cuchillos pueden cortar?</h3><br>
-
-<p>Puede parecer una pregunta simple pero su explicación en realidad es mucho más profunda que decir "porque tienen filo". Si tomamos un tomate y sobre él empujamos un cuchillo por el lado que tiene filo, facilmente lo va a cortar, sin embargo si le das la vuelta al cuchillo y la parte sin filo es la que ejerce presión, será demasiado dificil cortar el tomate, si no, imposible.</p><br>
-
-<div class="doblecolumn">
-    
-    <div >
-        <img src="./img/contenido/hidrostatica/tomate-punta.png" style="width: 250px;"  alt="Tomate cortado por un cuchillo con filo" class="img-center" >
-    </div>
-    
-    <div >
-        <img src="./img/contenido/hidrostatica/tomate-base.png" style="width: 250px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
-    </div>
-</div><br>
-
-<p>La razón de esto es la presión, si detallas bien un cuchillo, el área que está en contacto con el tomate en el filo es mucho menor que la que no tiene filo, por lo tanto si ejerces la misma fuerza en ambos casos, pero cuando colocas el cuchillo por el lado sin filo, el tomate sentirá la fuerza distribuida en un área mayor, ya que la fuerza que aplicas se distribuye en un area de contacto más grande; cuando pones la parte filosa del cuchillo, la misima fuerza se distribuye en un área más pequeña, por lo que cada sección de piel sentirá una fuerza mayor, por ende va a romperse más facilmente. Esta relación entre la fuerza aplicada y el area de superficie donde se aplica se conoce como <b>Presión</b> y está dada por la ecuación</p>
-
-<p>$$P=\frac{F}{A} \:\: \left [\frac{N}{m^2}  \right ]$$</p>
-
-<p>Las unidades de presión $\left [\frac{N}{m^2}  \right ]$ equivalen a $[Pascales]$, también escrito como $[Pa]$. Donde  $P$ representa la presión, $F<br>$ la fuerza que aplicas y $A$ el area donde está distribuida esa fuerza. Veamos un ejemplo.</p>
-
-<br>
-<div class="problema">
-    
-    <div >
-
-        <div class="doblecolumn">
-    
-            <div style=" width: auto;">
-                <p>Un hombre que camina a la orilla de un lago congelado deja caer por accidente su cartera y no puede alcanzarla desde la orilla, el hombre no sabe si la capa de hielo es lo suficientemente gruesa para soportar su peso. ¿Cómo debería acercarse el hombre para recoger su billetera corriendo el mayor riesgo posible de romper el hielo?</p><br>
-
-                <ol class="abc-list">
-                    <li>Si el hombre tiene una masa de $90Kg$, cómo se distribuye la fuerza que ejerce sobre el hielo cuando está de pie y cómo cuando está apoyado en cuatro patas?</li>
-                    <li>Compare la presión sobre la superficie del hielo cuando el hombre está de pie, y cuando se arrastra totalmente recostado sobre el hielo. (Asuma que la suela de las botas es cuadrada y cada una mide $10cm$ de ancho por $30cm$ de largo. Asuma tambien que el cuerpo del hombre totalmente extendido cubre una superficie cuadrada de $60cm$ de ancho por $180cm$ de largo)</li>
-                    <li>¿Cómo debería acercarse el hombre para recoger su billetera corriendo el mayor riesgo posible de romper el hielo?</li>
-                </ol>
-            </div>
-            
-            <div style="margin: auto;" >
-                <img src="./img/contenido/hidrostatica/pierde-cartera.png" style="width: 300px;"  alt="un hombre pierde su cartera" class="img-center">
-            <br>
-            </div>
-        </div><br>
-
+    <div class="doblecolumn">
         
+        <div >
+            <img src="./img/contenido/hidrostatica/fuerza-desplazamiento.png" style="width: 250px;"  alt="Fuerza aplicada sobre una masa" class="img-center" >
+        </div>
+        <div >
+            <img src="./img/contenido/hidrostatica/fuerza-torque.png" style="width: 250px;"  alt="Fuerza que genera torque" class="img-center" >
+        </div>
+        
+    </div><br>
+    <p>El la mecánica del movimiento típicamente ignorabamos las dimensiones de los objetos que experimentaban fuerzas, es decir, no nos importaba si tuvieran altura, ancho y largo, y más bien aplicabamoslas fuerzas al centro del objeto, o en otras palabras, asumíamos el objeto como una partícula puntual. Ahora, vamos a darle importancia al punto de aplicación de la fuerza y veremos cóomo esto puede influir en el comportamiento de los cuerpos.</p><br>
 
-    </div>
+    <h3 id="porquloscuchillospuedencortar">¿Por qué los cuchillos pueden cortar?</h3><br>
+
+    <p>Puede parecer una pregunta simple pero su explicación en realidad es mucho más profunda que decir "porque tienen filo". Si tomamos un tomate y sobre él empujamos un cuchillo por el lado que tiene filo, facilmente lo va a cortar, sin embargo si le das la vuelta al cuchillo y la parte sin filo es la que ejerce presión, será demasiado dificil cortar el tomate, si no, imposible.</p><br>
+
+    <div class="doblecolumn">
+        
+        <div >
+            <img src="./img/contenido/hidrostatica/tomate-punta.png" style="width: 250px;"  alt="Presión generada por un cuchillo con filo" class="img-center" >
+        </div>
+        
+        <div >
+            <img src="./img/contenido/hidrostatica/tomate-base.png" style="width: 250px;"  alt="Presión generada  por un cuchillo sin filo" class="img-center" >
+        </div>
+    </div><br>
+
+    <p>La razón de esto es la presión, si detallas bien un cuchillo, el área que está en contacto con el tomate en el filo es mucho menor que la que no tiene filo, por lo tanto si ejerces la misma fuerza en ambos casos, pero cuando colocas el cuchillo por el lado sin filo, el tomate sentirá la fuerza distribuida en un área mayor, ya que la fuerza que aplicas se distribuye en un area de contacto más grande; cuando pones la parte filosa del cuchillo, la misima fuerza se distribuye en un área más pequeña, por lo que cada sección de piel sentirá una fuerza mayor, por ende va a romperse más facilmente. Esta relación entre la fuerza aplicada y el area de superficie donde se aplica se conoce como <b>Presión</b> y está dada por la ecuación</p>
+
+    <p>$$P=\frac{F}{A} \:\: \left [\frac{N}{m^2}  \right ]$$</p>
+
+    <p>Las unidades de presión $\left [\frac{N}{m^2}  \right ]$ equivalen a $[Pascales]$, también escrito como $[Pa]$. Donde  $P$ representa la presión, $F<br>$ la fuerza que aplicas y $A$ el area donde está distribuida esa fuerza. Veamos un ejemplo.</p>
+
     <br>
-    <h3>Solución.</h3><br>
-    <div class="solucion">
+    <div class="problema">
         
-        <ol class="abc-list">
-            <li>Cuando el hombre se encuentra parado vemos que siente tres fuerzas, la de gravedad, conocida como peso $mg$ y dos fuerzas normales, que son las que ejerce el piso como reacción al apoyo que el ejerce con sus pies sobre el suelo. En ambos casos el peso es el mismo, la diferencia radica en que al haber más puntos de apoyo, la fuerza ejercida sobre el hielo se repartirá en más puntos, y cada uno de estos puntos sentirá una menor fuerza.</li>
+        <div >
+
             <div class="doblecolumn">
-    
-                <div >
-                    <img src="./img/contenido/hidrostatica/fuerzas-parado.png" style="width: 100px;"  alt="Tomate cortado por un cuchillo con filo" class="img-center" >
-                    <p>Veamos el caso en el que está de pie; haciendo el diagrama de cuerpo libre, podemos aplicar la primer ley de Newton,  en donde la sumatoria de fuerzas debe ser igual a cero ya que el cuerpo permanece en equilibrio. En este caso podemos omitir el análisis en el eje $x$, pue sevidente que las fuerzas presentes en la interacción son únicamente en el eje vertical $y$</p>
-                    <p>$$\sum F_y = 0$$</p>
-                    <p>$$N_1+N_2-mg=0$$</p>
-                    <p>$$N_1+N_2=mg$$</p>
-                    <p>Podemos observar que, la suma de las fuerzas normales es igual al peso del hombre. Si asumimos que se apoya con igual fuerza en ambos pies entonces $N_1=N_2$ las fuerzas normales deben ser iguales. Si reemplazamos $N_2$ por $N_1$, lo cual es válido ya que son iguales, entonces nos queda</p>
-                    <p>$$N_1+N_1=mg$$</p>
-                    <p>$$2N_1=mg$$</p>
-                    
-                    <p>$$N_1=\frac{mg}{2}$$</p>
-                    <p>$$N_1=\frac{90\times 10}{2}$$</p>
-                    
-                    <p>$$N_1=450\:  [N]$$</p>
-                    <p>Por lo tanto podemos concluir, que cada pie genera una fuerza sobre el hielo de $450\:Newtons$</p>
+        
+                <div style=" width: auto;">
+                    <p>Un hombre que camina a la orilla de un lago congelado deja caer por accidente su cartera y no puede alcanzarla desde la orilla, el hombre no sabe si la capa de hielo es lo suficientemente gruesa para soportar su peso. ¿Cómo debería acercarse el hombre para recoger su billetera corriendo el mayor riesgo posible de romper el hielo?</p><br>
+
+                    <ol class="abc-list">
+                        <li>Si el hombre tiene una masa de $90Kg$, cómo se distribuye la fuerza que ejerce sobre el hielo cuando está de pie y cómo cuando está apoyado en cuatro patas?</li>
+                        <li>Compare la presión sobre la superficie del hielo cuando el hombre está de pie, y cuando se arrastra totalmente recostado sobre el hielo. (Asuma que la suela de las botas es cuadrada y cada una mide $10cm$ de ancho por $30cm$ de largo. Asuma tambien que el cuerpo del hombre totalmente extendido cubre una superficie cuadrada de $60cm$ de ancho por $180cm$ de largo)</li>
+                        <li>¿Cómo debería acercarse el hombre para recoger su billetera corriendo el mayor riesgo posible de romper el hielo?</li>
+                    </ol>
                 </div>
                 
-                <div >
-                    <img src="./img/contenido/hidrostatica/fuerzas-cuatro.png" style="width: 250px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
-                    <p>Si ahora detallamos el caso en el que está en cuatro patas, podemos ver que el peso del hombre se distribuirá sobre el hielo, ya no en dos, sino en 6 puntos de apoyo (2 manos, 2 rodillas, 2 pies). Si asumimos que la fuerza se distribuye equitativamente en todos los puentos de apoyo, y de igual manera que hicimos el anterior análisis tendremos que </p>
-                    <p>$$\sum F_y = 0$$</p>
-                    <p>$$N_1+N_2+N_3+N_4+N_5+N_6-mg=0$$</p>
-                    <p>$$N_1+N_2+N_3+N_4+N_5+N_6=mg$$</p>
-                    <p>Como dijimos, asumiremos que la fuerza que ejerce el hombre sobre el suelo se distribuye uniformemente en los 6 puntos de apoyo, por lo tanto $N_1=N_2=N_3=N_4=N_5=N_6$, entonces podemos reemplazar todas las fuerzas normales por $N_1$ para simplificar</p>
-                    <p>$$N_1+N_1+N_1+N_1+N_1+N_1=mg$$</p>
-                    <p>$$6N_1=mg$$</p>
-                    
-                    <p>$$N_1=\frac{mg}{6}$$</p>
-                    <p>$$N_1=\frac{90\times 10}{6}$$</p>
-                    
-                    <p>$$N_1=150\:  [N]$$</p>
-                    <p>De esta manera hemos comprobado que en cada punto de apoyo ahora el hombre ejercerá una fuerza menor al distribuir la fuerza total en más puntos de apoyo, de esta manera el hielo tendrá que soportar menos fuerza en cada punto de contacto, por lo que será menos probable romperlo.</p>
+                <div style="margin: auto;" >
+                    <img src="./img/contenido/hidrostatica/pierde-cartera.png" style="width: 300px;"  alt="Presión sobre el hielo de un lago congelado" class="img-center">
+                <br>
                 </div>
             </div><br>
-            <li>Para poder comparar la presion ejercida en ambos casos debemos primero calcular el área en contacto en cada caso.
+
+            
+
+        </div>
+        <br>
+        <h3>Solución.</h3><br>
+        <div class="solucion">
+            
+            <ol class="abc-list">
+                <li>Cuando el hombre se encuentra parado vemos que siente tres fuerzas, la de gravedad, conocida como peso $mg$ y dos fuerzas normales, que son las que ejerce el piso como reacción al apoyo que el ejerce con sus pies sobre el suelo. En ambos casos el peso es el mismo, la diferencia radica en que al haber más puntos de apoyo, la fuerza ejercida sobre el hielo se repartirá en más puntos, y cada uno de estos puntos sentirá una menor fuerza.</li>
                 <div class="doblecolumn">
+        
                     <div >
-                        <img src="./img/contenido/hidrostatica/bota.png" style="width: 150px;"  alt="Tomate cortado por un cuchillo con filo" class="img-center" >
-                        <p>Para el caso de la bota vemos que tiene una base de $10\:cm$ lo que serían $0,1\:m$ y una altura de  $30\:cm$ lo que serían $0,3\:m$, por lo tanto el área de la suela en contacto con el hielo será de  </p>
-
-                        <p>$$A_{bota}=(0,1) \times (0,3)=0,03\: m^2$$</p>
-                        <p>$$A_{botas}=A_{bota1}+A_{bota2}$$</p>
-                        <p>$$A_{botas}=(0,03) + (0,03)=0,06\: m^2$$</p>
-
-                        <p>De esta manera, la fuerza que ejerce el hombre sobre el hielo, que será igual a su peso, se distribuirá en un área de $0,06\: m^2$, que es la superficie de sus dos botas. De esta manera, podemos calcular la presión ejercida por las botas sobre la capa de hielo del lago como</p>
-                        <p>$$P_{botas}=\frac{F}{A}=\frac{mg}{A_{botas}}$$</p>
-                        <p>$$P_{botas}=\frac{90\times 10}{0,06}= 15000 \:\left [\frac{N}{m^2}  \right ] $$</p>
-                        <p>$$P_{botas}= 15000 \:[Pa] $$</p>
+                        <img src="./img/contenido/hidrostatica/fuerzas-parado.png" style="width: 100px;"  alt="Fuerza normal sobre el suelo" class="img-center" >
+                        <p>Veamos el caso en el que está de pie; haciendo el diagrama de cuerpo libre, podemos aplicar la primer ley de Newton,  en donde la sumatoria de fuerzas debe ser igual a cero ya que el cuerpo permanece en equilibrio. En este caso podemos omitir el análisis en el eje $x$, pue sevidente que las fuerzas presentes en la interacción son únicamente en el eje vertical $y$</p>
+                        <p>$$\sum F_y = 0$$</p>
+                        <p>$$N_1+N_2-mg=0$$</p>
+                        <p>$$N_1+N_2=mg$$</p>
+                        <p>Podemos observar que, la suma de las fuerzas normales es igual al peso del hombre. Si asumimos que se apoya con igual fuerza en ambos pies entonces $N_1=N_2$ las fuerzas normales deben ser iguales. Si reemplazamos $N_2$ por $N_1$, lo cual es válido ya que son iguales, entonces nos queda</p>
+                        <p>$$N_1+N_1=mg$$</p>
+                        <p>$$2N_1=mg$$</p>
                         
+                        <p>$$N_1=\frac{mg}{2}$$</p>
+                        <p>$$N_1=\frac{90\times 10}{2}$$</p>
+                        
+                        <p>$$N_1=450\:  [N]$$</p>
+                        <p>Por lo tanto podemos concluir, que cada pie genera una fuerza sobre el hielo de $450\:Newtons$</p>
                     </div>
                     
                     <div >
-                        <br>
-                        <img src="./img/contenido/hidrostatica/cuerpo.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
-                        <br>
-                        <p>Ahora, cuando el hombre se tumba totalmente, podemos observar que la superficie se puede calcular de forma aproximada al multiplicar la base de $180\:cm$ lo que serían $1.8\:m$ y una altura de  $60\:cm$ lo que serían $0,6\:m$, esto nos da una superficie de contacto con el hielo equivalente a </p>
-
-                        <p>$$A_{cuerpo}=(1,8) \times (0,6)=1,08\: m^2$$</p>
-
-                        <p>De esta manera, la fuerza que ejerce el hombre sobre el hielo cuando está tumbado, que será igual a su peso, se distribuirá en un área de $1,08\: m^2$, que es la superficie de todo su cuerpo. De esta manera, podemos calcular la presión ejercida por el cuerpo sobre la capa de hielo del lago como</p>
-
-                        <p>$$P_{cuerpo}=\frac{F}{A}=\frac{mg}{A_{cuerpo}}$$</p>
+                        <img src="./img/contenido/hidrostatica/fuerzas-cuatro.png" style="width: 250px;"  alt="Fuerza normal sobre el suelo distribuida en mayor area" class="img-center" >
+                        <p>Si ahora detallamos el caso en el que está en cuatro patas, podemos ver que el peso del hombre se distribuirá sobre el hielo, ya no en dos, sino en 6 puntos de apoyo (2 manos, 2 rodillas, 2 pies). Si asumimos que la fuerza se distribuye equitativamente en todos los puentos de apoyo, y de igual manera que hicimos el anterior análisis tendremos que </p>
+                        <p>$$\sum F_y = 0$$</p>
+                        <p>$$N_1+N_2+N_3+N_4+N_5+N_6-mg=0$$</p>
+                        <p>$$N_1+N_2+N_3+N_4+N_5+N_6=mg$$</p>
+                        <p>Como dijimos, asumiremos que la fuerza que ejerce el hombre sobre el suelo se distribuye uniformemente en los 6 puntos de apoyo, por lo tanto $N_1=N_2=N_3=N_4=N_5=N_6$, entonces podemos reemplazar todas las fuerzas normales por $N_1$ para simplificar</p>
+                        <p>$$N_1+N_1+N_1+N_1+N_1+N_1=mg$$</p>
+                        <p>$$6N_1=mg$$</p>
                         
-                        <p>$$P_{cuerpo}=\frac{90\times 10}{1,08}= 833,3 \:\left [\frac{N}{m^2}  \right ] $$</p>
+                        <p>$$N_1=\frac{mg}{6}$$</p>
+                        <p>$$N_1=\frac{90\times 10}{6}$$</p>
                         
-                        <p>$$P_{cuerpo}= 833,3 \:[Pa] $$</p>
-                       
+                        <p>$$N_1=150\:  [N]$$</p>
+                        <p>De esta manera hemos comprobado que en cada punto de apoyo ahora el hombre ejercerá una fuerza menor al distribuir la fuerza total en más puntos de apoyo, de esta manera el hielo tendrá que soportar menos fuerza en cada punto de contacto, por lo que será menos probable romperlo.</p>
                     </div>
                 </div><br>
-                <p>Es facil evidenciar que la presión ejercida, cuando la superficie de apoyo es solo la de las botas es muchísimo mayor que cuando se distribuye todo el peso, sobre la superficie de todo el cuerpo, al extenderse sobre el hielo.</p>
-            </li>
-            <li>La conclusión anterior nos permite responder, que si el hombre, quiere alcanzar su billetera corriendo el mayor riesgo posible, deberá buscar distribuir su peso en el mayor area de contacto posible, esto puede lograrlo gateando, o aún mejor, arrastrandose con todo el cuerpo pegado al hielo. De esta manera logrará ejercer la mínima presión posible sobre el hielo y reducirá muchísimo las probabilidades de romperlo.</li>
-        </ol>
+                <li>Para poder comparar la presion ejercida en ambos casos debemos primero calcular el área en contacto en cada caso.
+                    <div class="doblecolumn">
+                        <div >
+                            <img src="./img/contenido/hidrostatica/bota.png" style="width: 150px;"  alt="Calculando el area de un zapato" class="img-center" >
+                            <p>Para el caso de la bota vemos que tiene una base de $10\:cm$ lo que serían $0,1\:m$ y una altura de  $30\:cm$ lo que serían $0,3\:m$, por lo tanto el área de la suela en contacto con el hielo será de  </p>
 
-    </div>
-</div><br>
+                            <p>$$A_{bota}=(0,1) \times (0,3)=0,03\: m^2$$</p>
+                            <p>$$A_{botas}=A_{bota1}+A_{bota2}$$</p>
+                            <p>$$A_{botas}=(0,03) + (0,03)=0,06\: m^2$$</p>
+
+                            <p>De esta manera, la fuerza que ejerce el hombre sobre el hielo, que será igual a su peso, se distribuirá en un área de $0,06\: m^2$, que es la superficie de sus dos botas. De esta manera, podemos calcular la presión ejercida por las botas sobre la capa de hielo del lago como</p>
+                            <p>$$P_{botas}=\frac{F}{A}=\frac{mg}{A_{botas}}$$</p>
+                            <p>$$P_{botas}=\frac{90\times 10}{0,06}= 15000 \:\left [\frac{N}{m^2}  \right ] $$</p>
+                            <p>$$P_{botas}= 15000 \:[Pa] $$</p>
+                            
+                        </div>
+                        
+                        <div >
+                            <br>
+                            <img src="./img/contenido/hidrostatica/cuerpo.png" style="width: 300px;"  alt="Calculando el area de una superficie" class="img-center" >
+                            <br>
+                            <p>Ahora, cuando el hombre se tumba totalmente, podemos observar que la superficie se puede calcular de forma aproximada al multiplicar la base de $180\:cm$ lo que serían $1.8\:m$ y una altura de  $60\:cm$ lo que serían $0,6\:m$, esto nos da una superficie de contacto con el hielo equivalente a </p>
+
+                            <p>$$A_{cuerpo}=(1,8) \times (0,6)=1,08\: m^2$$</p>
+
+                            <p>De esta manera, la fuerza que ejerce el hombre sobre el hielo cuando está tumbado, que será igual a su peso, se distribuirá en un área de $1,08\: m^2$, que es la superficie de todo su cuerpo. De esta manera, podemos calcular la presión ejercida por el cuerpo sobre la capa de hielo del lago como</p>
+
+                            <p>$$P_{cuerpo}=\frac{F}{A}=\frac{mg}{A_{cuerpo}}$$</p>
+                            
+                            <p>$$P_{cuerpo}=\frac{90\times 10}{1,08}= 833,3 \:\left [\frac{N}{m^2}  \right ] $$</p>
+                            
+                            <p>$$P_{cuerpo}= 833,3 \:[Pa] $$</p>
+                        
+                        </div>
+                    </div><br>
+                    <p>Es facil evidenciar que la presión ejercida, cuando la superficie de apoyo es solo la de las botas es muchísimo mayor que cuando se distribuye todo el peso, sobre la superficie de todo el cuerpo, al extenderse sobre el hielo.</p>
+                </li>
+                <li>La conclusión anterior nos permite responder, que si el hombre, quiere alcanzar su billetera corriendo el mayor riesgo posible, deberá buscar distribuir su peso en el mayor area de contacto posible, esto puede lograrlo gateando, o aún mejor, arrastrandose con todo el cuerpo pegado al hielo. De esta manera logrará ejercer la mínima presión posible sobre el hielo y reducirá muchísimo las probabilidades de romperlo.</li>
+            </ol>
+
+        </div>
+    </div><br>
 
 
 
 
-<h2 id="presionhidrostatica">Presión hidrostatica.</h2><br>
+    <h2 id="presionhidrostatica">Presión hidrostatica.</h2><br>
 
-<p>Cuando nos sumergimos en un fluido, las partículas que contienen a ese fluido tienden a comprimir a los objetos sumergidos en él. Los seres humanos estamos constantemente sufriendo este tipo de fuerzas de comprensión, pues el aire es un fluido, sin embargo no podemos notar estas fuerzas ya que el interior de nuestro cuerpo está adaptado para ejercer hacia afuera una fuerza equiparable, en otras palabras la presión interna de nuestro cuerpo ejercida hacia afuera es igual a la presión que ejerce la atmosfera sobre nosotros, por lo que la presión neta es nula. </p><br>
+    <p>Cuando nos sumergimos en un fluido, las partículas que contienen a ese fluido tienden a comprimir a los objetos sumergidos en él. Los seres humanos estamos constantemente sufriendo este tipo de fuerzas de comprensión, pues el aire es un fluido, sin embargo no podemos notar estas fuerzas ya que el interior de nuestro cuerpo está adaptado para ejercer hacia afuera una fuerza equiparable, en otras palabras la presión interna de nuestro cuerpo ejercida hacia afuera es igual a la presión que ejerce la atmosfera sobre nosotros, por lo que la presión neta es nula. </p><br>
 
-<img src="./img/contenido/hidrostatica/presion-hidrostatica.png" style="width: 150px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
-<br>
-<p>Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro torax para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, podemos interpretar el origen de esta presión como el peso que debemos soportar de las partículas del liquido sobre nosotros y a su vez a la fuerza de acción reacción que ejerce el líquido debajo de nosotros para aguantar todo el peso sobre él, es por esto mismo que la presión aumenta con la <b>profundidad</b> que en adelante denotaremos como $h$, y se mide desde la superficie del fluido hasta la posición del objeto sumergido. Entonces, la ecuación que me permite hallar la presión en un punto $A$, ubicado a determinada profundidad en un líquido es</p>
-<p>$$P_A=\rho g h \:\:[Pa]$$</p>
-<p>De esta manera, podemos ver que solo de la altura va a depender la presión al interior de un líquido. Entonces podremos decir siempre que cuando comparamos dos puntos diferentes, de un mismo líquido, la presión será igual a la misma altura. Si las alturas son diferentes, la presion en los dos puntos serán diferentes, y esta diferencia de presión podemos medirla por medio de la expresión.</p>
-
-<p>$$P_B-P_A=\rho g (h_B-h_A)\:\:[Pa]$$</p>
-
-<p>Pero qué pasa cunado en un recipiente se encuentran líquidos diferentes, cuyas densidades son diferentes. Para dos puntos en un mismo líquido la presión solo depende de $h$ ya que $\rho$ se considera el mismo en cualquier punto, pero esto no pasa cuando los líquidos tienen densidades diferentes, entonces si queremos calcular la presión en algún punto no basta con hallarla para la altura total, escogiendo cualquier densidad, es necesario calcular cuánta presión aporta las columnas de los otros líquidos sobre el líquido donde está el punto que queremos medir, y sumarla a la presión generada por el líquido en donde está el punto, para la profundidad medida, no desde la superficie total, sino desde el límite entre el líquido superior y el inferior. Veamos un ejemplo.</p>
-
-<br>
-
-
-<div class="doblecolumn">
-    
-    <div style="margin: auto;" >
-        <img src="./img/contenido/hidrostatica/densidades-distintas.png" style="width: 200px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
+    <img src="./img/contenido/hidrostatica/presion-hidrostatica.png" style="width: 150px;"  alt="Presión hidrostática dentro de un líquido" class="img-center" >
     <br>
-    </div>
-    
-    <div style=" width: auto;">
-        <p>Si queremos calcular la presión en el punta $a$ debemos sumar las presiones aportadas por cada líquido. Vemos que en el líquido $h_3$ no ncesesariamente va hasta el fondo, sin embargo las otras $h$ sí se miden desde el inicio hasta el final de cada líquido. Por lo tanto la expresión de la presión en el punto $a$ se calcula como</p><br>
+    <p>Pero no pasa lo mismo cuando nos metemos a una piscina, nos damos cuenta rápidamente que es más dificil expandir nuestro torax para respirar, también que nos duelen los oidos, y entre más bajamos, mayor son estos efectos sobre nosotros, esto se debe a que la presión en el interior de un fluido aumenta cuanto más profundo nos sumergimos. Naturalmente, podemos interpretar el origen de esta presión como el peso que debemos soportar de las partículas del liquido sobre nosotros y a su vez a la fuerza de acción reacción que ejerce el líquido debajo de nosotros para aguantar todo el peso sobre él, es por esto mismo que la presión aumenta con la <b>profundidad</b> que en adelante denotaremos como $h$, y se mide desde la superficie del fluido hasta la posición del objeto sumergido. Entonces, la ecuación que me permite hallar la presión en un punto $A$, ubicado a determinada profundidad en un líquido es</p>
+    <p>$$P_A=\rho g h \:\:[Pa]$$</p>
+    <p>De esta manera, podemos ver que solo de la altura va a depender la presión al interior de un líquido. Entonces podremos decir siempre que cuando comparamos dos puntos diferentes, de un mismo líquido, la presión será igual a la misma altura. Si las alturas son diferentes, la presion en los dos puntos serán diferentes, y esta diferencia de presión podemos medirla por medio de la expresión.</p>
 
-        <p>$$P_a= \rho_1 g h_1 + \rho_2 g h_2 + \rho_3 g h_3$$</p>
+    <p>$$P_B-P_A=\rho g (h_B-h_A)\:\:[Pa]$$</p>
 
-        
-    </div>
-</div><br>
+    <p>Pero qué pasa cunado en un recipiente se encuentran líquidos diferentes, cuyas densidades son diferentes. Para dos puntos en un mismo líquido la presión solo depende de $h$ ya que $\rho$ se considera el mismo en cualquier punto, pero esto no pasa cuando los líquidos tienen densidades diferentes, entonces si queremos calcular la presión en algún punto no basta con hallarla para la altura total, escogiendo cualquier densidad, es necesario calcular cuánta presión aporta las columnas de los otros líquidos sobre el líquido donde está el punto que queremos medir, y sumarla a la presión generada por el líquido en donde está el punto, para la profundidad medida, no desde la superficie total, sino desde el límite entre el líquido superior y el inferior. Veamos un ejemplo.</p>
 
-
-
-<h2 id="vasoscomunicantes">Vasos comunicantes.</h2><br>
-
-<p>Como vimos anteriormente, la presión hidrostática a cierta profundidad, depende únicamente de la profundidad a al que se mide. por esto mismo un conjunto de diferentes tubos comunicados entre sí, al ser llenados, el liquido contenido tendrá la misma altura en cada tubo, aunque tengan formas diferentes, y aunque el área de los tubos  no sean iguales.</p><br>
-
-
-<img src="./img/contenido/hidrostatica/vasos-comunicantes-complejo.png" style="width: 300px;"  alt="Vasos comunicantes" class="img-center" >
-<br>
-
-<p>Si las alturas no fueran iguales, implicaría que las presiones son diferentes para áreas diferentes, pero la experimentación nos muestra, que la presión es indiferente al área, y depende únicamente de la profundidad a la que se mide, o a la altura del liquido contenida en el tubo, si lo que estamos midiendo es la presión del fondo. Por esto, si por ejemplo intentamos sumergirnos a una profundidad de 3 metros, sentiremos la misma presión sobre nuestro cuerpo, sea en una piscina olímpica (mucha área) o sea en la pileta del lavadero de nuestra casa (poca área). Veamos un ejemplo de aplicaión.</p><br>
-
-<div class="problema">
-    
-    <div >
-
-        <div class="doblecolumn">
-    
-            <div style=" width: auto;">
-                <p>en un tubo en forma de "U" se tienen dos líquidos contenidos, con densidades diferentes, el líquido uno (color rojo) es aceite cuya densidad es $\rho_{aceite}=750\:Kg/m^3$ yel líquido dos (color azul) es agua cuya densidad es $\rho_{agua}=1000\:Kg/m^3$.</p><br>
-
-                <p><b>Pregunta:</b> si la columna de aceite mide $h_1=10cm$, ¿cuánto mide la diferencia de altura entre la superficie del agua y el punto $b$?</p>
-            </div>
-            
-            <div style="margin: auto;" >
-                <img src="./img/contenido/hidrostatica/vasos-densidades-distintas.png" style="width: 300px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
-                
-            </div>
-        </div><br>
-
-        
-
-    </div>
     <br>
-    <h3>Solución.</h3><br>
-    <div class="solucion">
-        <p>Para resolverlo</p>
-            
-    </div>
-</div><br>
 
 
-
-<h2>Principio de Pascal</h2><br>
-
-
-<div class="doblecolumn">
-    <div style="width: auto;">
-        <p>Como vimos anteriormente, la presión en un líquido contenido en un recipiente, no depende del área trasversal del recipiente, depende únicamente de la altura. Ahora bien, Pascal supo usar muy bien esta propiedad y descubrió que la presión se distribuye uniformemente en todas las direcciones y en todos los puntos del fluido. El principio de pascal cita de la siguiente manera</p>
+    <div class="doblecolumn">
+        
+        <div style="margin: auto;" >
+            <img src="./img/contenido/hidrostatica/densidades-distintas.png" style="width: 200px;"  alt="Presión en liquidos con diferentes densidades" class="img-center" >
         <br>
-        <p class="cita">"La presión ejercida sobre un fluido incompresible y en equilibrio dentro de un recipiente de paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del fluido."</p>
-
-    </div>
-    
-    <div style="margin: auto;" >
-        <img src="./img/contenido/hidrostatica/principio-pascal.png" style="width: 280px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
-    </div>
-</div><br>
-
-<p>En otras palabras, si yo tengo dos émbolos sobre un líquido incompresible, cada uno en un extremo del ducto que los conecta, la presión en el punto de contacto de cualquiera de los émbolos puede ser transmitida al otro émbolo a tra vez del líquido. Como la presión es independiente del área pero sí dependiente de la altura, puedo decir que para alturas iguales, la presión es igual en ambos émbolos.</p>
-<p>$$P_1=P_2$$</p>
-<p>Por lo tanto debido a que la presión es igual a la fuerza en el punto de aplicación dividido por el área en dodne se distribuye la fuerza, tengo para $P_1=\frac{F_1}{A_1}$ y para $P_2=\frac{F_2}{A_2}$, de esta manera la expresión anterior me queda. </p>
-<p>$$\frac{F_1}{A_1}=\frac{F_2}{A_2}$$</p>
-
-<p>Esta expresión es muy útil y tiene muchas aplicaciones, pues en pro de mantener la igualdad, si un tubo tiene un area menor que el otro, la fuerza presente en el punto donde el área es menor, será también menor, y por el contrario, si el área es cada vez mayor, la fuerza en ese punto será también mayor para que se mantenga la proporción. De esta manera es que funcionan las máquinas hidráulicas, en donde con la fuerza de un simple brazo puedo levantar un vehículo de $1$ tonelada. Para hacerlo bastará con conectar dos conductos, y ubicar la carga en el émbolo de mayor área, y el operador empujará con una fuerza pequeña el émbolo en la sección de area pequeña, entonces el líquido comunicará esta presión y multiplicará la fuerza en el área mayor, así con muy poca fuerza el operador podrá levantar casi cualquier carga que desee.</p>
-<br>
-<p>Por lo tanto, para dar un uso más práctico a la ecuación anterior, podemos acomodarla algebráicamente, despejaremos entonces la fuerza en $1$, que es el lugar donde el operador ejerce la fuerza. Si la carga se coloca en el punto $2$ y esta tiene un peso igual a $F_2$, entonces podremos saber la fuerza necesaria para leventar ese peso.</p>
-
-<p>$$F_1=\frac{A_1}{A_2}F_2$$</p>
-
-<p>Así la fuerza que el operador necesita ejercer para igualar en el otro extremo el peso del vehículo, será proporcional al peso y a la proporción entre el área en $1$ y el área en $2$, así si quiero reducir la cantidad de fuerza que debo ejercer, bastará con aumentar el área $A_2$ o disminuir en proporción el área $A_2$. Veamos un ejemplo.</p>
-
-<br>
-<div class="problema">
-    
-    <div >
-
-        <div class="doblecolumn">
-    
-            <div style=" width: auto;">
-                <p>Un mecánico recibe un coche de $m_c=1000Kg$ para su reparación, para esto debe elevarlo del suelo y cuenta con un dispositivo hidráulico, cuya sección mayor, de forma circular, tiene un radio de $R=1m$ y la sección menor, también circular, tiene un radio de $r=0,1m$.</p><br>
-
-                <ol class="abc-list">
-                    <li>Calcule la fuerza que debe ejercer el mecánico en el émbolo pequeño para levantar el coche.</li>
-                    <li>Si el mecánico se lesiona, y ahora puede hacer solo la mita de la fuerza, ¿qué tan grande debe ser el radio del émbolo más grande?</li>
-                </ol>
-            </div>
-            
-            <div style="margin: auto;" >
-                <img src="./img/contenido/hidrostatica/ejercicio-pascal.png" style="width: 300px;"  alt="un hombre pierde su cartera" class="img-center">
-            <br>
-            </div>
-        </div><br>
-
+        </div>
         
+        <div style=" width: auto;">
+            <p>Si queremos calcular la presión en el punta $a$ debemos sumar las presiones aportadas por cada líquido. Vemos que en el líquido $h_3$ no ncesesariamente va hasta el fondo, sin embargo las otras $h$ sí se miden desde el inicio hasta el final de cada líquido. Por lo tanto la expresión de la presión en el punto $a$ se calcula como</p><br>
 
-    </div>
-    <br>
-    <h3>Solución.</h3><br>
-    <div class="solucion">
-        <p>Para resolverlo</p>
+            <p>$$P_a= \rho_1 g h_1 + \rho_2 g h_2 + \rho_3 g h_3$$</p>
+
             
-    </div>
-</div><br>
+        </div>
+    </div><br>
 
-<h2 id="arquimides">El principio de Arquímedes</h2>
-<br>
-<p>Seguramente ya habrás notado que si en un recipiente con agua hasta cierta altura, idtroduces objetos, el nivel del agua sube. Esto se debe a que el objeto sumergido, al tener un volumen determinado, desplazará al liquido en proporción al volumen de dicho objeto. Este principio plantea lo siguiente.</p>
 
-<p class="cita">"Todo cuerpo sumergido, parcial o totalmente en un líquido experimentará una fuerza de empuje, en dirección vertical y hacia arriba, cuya magnitud es el peso del líquido desplazado por el cuerpo."</p>
 
-<img src="./img/contenido/hidrostatica/volumen-desplazado.png" style="width: 300px;"  alt="Tomate cortado por un cuchillo sin filo" class="img-center" >
-<br>
+    <h2 id="vasoscomunicantes">Vasos comunicantes.</h2><br>
 
-<p>El origen de esta fuerza de empuje, se puede entender debido a que las moléculas del líquido tienden siempre a buscar acomodarse lo mejor posible a la forma del recipiente que lo contiene, buscando así estar a la menor altura que el recipiente le permita, por eso cuando movemos o sacudimos un baso de agua, el líquido contenido oscilará de un lado al otro y poco a poco la superficie tenderá a ser uniforme, y plana. Por lo tanto cuando sumerges un cuerpo en él, este líquido buscará desplazar el objeto de nuevo afuera del agua, para alcanzar su nivel mínimo en el recipiente. Como resultado, el principio de Arquímedes permite deducir la siguiente ecuación</p>
+    <p>Como vimos anteriormente, la presión hidrostática a cierta profundidad, depende únicamente de la profundidad a al que se mide. por esto mismo un conjunto de diferentes tubos comunicados entre sí, al ser llenados, el liquido contenido tendrá la misma altura en cada tubo, aunque tengan formas diferentes, y aunque el área de los tubos  no sean iguales.</p><br>
 
-<p>$$E=\rho g V \: [N]$$</p>
 
-<p>En donde $E$ es la fuerza de <b>empuje</b> y cuyas unidades son $Newtons$, $\rho$ es la densidad del liquido en donde se sumerge el objeto, $g=9.8\: m/s$ es la aceleración de la gravedad, y $V$ es el volumen del líquido desplazado. En general es fácil hallar el volumen del líquido desplazado, basta con conocer el volumen del objeto que se sumerge, o la fracción de volumen de este objeto, si se sumerge parcialmente, es común encontrar en los ejercicios, que este volumen lo indican o dan la información necesaria para calcularlo de forma simple, haciendo uso de geometría de figuras básicas (cilindors, cubos, esferas). Veamos un ejemplo.</p>
+    <img src="./img/contenido/hidrostatica/vasos-comunicantes-complejo.png" style="width: 300px;"  alt="Vasos comunicantes" class="img-center" >
+    <br>
 
+    <p>Si las alturas no fueran iguales, implicaría que las presiones son diferentes para áreas diferentes, pero la experimentación nos muestra, que la presión es indiferente al área, y depende únicamente de la profundidad a la que se mide, o a la altura del liquido contenida en el tubo, si lo que estamos midiendo es la presión del fondo. Por esto, si por ejemplo intentamos sumergirnos a una profundidad de 3 metros, sentiremos la misma presión sobre nuestro cuerpo, sea en una piscina olímpica (mucha área) o sea en la pileta del lavadero de nuestra casa (poca área). Veamos un ejemplo de aplicaión.</p><br>
+
+    <div class="problema">
+        
+        <div >
+
+            <div class="doblecolumn">
+        
+                <div style=" width: auto;">
+                    <p>en un tubo en forma de "U" se tienen dos líquidos contenidos, con densidades diferentes, el líquido uno (color rojo) es aceite cuya densidad es $\rho_{aceite}=750\:Kg/m^3$ yel líquido dos (color azul) es agua cuya densidad es $\rho_{agua}=1000\:Kg/m^3$.</p><br>
+
+                    <p><b>Pregunta:</b> si la columna de aceite mide $h_1=10cm$, ¿cuánto mide la diferencia de altura entre la superficie del agua y el punto $b$?</p>
+                </div>
+                
+                <div style="margin: auto;" >
+                    <img src="./img/contenido/hidrostatica/vasos-densidades-distintas.png" style="width: 300px;"  alt="Calcule la presión de diferentes liquidos en un recipiente" class="img-center" >
+                    
+                </div>
+            </div><br>
+
+            
+
+        </div>
+        <br>
+        <h3>Solución.</h3><br>
+        <div class="solucion">
+            <p>Para resolverlo</p>
+                
+        </div>
+    </div><br>
+
+
+
+    <h2>Principio de Pascal</h2><br>
+
+
+    <div class="doblecolumn">
+        <div style="width: auto;">
+            <p>Como vimos anteriormente, la presión en un líquido contenido en un recipiente, no depende del área trasversal del recipiente, depende únicamente de la altura. Ahora bien, Pascal supo usar muy bien esta propiedad y descubrió que la presión se distribuye uniformemente en todas las direcciones y en todos los puntos del fluido. El principio de pascal cita de la siguiente manera</p>
+            <br>
+            <p class="cita">"La presión ejercida sobre un fluido incompresible y en equilibrio dentro de un recipiente de paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del fluido."</p>
+
+        </div>
+        
+        <div style="margin: auto;" >
+            <img src="./img/contenido/hidrostatica/principio-pascal.png" style="width: 280px;"  alt="Máquina hidráulica y el principio de pascal" class="img-center" >
+        </div>
+    </div><br>
+
+    <p>En otras palabras, si yo tengo dos émbolos sobre un líquido incompresible, cada uno en un extremo del ducto que los conecta, la presión en el punto de contacto de cualquiera de los émbolos puede ser transmitida al otro émbolo a tra vez del líquido. Como la presión es independiente del área pero sí dependiente de la altura, puedo decir que para alturas iguales, la presión es igual en ambos émbolos.</p>
+    <p>$$P_1=P_2$$</p>
+    <p>Por lo tanto debido a que la presión es igual a la fuerza en el punto de aplicación dividido por el área en dodne se distribuye la fuerza, tengo para $P_1=\frac{F_1}{A_1}$ y para $P_2=\frac{F_2}{A_2}$, de esta manera la expresión anterior me queda. </p>
+    <p>$$\frac{F_1}{A_1}=\frac{F_2}{A_2}$$</p>
+
+    <p>Esta expresión es muy útil y tiene muchas aplicaciones, pues en pro de mantener la igualdad, si un tubo tiene un area menor que el otro, la fuerza presente en el punto donde el área es menor, será también menor, y por el contrario, si el área es cada vez mayor, la fuerza en ese punto será también mayor para que se mantenga la proporción. De esta manera es que funcionan las máquinas hidráulicas, en donde con la fuerza de un simple brazo puedo levantar un vehículo de $1$ tonelada. Para hacerlo bastará con conectar dos conductos, y ubicar la carga en el émbolo de mayor área, y el operador empujará con una fuerza pequeña el émbolo en la sección de area pequeña, entonces el líquido comunicará esta presión y multiplicará la fuerza en el área mayor, así con muy poca fuerza el operador podrá levantar casi cualquier carga que desee.</p>
+    <br>
+    <p>Por lo tanto, para dar un uso más práctico a la ecuación anterior, podemos acomodarla algebráicamente, despejaremos entonces la fuerza en $1$, que es el lugar donde el operador ejerce la fuerza. Si la carga se coloca en el punto $2$ y esta tiene un peso igual a $F_2$, entonces podremos saber la fuerza necesaria para leventar ese peso.</p>
+
+    <p>$$F_1=\frac{A_1}{A_2}F_2$$</p>
+
+    <p>Así la fuerza que el operador necesita ejercer para igualar en el otro extremo el peso del vehículo, será proporcional al peso y a la proporción entre el área en $1$ y el área en $2$, así si quiero reducir la cantidad de fuerza que debo ejercer, bastará con aumentar el área $A_2$ o disminuir en proporción el área $A_2$. Veamos un ejemplo.</p>
+
+    <br>
+    <div class="problema">
+        
+        <div >
+
+            <div class="doblecolumn">
+        
+                <div style=" width: auto;">
+                    <p>Un mecánico recibe un coche de $m_c=1000Kg$ para su reparación, para esto debe elevarlo del suelo y cuenta con un dispositivo hidráulico, cuya sección mayor, de forma circular, tiene un radio de $R=1m$ y la sección menor, también circular, tiene un radio de $r=0,1m$.</p><br>
+
+                    <ol class="abc-list">
+                        <li>Calcule la fuerza que debe ejercer el mecánico en el émbolo pequeño para levantar el coche.</li>
+                        <li>Si el mecánico se lesiona, y ahora puede hacer solo la mita de la fuerza, ¿qué tan grande debe ser el radio del émbolo más grande?</li>
+                    </ol>
+                </div>
+                
+                <div style="margin: auto;" >
+                    <img src="./img/contenido/hidrostatica/ejercicio-pascal.png" style="width: 300px;"  alt="Principio de pascal para levantar un auto con una maquina hidráulica" class="img-center">
+                <br>
+                </div>
+            </div><br>
+
+            
+
+        </div>
+        <br>
+        <h3>Solución.</h3><br>
+        <div class="solucion">
+            <p>Para resolverlo</p>
+                
+        </div>
+    </div><br>
+
+    <h2 id="arquimides">El principio de Arquímedes</h2>
+    <br>
+    <p>Seguramente ya habrás notado que si en un recipiente con agua hasta cierta altura, idtroduces objetos, el nivel del agua sube. Esto se debe a que el objeto sumergido, al tener un volumen determinado, desplazará al liquido en proporción al volumen de dicho objeto. Este principio plantea lo siguiente.</p>
+
+    <p class="cita">"Todo cuerpo sumergido, parcial o totalmente en un líquido experimentará una fuerza de empuje, en dirección vertical y hacia arriba, cuya magnitud es el peso del líquido desplazado por el cuerpo."</p>
+
+    <img src="./img/contenido/hidrostatica/volumen-desplazado.png" style="width: 300px;"  alt="Empuje generado debido al principio de Arquímides" class="img-center" >
+    <br>
+
+    <p>El origen de esta fuerza de empuje, se puede entender debido a que las moléculas del líquido tienden siempre a buscar acomodarse lo mejor posible a la forma del recipiente que lo contiene, buscando así estar a la menor altura que el recipiente le permita, por eso cuando movemos o sacudimos un baso de agua, el líquido contenido oscilará de un lado al otro y poco a poco la superficie tenderá a ser uniforme, y plana. Por lo tanto cuando sumerges un cuerpo en él, este líquido buscará desplazar el objeto de nuevo afuera del agua, para alcanzar su nivel mínimo en el recipiente. Como resultado, el principio de Arquímedes permite deducir la siguiente ecuación</p>
+
+    <p>$$E=\rho g V \: [N]$$</p>
+
+    <p>En donde $E$ es la fuerza de <b>empuje</b> y cuyas unidades son $Newtons$, $\rho$ es la densidad del liquido en donde se sumerge el objeto, $g=9.8\: m/s$ es la aceleración de la gravedad, y $V$ es el volumen del líquido desplazado. En general es fácil hallar el volumen del líquido desplazado, basta con conocer el volumen del objeto que se sumerge, o la fracción de volumen de este objeto, si se sumerge parcialmente, es común encontrar en los ejercicios, que este volumen lo indican o dan la información necesaria para calcularlo de forma simple, haciendo uso de geometría de figuras básicas (cilindors, cubos, esferas). Veamos un ejemplo.</p>
+
+
+
+
+
+    
+</body>
+</html>

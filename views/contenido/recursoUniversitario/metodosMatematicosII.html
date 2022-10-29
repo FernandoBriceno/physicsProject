@@ -75,7 +75,7 @@
 
         <p>Ahora si calculamos las $b_n$ en el mismo intervalo tenemos que </p>
 
-        <p>$$b_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x sin(nx)dx =\frac{2}{n}(-1)^{n+1} $$</p>
+        <p>$$b_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x sin(nx)dx =\frac{-2}{n}cos(n\pi)=\frac{2}{n}(-1)^{n+1} $$</p>
 
         <p>Debido a esto nuestra función nos queda representada en la serie de Fourier</p>
 
@@ -102,3 +102,93 @@
         
     </div>
 </div><br>
+
+<h2>Cambiando el intervalo</h2><br>
+<p>Convengamos en que de forma más general, para una función $f(x)$ cuyo período es $T$ su representación en serie de Fourier está dada por la expresión</p>
+
+<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( \frac{n2\pi x}{T} \right ) + b_{n}sin\left ( \frac{n2\pi x}{T} \right )  \right ]$$</p>
+<p>Si reescribimos con el factor $w_0=\frac{2\pi }{T}$ tenemos que</p>
+<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( nw_0x \right ) + b_{n}sin\left (  nw_0x  \right )  \right ]$$</p>
+
+<p>De esta manera los coeficientes $a_n$ y $b_n$ se definirán como</p>
+
+
+<p>$$a_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) cos\left ( \frac{n2\pi x}{T} \right )dx$$</p>
+<p>$$b_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) sin\left ( \frac{n2\pi x}{T} \right )dx$$</p>
+<br>
+
+<h2>Serie de Fourier compleja.</h2><br> 
+<!-- https://www.tamps.cinvestav.mx/~wgomez/diapositivas/FIC/FIC-03.pdf -->
+<!-- http://www.sc.ehu.es/sbweb/fisica3/ondas/fourier/fourier.html -->
+
+<p>Un número complejo definido por la suma de un coeficiente real $a$ y una parte imaginaria $b$ está definido como $z=a+\mathbf{i}b$. Haciendo uso de la formula de Euler </p>
+
+<p>$$e^{\pm \mathbf{i}x}=cosx \pm \mathbf{i} sinx$$</p>
+
+<p>Podemos dar con las representaciones complejas del seno y del coseno, las cuales quedan como</p>
+
+<p>$$cos(nx) = \frac{1}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right )$$</p>
+<p>$$sin(nx) = \frac{1}{2\mathbf{i}}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )$$</p>
+
+<p>Así, nuestra representación en serie de Fourier compleja de una función $f(x)$ está dada por </p>
+
+<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ \frac{a_{n}}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right ) + \frac{b_{n}}{2\mathbf{i}}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )  \right ]$$</p>
+
+<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ \frac{a_{n}}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right ) - \mathbf{i} \frac{b_{n}}{2}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )  \right ]$$</p>
+
+<p>Reorganizando algebráicamente sus términos tenemos</p>
+
+<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\frac{1}{2}\left [ \left (a_{n}-\mathbf{i}b_{n}  \right )e^{\mathbf{i}nx} + \left (a_{n}+\mathbf{i}b_{n}  \right )e^{-\mathbf{i}nx}  \right ]$$</p>
+
+<p>$$f(x)=a_0+\sum_{n=1}^{\infty }\left [ c_{+n}e^{\mathbf{i}nx} + c_{-n}e^{-\mathbf{i}nx}  \right ] $$</p>
+
+<p>Para unos valores de</p>
+
+<p>$$a_{0}=c_{0}$$</p>
+<p>$$c_{+n}=\frac{1}{2}\left (a_{n}-\mathbf{i}b_{n}  \right )$$</p>
+<p>$$c_{-n}=\frac{1}{2}\left (a_{n}+\mathbf{i}b_{n}  \right )$$</p>
+
+<p>De esta manera al separar y reaorganizar las sumas tendremos</p>
+<p>$$ f(x)=c_{0}+\sum_{n=1}^{\infty }c_{n}e^{\mathbf{i}nx} + \sum_{n=1}^{\infty }c_{-n}e^{\mathbf{i}(-n)x} $$</p>
+<p>$$ f(x)=c_{0}+\sum_{n=1}^{\infty }c_{n}e^{\mathbf{i}nx} + \sum_{n=-1}^{-\infty }c_{n}e^{\mathbf{i}nx} $$</p>
+
+<p>Por los cual nos queda nuestra serie de Fourier de la forma</p>
+<p class="ec-final">$$f(x)=\sum_{n=-\infty}^{\infty }c_{n}e^{\mathbf{i}nx}$$</p>
+<p>Para cada valor de $c_n$ de la forma</p>
+
+<p class="ec-final">$$c_n=\frac{1}{2\pi } \int_{0}^{2\pi}e^{-\mathbf{i}nx}f(x)dx$$</p>
+
+De igual forma las expresiones para una función cuyo periodo es $T$ la expresión nos queda
+
+<div class="doblecolumn">
+    <div>
+        <p class="ec-final">$$f(x)=\sum_{n=-\infty}^{\infty }c_{n}e^{\mathbf{i}\frac{n2\pi x}{T}}$$</p>
+    </div>
+    
+    <div>
+        <p class="ec-final">$$c_n=\frac{1}{T } \int_{-\frac{T}{2 }}^{\frac{T}{2 }}e^{-\mathbf{i}\frac{n2\pi x}{T}}f(x)dx$$</p>
+    </div>
+</div><br><br>
+
+<h2 id="Transformada-de-Fourier">Transformada de Fourier</h2><br>
+
+<p>LA transformada de Fourier es un tipo de transformación que me permite llevar a una función $f(t)$ al espacio de fourier $F(w)$, como un ejemplo particular, se habitúa llevar funciones en el espacio tel tiempo, para analizar su comportamiento en el espacio de las frecuencias, en donde algunas propiedades no tan evidentes en el espacio del tiempo no son quizás tan evidentes. En forma general la forma de una <b>transformada de Fourier</b> es</p>
+
+<p>$$F(\alpha )=\int_{a}^{b}f(t)k(\alpha ,t)dt$$</p>
+
+<p>En donde $k(\alpha ,t)$ es conocido como el <b>kernel</b> o núcleo de la transformación de Fourier. </p>
+<br>
+
+<h3>Propiedades de la Transformada de Fourier.</h3><br>
+
+<p>La transoformada de Fourier goza de algunas propiedades como veremos a continuación.</p><br>
+
+<ol class="i-list">
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+<p>De forma concreta la transformada de Fourier para el espacio de las frecuencias se escrbie como</p>
+
+<p>$$F(w)=\frac{1}{\sqrt{2\pi} }\int_{-\infty }^{\infty }f(t)e^{\textbf{i}wt}dt$$</p>

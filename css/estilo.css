@@ -255,3 +255,9 @@ li::marker {
     text-align: center;
     font-family: "Times New Roman", Times, serif;
   }
+
+.ec-final{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 1px;
+}
