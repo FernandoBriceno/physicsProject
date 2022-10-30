@@ -1,194 +1,208 @@
-<h1>Hablemos de Series</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos matemáticos para Física</title>
+    <meta name="description" content="Un estudio de los metodos matemáticos para la física más útiles para los físicos.">
+    <meta name="keywords" content="física, Métodos, series, Fourier, funciones, función, seno, coseno, compleja, numeros complejos, transformada, propiedades, kernel, frecuencia, periodo">
+</head>
+<body>
+    <h1>Hablemos de Series</h1>
 
-<h2 id="fourier">Series de Fourier.</h2><br>
+    <h2 id="fourier">Series de Fourier.</h2><br>
 
-<p>Es una forma de expandir funciones, esta vez en un conjunto de senos y cosenos, es decir, la base en la que representamos nuestra función ahora será una base de funciones ortogonales de $sen(nx)$ y $cos(nx)$. La representación en serie de Fourier de una funcion dada $f(x)$ es</p>
+    <p>Es una forma de expandir funciones, esta vez en un conjunto de senos y cosenos, es decir, la base en la que representamos nuestra función ahora será una base de funciones ortogonales de $sen(nx)$ y $cos(nx)$. La representación en serie de Fourier de una funcion dada $f(x)$ es</p>
 
-<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }a_{n}cos(nx) + \sum_{n=1}^{\infty }b_{n}sin(nx)$$</p>
+    <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }a_{n}cos(nx) + \sum_{n=1}^{\infty }b_{n}sin(nx)$$</p>
 
-<p>Los factores $a_0$, $a_n$, $b_n$, son valores que nos indican la paridad de la función, pues bien sabemos que la función Seno es impar, mientras que la función  Coseno es par, por tanto si los elementos $b_n$ fuesen todos cero, sería porque nuestra función es puramente par y bisceversa. La forma de calcular estos pesos es con las siguientes relaciones </p>
+    <p>Los factores $a_0$, $a_n$, $b_n$, son valores que nos indican la paridad de la función, pues bien sabemos que la función Seno es impar, mientras que la función  Coseno es par, por tanto si los elementos $b_n$ fuesen todos cero, sería porque nuestra función es puramente par y bisceversa. La forma de calcular estos pesos es con las siguientes relaciones </p>
 
-<p>$$a_n= \frac{1}{\pi } \int_{0}^{2\pi } f(x) cos(nx)dx$$</p>
-<p>$$b_n= \frac{1}{\pi } \int_{0}^{2\pi } f(x) sin(nx)dx$$</p>
+    <p>$$a_n= \frac{1}{\pi } \int_{0}^{2\pi } f(x) cos(nx)dx$$</p>
+    <p>$$b_n= \frac{1}{\pi } \int_{0}^{2\pi } f(x) sin(nx)dx$$</p>
 
-<p>La representación de fourier sirve para todo tipo de funciones, pero en donde su potencial es máximo, es cuando las funciones son periodicas, debido a esto, en cualquier otro tipo de función que no sea periodica, su representación será acotada, la aplicación asumirá una periodicidad para el intervalo seleccionado. Veamos un ejemplo.</p>
-<br>
-
-<div class="problema">
-    <div >
-        <div class="doblecolumn">
-            <div style=" width: auto;">
-                <p>Encuentre la serie de Fourier para la función diente de sierra</p><br>
-
-                <p>$$f(x) = \left\{\begin{matrix}
-                    x &  si & 0\leq x\leq \pi \\ 
-                     x-2\pi &  si & \pi\leq x\leq 2\pi
-                    \end{matrix}\right.$$</p>
-            </div>
-            
-            <div style="margin: auto;" >
-                <img src="./img/contenido/metodosMatematicosII/ftrozos.png" style="width: 200px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
-                
-            </div>
-        </div><br>
-    </div>
+    <p>La representación de fourier sirve para todo tipo de funciones, pero en donde su potencial es máximo, es cuando las funciones son periodicas, debido a esto, en cualquier otro tipo de función que no sea periodica, su representación será acotada, la aplicación asumirá una periodicidad para el intervalo seleccionado. Veamos un ejemplo.</p>
     <br>
-    <h3>Solución.</h3><br>
-    <div class="solucion">
-        <p>Debido a que la solución está planteada a trozos, así mismo debemos plantear las integralas, separarlas en los intervalos en los que la función se divide.</p>
 
-        <p>$$a_n= \frac{1}{\pi } \left [\int_{0}^{\pi } x cos(nx)dx + \int_{\pi}^{2\pi } (x-2\pi) cos(nx)dx  \right ]$$</p>
-        <p>$$a_n=\frac{1}{\pi } \left [\dfrac{{\pi}n\sin\left({\pi}n\right)+\cos\left({\pi}n\right)-1}{n^2}+\dfrac{\cos\left(2{\pi}n\right)+{\pi}n\sin\left({\pi}n\right)-\cos\left({\pi}n\right)}{n^2}  \right ]$$</p>
-        <p>$$a_n=\frac{1}{\pi } \left [\dfrac{2\pi n\sin(\pi n) + \cos(2 \pi n) - 1}{n^2}\right ]$$</p>
+    <div class="problema">
+        <div >
+            <div class="doblecolumn">
+                <div style=" width: auto;">
+                    <p>Encuentre la serie de Fourier para la función diente de sierra</p><br>
 
-        <p>$$a_0=0$$</p>
+                    <p>$$f(x) = \left\{\begin{matrix}
+                        x &  si & 0\leq x\leq \pi \\ 
+                        x-2\pi &  si & \pi\leq x\leq 2\pi
+                        \end{matrix}\right.$$</p>
+                </div>
+                
+                <div style="margin: auto;" >
+                    <img src="./img/contenido/metodosMatematicosII/ftrozos.png" style="width: 200px;"  alt="Función sierra" class="img-center" >
+                    
+                </div>
+            </div><br>
+        </div>
+        <br>
+        <h3>Solución.</h3><br>
+        <div class="solucion">
+            <p>Debido a que la solución está planteada a trozos, así mismo debemos plantear las integralas, separarlas en los intervalos en los que la función se divide.</p>
+
+            <p>$$a_n= \frac{1}{\pi } \left [\int_{0}^{\pi } x cos(nx)dx + \int_{\pi}^{2\pi } (x-2\pi) cos(nx)dx  \right ]$$</p>
+            <p>$$a_n=\frac{1}{\pi } \left [\dfrac{{\pi}n\sin\left({\pi}n\right)+\cos\left({\pi}n\right)-1}{n^2}+\dfrac{\cos\left(2{\pi}n\right)+{\pi}n\sin\left({\pi}n\right)-\cos\left({\pi}n\right)}{n^2}  \right ]$$</p>
+            <p>$$a_n=\frac{1}{\pi } \left [\dfrac{2\pi n\sin(\pi n) + \cos(2 \pi n) - 1}{n^2}\right ]$$</p>
+
+            <p>$$a_0=0$$</p>
 
 
-        <!-- (pi*n*sin(pi*n)+cos(pi*n)-1)/n^2 + (cos(2*pi*n)+pi*n*sin(pi*n)-cos(pi*n))/n^2 -->
-        <p>$$b_n= \frac{1}{\pi } \left [\int_{0}^{\pi } x sin(nx)dx + \int_{\pi}^{2\pi } (x-2\pi) sin(nx)dx  \right ]$$</p>
-        <p>$$b_n= \frac{1}{\pi } \left [ \frac{\sin(\pi n)-\pi n\cos(\pi n)}{n^2} + 
+            <!-- (pi*n*sin(pi*n)+cos(pi*n)-1)/n^2 + (cos(2*pi*n)+pi*n*sin(pi*n)-cos(pi*n))/n^2 -->
+            <p>$$b_n= \frac{1}{\pi } \left [\int_{0}^{\pi } x sin(nx)dx + \int_{\pi}^{2\pi } (x-2\pi) sin(nx)dx  \right ]$$</p>
+            <p>$$b_n= \frac{1}{\pi } \left [ \frac{\sin(\pi n)-\pi n\cos(\pi n)}{n^2} + 
 
-            \frac{\sin(2{\pi}n)-\sin({\pi}n)-{\pi}n\cos({\pi}n)}{n^2}
-             \right ]$$</p>
-        <p>$$b_n =\frac{1}{\pi }  \left [\frac{\sin(2{\pi}n)-2\pi n\cos(\pi n)}{n^2}\right ]
-            $$</p>
+                \frac{\sin(2{\pi}n)-\sin({\pi}n)-{\pi}n\cos({\pi}n)}{n^2}
+                \right ]$$</p>
+            <p>$$b_n =\frac{1}{\pi }  \left [\frac{\sin(2{\pi}n)-2\pi n\cos(\pi n)}{n^2}\right ]
+                $$</p>
 
-         <!-- (sin(pi*n)-pi*n*cos(pi*n))/n^2+ (sin(2*pi*n)-sin(pi*n)-pi*n*cos(pi*n))/n^2 -->
-        <p>Por lo tanto tendremos una función representada en series de fourier de la forma</p>
+            <!-- (sin(pi*n)-pi*n*cos(pi*n))/n^2+ (sin(2*pi*n)-sin(pi*n)-pi*n*cos(pi*n))/n^2 -->
+            <p>Por lo tanto tendremos una función representada en series de fourier de la forma</p>
 
-        <p>$$f(x)=0+\sum_{n=1}^{\infty }\frac{1}{\pi } \left [\dfrac{2\pi n\sin(\pi n) + \cos(2 \pi n) - 1}{n^2}\right ]cos(nx) + \sum_{n=1}^{\infty }\frac{1}{\pi }  \left [\frac{\sin(2{\pi}n)-2\pi n\cos(\pi n)}{n^2}\right ]sin(nx)$$</p>
+            <p>$$f(x)=0+\sum_{n=1}^{\infty }\frac{1}{\pi } \left [\dfrac{2\pi n\sin(\pi n) + \cos(2 \pi n) - 1}{n^2}\right ]cos(nx) + \sum_{n=1}^{\infty }\frac{1}{\pi }  \left [\frac{\sin(2{\pi}n)-2\pi n\cos(\pi n)}{n^2}\right ]sin(nx)$$</p>
 
-        <p>Grafiquemos para comprobar. Utilicemos únicamente los primeros 100 términos de la serie.</p>
+            <p>Grafiquemos para comprobar. Utilicemos únicamente los primeros 100 términos de la serie.</p>
 
+            
+            <img src="./img/contenido/metodosMatematicosII/ftrozos-fourier.png" style="width: 300px;"  alt="Serie de fourier aplicada a una función períodica a trozos" class="img-center" >
+
+            <p>Observa que si cambiamos el dominio de la función, podemos definir una serie mucho más sencilla como se ve a continuación</p>
+            
+            <p>$$f(x) = \left\{\begin{matrix}
+                x &  si & 0\leq x\leq \pi \\ 
+                x-2\pi &  si & -\pi\leq x\leq 0
+                \end{matrix}\right.$$</p>
+            <p>Para este caso podemos ver que los $a_n$ son cero, esto con claridad nos indica que la función es impar, y efectivamente lo es. Para calcular los $a_n$ en este nuevo rango debemos re definir el rango de sumatoria ahora entre $(-\pi,\pi)$</p>
+
+            <p>$$a_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x cos(nx)dx =0 $$</p>
+
+            <p>Ahora si calculamos las $b_n$ en el mismo intervalo tenemos que </p>
+
+            <p>$$b_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x sin(nx)dx =\frac{-2}{n}cos(n\pi)=\frac{2}{n}(-1)^{n+1} $$</p>
+
+            <p>Debido a esto nuestra función nos queda representada en la serie de Fourier</p>
+
+            <p>$$f(x)= \sum_{n=1}^{\infty }\frac{2}{n}(-1)^{n+1}sen(nx) $$</p>
+
+
+        </div>
+    </div><br>
+
+    <p>Podemos convenir entonces que la paricidad de la serie está determinada por los coeficientes $a_n$ y $b_n$.</p>
+    <br>
+    <div class="doblecolumn">
+        <div>
+            <h2 style="text-align: center;">Odd function</h2><br>
+            <p>Encontramos que la serie es <b>impar</b> si los coeficientes $a_n$ son cero</p>
+            <p>$$a_n=0$$</p>
+        </div>
         
-        <img src="./img/contenido/metodosMatematicosII/ftrozos-fourier.png" style="width: 300px;"  alt="Diferentes liquidos en un recipiente" class="img-center" >
+        <div>
+            
+            <h2 style="text-align: center;">Even function</h2><br>
+            <p>Encontramos que la serie es <b>par</b> si los coeficientes $b_n$ son cero</p>
+            <p>$$b_n=0$$</p>
+            
+        </div>
+    </div><br>
 
-        <p>Observa que si cambiamos el dominio de la función, podemos definir una serie mucho más sencilla como se ve a continuación</p>
+    <h2>Cambiando el intervalo</h2><br>
+    <p>Convengamos en que de forma más general, para una función $f(x)$ cuyo período es $T$ su representación en serie de Fourier está dada por la expresión</p>
+
+    <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( \frac{n2\pi x}{T} \right ) + b_{n}sin\left ( \frac{n2\pi x}{T} \right )  \right ]$$</p>
+    <p>Si reescribimos con el factor $w_0=\frac{2\pi }{T}$ tenemos que</p>
+    <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( nw_0x \right ) + b_{n}sin\left (  nw_0x  \right )  \right ]$$</p>
+
+    <p>De esta manera los coeficientes $a_n$ y $b_n$ se definirán como</p>
+
+
+    <p>$$a_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) cos\left ( \frac{n2\pi x}{T} \right )dx$$</p>
+    <p>$$b_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) sin\left ( \frac{n2\pi x}{T} \right )dx$$</p>
+    <br>
+
+    <h2>Serie de Fourier compleja.</h2><br> 
+    <!-- https://www.tamps.cinvestav.mx/~wgomez/diapositivas/FIC/FIC-03.pdf -->
+    <!-- http://www.sc.ehu.es/sbweb/fisica3/ondas/fourier/fourier.html -->
+
+    <p>Un número complejo definido por la suma de un coeficiente real $a$ y una parte imaginaria $b$ está definido como $z=a+\mathbf{i}b$. Haciendo uso de la formula de Euler </p>
+
+    <p>$$e^{\pm \mathbf{i}x}=cosx \pm \mathbf{i} sinx$$</p>
+
+    <p>Podemos dar con las representaciones complejas del seno y del coseno, las cuales quedan como</p>
+
+    <p>$$cos(nx) = \frac{1}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right )$$</p>
+    <p>$$sin(nx) = \frac{1}{2\mathbf{i}}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )$$</p>
+
+    <p>Así, nuestra representación en serie de Fourier compleja de una función $f(x)$ está dada por </p>
+
+    <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ \frac{a_{n}}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right ) + \frac{b_{n}}{2\mathbf{i}}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )  \right ]$$</p>
+
+    <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ \frac{a_{n}}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right ) - \mathbf{i} \frac{b_{n}}{2}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )  \right ]$$</p>
+
+    <p>Reorganizando algebráicamente sus términos tenemos</p>
+
+    <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\frac{1}{2}\left [ \left (a_{n}-\mathbf{i}b_{n}  \right )e^{\mathbf{i}nx} + \left (a_{n}+\mathbf{i}b_{n}  \right )e^{-\mathbf{i}nx}  \right ]$$</p>
+
+    <p>$$f(x)=a_0+\sum_{n=1}^{\infty }\left [ c_{+n}e^{\mathbf{i}nx} + c_{-n}e^{-\mathbf{i}nx}  \right ] $$</p>
+
+    <p>Para unos valores de</p>
+
+    <p>$$a_{0}=c_{0}$$</p>
+    <p>$$c_{+n}=\frac{1}{2}\left (a_{n}-\mathbf{i}b_{n}  \right )$$</p>
+    <p>$$c_{-n}=\frac{1}{2}\left (a_{n}+\mathbf{i}b_{n}  \right )$$</p>
+
+    <p>De esta manera al separar y reaorganizar las sumas tendremos</p>
+    <p>$$ f(x)=c_{0}+\sum_{n=1}^{\infty }c_{n}e^{\mathbf{i}nx} + \sum_{n=1}^{\infty }c_{-n}e^{\mathbf{i}(-n)x} $$</p>
+    <p>$$ f(x)=c_{0}+\sum_{n=1}^{\infty }c_{n}e^{\mathbf{i}nx} + \sum_{n=-1}^{-\infty }c_{n}e^{\mathbf{i}nx} $$</p>
+
+    <p>Por los cual nos queda nuestra serie de Fourier de la forma</p>
+    <p class="ec-final">$$f(x)=\sum_{n=-\infty}^{\infty }c_{n}e^{\mathbf{i}nx}$$</p>
+    <p>Para cada valor de $c_n$ de la forma</p>
+
+    <p class="ec-final">$$c_n=\frac{1}{2\pi } \int_{0}^{2\pi}e^{-\mathbf{i}nx}f(x)dx$$</p>
+
+    De igual forma las expresiones para una función cuyo periodo es $T$ la expresión nos queda
+
+    <div class="doblecolumn">
+        <div>
+            <p class="ec-final">$$f(x)=\sum_{n=-\infty}^{\infty }c_{n}e^{\mathbf{i}\frac{n2\pi x}{T}}$$</p>
+        </div>
         
-        <p>$$f(x) = \left\{\begin{matrix}
-            x &  si & 0\leq x\leq \pi \\ 
-             x-2\pi &  si & -\pi\leq x\leq 0
-            \end{matrix}\right.$$</p>
-        <p>Para este caso podemos ver que los $a_n$ son cero, esto con claridad nos indica que la función es impar, y efectivamente lo es. Para calcular los $a_n$ en este nuevo rango debemos re definir el rango de sumatoria ahora entre $(-\pi,\pi)$</p>
+        <div>
+            <p class="ec-final">$$c_n=\frac{1}{T } \int_{-\frac{T}{2 }}^{\frac{T}{2 }}e^{-\mathbf{i}\frac{n2\pi x}{T}}f(x)dx$$</p>
+        </div>
+    </div><br><br>
 
-        <p>$$a_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x cos(nx)dx =0 $$</p>
+    <h2 id="Transformada-de-Fourier">Transformada de Fourier</h2><br>
 
-        <p>Ahora si calculamos las $b_n$ en el mismo intervalo tenemos que </p>
+    <p>LA transformada de Fourier es un tipo de transformación que me permite llevar a una función $f(t)$ al espacio de fourier $F(w)$, como un ejemplo particular, se habitúa llevar funciones en el espacio tel tiempo, para analizar su comportamiento en el espacio de las frecuencias, en donde algunas propiedades no tan evidentes en el espacio del tiempo no son quizás tan evidentes. En forma general la forma de una <b>transformada de Fourier</b> es</p>
 
-        <p>$$b_n= \frac{1}{\pi } \int_{-\pi}^{\pi } x sin(nx)dx =\frac{-2}{n}cos(n\pi)=\frac{2}{n}(-1)^{n+1} $$</p>
+    <p>$$F(\alpha )=\int_{a}^{b}f(t)k(\alpha ,t)dt$$</p>
 
-        <p>Debido a esto nuestra función nos queda representada en la serie de Fourier</p>
+    <p>En donde $k(\alpha ,t)$ es conocido como el <b>kernel</b> o núcleo de la transformación de Fourier. </p>
+    <br>
 
-        <p>$$f(x)= \sum_{n=1}^{\infty }\frac{2}{n}(-1)^{n+1}sen(nx) $$</p>
+    <h3>Propiedades de la Transformada de Fourier.</h3><br>
 
+    <p>La transoformada de Fourier goza de algunas propiedades como veremos a continuación.</p><br>
 
-    </div>
-</div><br>
+    <ol class="i-list">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
 
-<p>Podemos convenir entonces que la paricidad de la serie está determinada por los coeficientes $a_n$ y $b_n$.</p>
-<br>
-<div class="doblecolumn">
-    <div>
-        <h2 style="text-align: center;">Odd function</h2><br>
-        <p>Encontramos que la serie es <b>impar</b> si los coeficientes $a_n$ son cero</p>
-        <p>$$a_n=0$$</p>
-    </div>
-    
-    <div>
-        
-        <h2 style="text-align: center;">Even function</h2><br>
-        <p>Encontramos que la serie es <b>par</b> si los coeficientes $b_n$ son cero</p>
-        <p>$$b_n=0$$</p>
-        
-    </div>
-</div><br>
+    <p>De forma concreta la transformada de Fourier para el espacio de las frecuencias se escrbie como</p>
 
-<h2>Cambiando el intervalo</h2><br>
-<p>Convengamos en que de forma más general, para una función $f(x)$ cuyo período es $T$ su representación en serie de Fourier está dada por la expresión</p>
+    <p>$$F(w)=\frac{1}{\sqrt{2\pi} }\int_{-\infty }^{\infty }f(t)e^{\textbf{i}wt}dt$$</p>
 
-<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( \frac{n2\pi x}{T} \right ) + b_{n}sin\left ( \frac{n2\pi x}{T} \right )  \right ]$$</p>
-<p>Si reescribimos con el factor $w_0=\frac{2\pi }{T}$ tenemos que</p>
-<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( nw_0x \right ) + b_{n}sin\left (  nw_0x  \right )  \right ]$$</p>
-
-<p>De esta manera los coeficientes $a_n$ y $b_n$ se definirán como</p>
-
-
-<p>$$a_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) cos\left ( \frac{n2\pi x}{T} \right )dx$$</p>
-<p>$$b_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) sin\left ( \frac{n2\pi x}{T} \right )dx$$</p>
-<br>
-
-<h2>Serie de Fourier compleja.</h2><br> 
-<!-- https://www.tamps.cinvestav.mx/~wgomez/diapositivas/FIC/FIC-03.pdf -->
-<!-- http://www.sc.ehu.es/sbweb/fisica3/ondas/fourier/fourier.html -->
-
-<p>Un número complejo definido por la suma de un coeficiente real $a$ y una parte imaginaria $b$ está definido como $z=a+\mathbf{i}b$. Haciendo uso de la formula de Euler </p>
-
-<p>$$e^{\pm \mathbf{i}x}=cosx \pm \mathbf{i} sinx$$</p>
-
-<p>Podemos dar con las representaciones complejas del seno y del coseno, las cuales quedan como</p>
-
-<p>$$cos(nx) = \frac{1}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right )$$</p>
-<p>$$sin(nx) = \frac{1}{2\mathbf{i}}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )$$</p>
-
-<p>Así, nuestra representación en serie de Fourier compleja de una función $f(x)$ está dada por </p>
-
-<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ \frac{a_{n}}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right ) + \frac{b_{n}}{2\mathbf{i}}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )  \right ]$$</p>
-
-<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ \frac{a_{n}}{2}\left (  e^{\mathbf{i}nx}+e^{- \mathbf{i}nx} \right ) - \mathbf{i} \frac{b_{n}}{2}\left ( e^{\mathbf{i}nx}-e^{- \mathbf{i}nx} \right )  \right ]$$</p>
-
-<p>Reorganizando algebráicamente sus términos tenemos</p>
-
-<p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\frac{1}{2}\left [ \left (a_{n}-\mathbf{i}b_{n}  \right )e^{\mathbf{i}nx} + \left (a_{n}+\mathbf{i}b_{n}  \right )e^{-\mathbf{i}nx}  \right ]$$</p>
-
-<p>$$f(x)=a_0+\sum_{n=1}^{\infty }\left [ c_{+n}e^{\mathbf{i}nx} + c_{-n}e^{-\mathbf{i}nx}  \right ] $$</p>
-
-<p>Para unos valores de</p>
-
-<p>$$a_{0}=c_{0}$$</p>
-<p>$$c_{+n}=\frac{1}{2}\left (a_{n}-\mathbf{i}b_{n}  \right )$$</p>
-<p>$$c_{-n}=\frac{1}{2}\left (a_{n}+\mathbf{i}b_{n}  \right )$$</p>
-
-<p>De esta manera al separar y reaorganizar las sumas tendremos</p>
-<p>$$ f(x)=c_{0}+\sum_{n=1}^{\infty }c_{n}e^{\mathbf{i}nx} + \sum_{n=1}^{\infty }c_{-n}e^{\mathbf{i}(-n)x} $$</p>
-<p>$$ f(x)=c_{0}+\sum_{n=1}^{\infty }c_{n}e^{\mathbf{i}nx} + \sum_{n=-1}^{-\infty }c_{n}e^{\mathbf{i}nx} $$</p>
-
-<p>Por los cual nos queda nuestra serie de Fourier de la forma</p>
-<p class="ec-final">$$f(x)=\sum_{n=-\infty}^{\infty }c_{n}e^{\mathbf{i}nx}$$</p>
-<p>Para cada valor de $c_n$ de la forma</p>
-
-<p class="ec-final">$$c_n=\frac{1}{2\pi } \int_{0}^{2\pi}e^{-\mathbf{i}nx}f(x)dx$$</p>
-
-De igual forma las expresiones para una función cuyo periodo es $T$ la expresión nos queda
-
-<div class="doblecolumn">
-    <div>
-        <p class="ec-final">$$f(x)=\sum_{n=-\infty}^{\infty }c_{n}e^{\mathbf{i}\frac{n2\pi x}{T}}$$</p>
-    </div>
-    
-    <div>
-        <p class="ec-final">$$c_n=\frac{1}{T } \int_{-\frac{T}{2 }}^{\frac{T}{2 }}e^{-\mathbf{i}\frac{n2\pi x}{T}}f(x)dx$$</p>
-    </div>
-</div><br><br>
-
-<h2 id="Transformada-de-Fourier">Transformada de Fourier</h2><br>
-
-<p>LA transformada de Fourier es un tipo de transformación que me permite llevar a una función $f(t)$ al espacio de fourier $F(w)$, como un ejemplo particular, se habitúa llevar funciones en el espacio tel tiempo, para analizar su comportamiento en el espacio de las frecuencias, en donde algunas propiedades no tan evidentes en el espacio del tiempo no son quizás tan evidentes. En forma general la forma de una <b>transformada de Fourier</b> es</p>
-
-<p>$$F(\alpha )=\int_{a}^{b}f(t)k(\alpha ,t)dt$$</p>
-
-<p>En donde $k(\alpha ,t)$ es conocido como el <b>kernel</b> o núcleo de la transformación de Fourier. </p>
-<br>
-
-<h3>Propiedades de la Transformada de Fourier.</h3><br>
-
-<p>La transoformada de Fourier goza de algunas propiedades como veremos a continuación.</p><br>
-
-<ol class="i-list">
-    <li></li>
-    <li></li>
-    <li></li>
-</ol>
-
-<p>De forma concreta la transformada de Fourier para el espacio de las frecuencias se escrbie como</p>
-
-<p>$$F(w)=\frac{1}{\sqrt{2\pi} }\int_{-\infty }^{\infty }f(t)e^{\textbf{i}wt}dt$$</p>
+</body>
+</html>
