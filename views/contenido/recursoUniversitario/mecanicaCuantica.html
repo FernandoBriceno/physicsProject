@@ -1,372 +1,387 @@
-<h1>Mecánica cuántica Primitiva</h1>
-
-<br><br>
-<p>Para ver nacer a la mecánica cuántica fue necesario abandonar el arraigo a muchas ideas viejas sobre la concepción de la materia y la energía, a demás de cambiar principios bien establecidos para la la época. Hubo que convencerse de la existencia de un mundo microscópico, que planteaba una nueva realidad física para la estructura inerna de la materia, su estructura atómica; se debió dejarle a Newton solo el mundo macroscópico, pero dejarlo atrás en el mundo microscópico, pues la mecánica newtoniana no puede ser aplicada en el estudio del átomo; también la electrodinámica de Maxwel debió cuestionarse, para conocer la verdadera interacción entre los átomos y el campo de radiación; así como muchas otras reformulaciones establecidas por el modelo clásico.</p>
-<br>
-<h2>Radiación de cuerpo negro.</h2>
-<br>
-<p>Un cuerpo negro es un objeto absorve toda la radiación que recibe. Si se encuentra en equilibrio térmico y si se abre un pequeño orificio podrá su vez emitir por allí una radiación característica que depende de la temperatura de equilibrio del cuerpo negro. </p>
-<br>
-<img src="./img/contenido/mecanicaCuantica/cuerpoNegro.jpeg" style="width: 300px;"  alt="Cuerpo Negro." class="img-center">
-<br>
-
-<p>La potencia radiada de un cuerpo negro es proporcional a $T^4$, esto se supo gracias a que en 1897 el físico austriaco Josef Stefan, enontró experimentalmente la potencia total emitida por unidad de area para todas las frecuencias $u _A= \int _{0}^{\infty } u _f df = \sigma T^4$ <a href="#ref1" class="ref">(Serway, Moses, Moyer, 2005, p. 69)</a> donde $\sigma =5,67 \times  10^{-8}\frac{W}{m^2K^4}$ es la constante de Stefan-Boltzmann. Este hecho experimental fue confirmado solo cinco años después por el físico austriaco Ludwig E. Boltzman teóricamente, quien lo dedujo de la termodinámica y las ecuaciones de Maxwel, por lo que hoy es conocida como la ley de Stefan-Boltzmann. </p>
-
-<br>
-<h2>La catástrofe Ultravioleta</h2>
-<br>
-
-<div class="doblecolumn">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecánica Cuántica</title>
+    <meta name="description" content="Abordamos a la Mecánica Cuántica, desde su historia, estudiando la matemática y los aspectos conceptuales necesarios para entender el comportamiento de las partículas a nivel cuántico.">
+    <meta name="keywords" content="Mecáncia, Cuántica, física, fuerza, Newton, vector, cuerpo negro, radiación, ultravioleta, hamiltoniano, distribución, continua, discreta, partículas, probabilidad, ley, efecto fotoeléctrico, potencial, clásica, corriente, energía, voltaje, Einstein, paquetes, fotones, Compton, ondas, Broglie, ecuación, Schrödinger, tiempo, Serway, Cohen, neutrones">
+</head>
+<body>
     
-    <div style=" width: auto;">
-        <p>Un concepto importante en el nacimiento de la mecánica clásica fue el de la <b>densidad de energía espectral de radiación</b> o  densidad de energía por unidad de volumen por unidad de frecuencia de readiación, para la radiación contenidad dentro de un cuerpo negro, la cuál denominaremos como</p>
+    <h1>Mecánica cuántica</h1>
 
-        <p >$$\rho = \rho (\nu , T)$$</p>
-
-        <p>en donde $\nu$ es la frecuencia de las ondas de radiación contenidas en el cuerpo negro y $T$ es la temperatura de equilibrio del cuerpo negro. Cuando aplicamos el concepto de resonancia en la teoría undulatoria, podemos saber que hay un <b>numero de modos</b> de estas ondas que cumplen las condiciones de frontera de la cavidad, esto es $N=\frac{8\pi }{c^{3}}\nu ^{2}$. Ahora bien, si de alguna manera consiguieramos conocer la energía promedio de esta radiación contenida en la cavidad bastaría por multiplicarlo con el numero de modos para obtener nuestra densidad energética</p> 
-
-        <p>$$ \rho (\nu , T)=N\left \langle E \right \rangle$$</p>
-    </div>
-    <div style="margin: auto;">
-        <img src="./img/contenido/mecanicaCuantica/densidadEspectral.PNG" style="width: 350px;"  alt="Densidad de energía espectral." class="img-center">
-    </div>
-    
-</div>
-
-
-<p></p>
-
-
-<p>Nos queda por lo tanto la tarea de hallar el valor de la energía promedio del espectro contenido en el cuerpo negro a determinada temperatura. Una forma de abordar este problema es por medio de los grados de libertad y el <b>teoréma de equipartición</b>; para ello revisaremos la teoría electromagnética de Maxwel, en donde la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ representa la energía total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(Hayt, 1991, p.395-396)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
-<br>
-
-<p>Como vimos en el párrafo anterior, según la teoría electromagnética clásica, la energía de una onda se encuentra almacenada en los campos eléctricos y magnéticos por lo que podemos plantear un hamiltoniano de la forma</p> 
-        
-<p>$$H = \frac{ \epsilon E^2}{2}+\frac{  B^2}{\mu 2}$$</p>
-
-<p>De esta manera, la equipartición de la energía, también llamado <b>teorema de equipartición</b>  de la energía mecánica clásica, propone que al calcular la energía media de la onda $\left \langle E \right \rangle$, se adicionará $\frac{ 1}{2}\kappa T$ por cada grado de libertad<a href="#ref1" class="ref">(Serway, 2005, p. 343)</a>, donde $\kappa = 1,380649 \times 10^{-23} \: J/K$ es la <b>constante de Boltzmann</b>; en este caso, para la onda los grados de libertad son 2, uno para $E$ y otro para $B$, lo que es</p> 
-
-<p>$$\left \langle E \right \rangle = \frac{ 1}{2}\kappa T+\frac{ 1}{2}\kappa T = \kappa T$$</p>
-
-<p>De aquí se puede interpretar que "todos los osciladores deben tener la misma energía media en equilibrio, cualquiera que sea su frecuencia" <a href="#ref1" class="ref">(L. de la Peña, 2014, p. 3)</a>  y su valor será $\left \langle E \right \rangle = \kappa T$. Sin embargo esto no es aplicable a nuestro estudio de la densidad de energía por unidad de frecuencia, dicha aplicación nos llevará a la muy conocida <b>Catrástofe ultravioleta</b> como veremos acontinuación.</p> 
-<br>
-<p>De la física estadísitca podemos tomar el valor promedio de una variable $X$, para un arreglo de $m$ estados probables como $\left \langle X \right \rangle = \frac{\sum_{n=1}^{m} X_nP(X_n)}{\sum_{n=1}^{m} P(X_n)}$, para nuestro caso $X=E$, por lo que  $\left \langle E \right \rangle =\frac{\sum_{n=1}^{\infty } E_nP(E_n)}{\sum_{n=1}^{m} P(E_n)}$ y $m\rightarrow \infty $.</p><br>
-<div class="doblecolumn">
-    <div>
-        <h3>Distribución Continua</h3>
-        <br>
-        <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua y que los osciladores allí intercambian energía de forma contínua con la radiación de su entorno, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que en la expresión para la energía promedio, las sumatorias deberán ser intercambiadas por integrales</p>
-
-        <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
-        <br>
-
-        <p>Con lo cual hemos llegado al mismo resultado planteado por el teorema de Equipartición. Si aplicamos este valor medio en nuestra ecuación de densidad espectral obtenemos</p>
-
-        <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}} \nu^{2}  \kappa T $$</p>
-
-        <p>Este resultado es conocido como la <strong>Ley de Rayleigh-Jeans</strong>. Se puede ver claramente que el término cuadrádo de la frecuencia hace tender el resultado rápidamente al infinito y si comparamos con el resultado experimental vemos que da una buena aproximación para bajas frecuencias, pero un resultado erróneo para frecuencias mas grandes. A este resultado es al que s ele conoce como la <strong>Catástrofe ultravioleta</strong>.</p>
-        <br>
-
-        <img src="./img/contenido/mecanicaCuantica/densidadEnergiaClasica.PNG" style="width: 300px;"  alt="Densidad de energía clásica." class="img-center">
-        <br>
-
-        <p>La gráfica anterior, con valores arbitrarios, unicamente ilustrativos, nos muestra cómo la gráfica se ajusta muy bien para valores de frecuencia pepqueños, pero a medida que aumentan tiende hacia infinito, en la dirección creciente de las frecuencias encontramos el orden de la luz ultravioleta que se presenta al rededor de $10^{15}Hz$ a $10^{17} Hz$ aproximadamente, por eso el nombre de "Catástrofe ultravioleta".</p><br>
-    </div>
-
-    <div>
-        <h3>Distribución Discreta</h3>
-        <br>
-        <p>El gran acierto de <b>Max Planck</b> fue pensar en que los osciladores intercambiaban energía con el medio en pequeños paquetes y no de forma continua, estos paquetes debían ser un número entero de una energía fundamental $E_1=h \nu$, proporcional a la frecuencia del oscilador,  de forma que $E_n=nE_1=nh \nu$  con $n=1,2,3,...$. Para esto se valió de la <b>distribución de probabilidad de Boltzman</b> $P(E_n)=P_1e ^{-(E_n-E_1)/\kappa T}$, con $P_1$ como la probabilidad de encontrar al oscilador en su estado fundamental . De esta manera obtubo la expresión para la energía media como</p>
-
-        <p>$$\left \langle E \right \rangle = \frac{ \sum_{n=1}^{\infty }E_n e ^{-E_n/\kappa T}}{\sum_{n=1}^{\infty } e ^{-E_n/\kappa T}}$$ </p>
-   
-        <p>$$\left \langle E \right \rangle =  \frac{ \sum_{n=1}^{\infty } nh\nu  e^{-nh \nu / \kappa T}}{\sum_{n=1}^{\infty } e^{-nh \nu / \kappa T}}$$</p>
-
-        <p>$$\left \langle E \right \rangle =  \frac{ h\nu}{e^{h \nu / \kappa T}-1}$$</p>
-        <br>
-
-        <p>Esta expresion, al ser introducida en la densidad de de energía de radiación tenemos</p>
-
-        <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}}\frac{ h\nu^{3}}{e^{h \nu / \kappa T}-1}$$</p>
-
-        <p>Este resultado proporciona de forma inmediata una función que se ajusta muy bien a los valores experimentales. </p>
-        <br>
-        <img src="./img/contenido/mecanicaCuantica/densidadEnergia.PNG" style="width: 300px;"  alt="Densidad de energía cuántica." class="img-center">
-        <br>
-
-        <p>Ahora solo hacía falta ajustar de forma manual el valor de la constante $h$, la cual conocemos ahora como la <b>constante de Planck</b> y tiene un valor experimental de $h=6,626 \times 10^{-34} J.s$. </p>
-        <br>
-        <p>Observe que la constante de Planck tiene unidades de $J.s$, esto en mecánica clásica son unidades de acción $\boldsymbol{S}=\int \mathscr{L}(q_1,q_2,...,q_N;t) \:  dt  $, de aquí se puede sacar una conclusión importante y es que podemos conocer cuándo en un sistema los fenómenos cuánticos llegan a ser apreciables, o cuándo estamos hablando de un sistema cuántico y no clásico; esto es cuando la acción que representa al sistema es proporcional en ordenes de magnitud al valor de la constante de Planck.</p>
-        
-    </div>    
-</div>
-<br><br>
-
-<h2>El efecto fotoeléctrico</h2>
-
-<br>
-
-<h3 >Heinrich Hertz y los fotoelectrones</h2><br>
-<p>En el año 1887, el fisico alemán Heinrich Rudolf Hertz intentó con éxito demostrar los resultados de la teoría de Máxwel de la luz, este había planteado que al haber una dependencia mutua entre los campos eléctricos y magnéticos, es decir, bajo ciertas condicione sun campo eléctrico puede inducir un campo magnético y bisceversa, esto daría origen a una onda electromagnética que se propagaría por el espacio a una velocidad igual a $c=299\; 792\; 458\; m/s$. </p>
-
-<br>
-
-<div class="doblecolumn">
-    
-    <div style=" width: auto;">
-        <p>Para esto Hertz construyó un generador de ondas electromagnéticas que consistía en un arreglo de dos varillas en cuyos extremos externos poseían unas esféras metálicas que servían como capacitores para concentrar la carga, y en sus extremos internos unas esferas pequeñas, cercanas entre sí desde las cuales saltarían las cargas eléctricas de un lado al otro. Conectó a este circuito una bobina de Ruhmkorff, la cual se encargaba de generar un voltaje muy alto suficiente para estos saltos, una vez se acumlara la suficienta carga en los condensadores los electrónes saltarían de un extremo al otro, esto generaría en la región del salto un campo eléctrico variable, el cual a su vez induciría un campo magnético igualmente variable, estas perturvaciónes se propagarían a través del espacio como una onda electromagnética. Para poder detectar estas ondas diseñó diferentes detectores, que en esencia era un montaje similar al emisor, uno de ellos consistía en un aro de un material conductor con una ligera separación en sus terminales. Cuando la onda alcanzaba el receptor, inducía una corriente igualmente alterna que saltaba entre las terminales.</p>
-    </div>
-    <div style="margin: auto;">
-        <img src="./img/contenido/mecanicaCuantica/hertz.jpg" style="width: 350px;"  alt="potencial de frenado Lenard." class="img-center"><a href="#ref7" class="ref">(C. López,2016)</a>
-    </div>
-    
-</div>
-<br>
-
-<p>Hertz apartir de entonces diseño diversos experimentos que le permitieron mostrar distintas propiedades de la luz, como su frecuancia a tra véz del calculo de la oscilación de la corriente en el circuito, la difracción a travéz de rendijas, la reflexión, logró crear ondas estacionarias entre cavidades que le permitieron a su vez medir la longitud de las distintas ondas que generaba, distintas ondas. Una vez conocida la longitud y la frecuencia de las ondas, logró comprobar experimentalmente la velocidad de la luz mediante el cálculo de $c= \nu  \lambda $.</p>
-<br>
-<p>Fue una observación en particular en medio de sus experimentos la que desembocó en grandes aportes para la mecánica cuántica. Hertz se dio cuenta que cuando luz ultravioleta era dirigida a la superficie metálica del receptor, aumentaba la sensibilidad de este al momento de detectar las ondas recibidas; más adelante adelante estudió este fenómeno más a detalle, observando que se producía cierto voltaje en una placa metálica sobre la cual se incidía luz ultravioleta. Fue <b>J. J. Thompson</b> quien dedujo que de alguna manera la luz que incidía sobre el metal permitía que más cargas estuvieran disponibles al momento de recibir la onda producida por el emisor, y esto lo hacía porque la luz incidente lograba arrancar electrones del metal, en 1899 logró demostrar esto, encontrando la razon entre carga y masa del electrón $\frac{e}{m_e}$ mediante el tubo de rayos catódicos.</p>
-
-<br>
-
-<h3 >Philip Lenard y el potencial de frenado</h2><br>
-
-
-<br>
-
-<div class="doblecolumn">
-    
-    <div style=" width: auto;">
-        <p>El fisico hungaro, Philipp Eduard Anton von Lenard, galardonado en 1905 con el premio Nobel por sus estudios sobre los rayos catódicos, en el año 1902, estudiando el efecto fotoeléctrico, descubrió dos propiedades importantes de estos rayos. El experimento consistía en que en el interior de un tubo de vacío se colocaban dos plácas metálicas, un coleector y un emisor, ambas sometidas a una diferencia de potencial ajustable. Cuando se hacía incidir luz sobre el emisor aparecían una especie de rayos entre ambas placas, estos eran en realidad electrones que se desprendían de los átomos en la placa del emisor y saltaban al receptor. Al aplicar cierto potencial negativo entre las placas lograba evitar que los electrones alcanzaran el emisor, a este potencial se le llamó <b>potencial de frenado</b>. No todos los electrones salen con la misma energía de la pláca, aquellos con energía cinética más alta logran llegar más lejos a pesar del voltaje de frenado, por ello son los últimos electrones en ser frenados cuando se aplica este potencial, la energía cinética que poseen estos electrones más positivos se la energía cinética máxima $K_{máx}$ en donde </p>
-        <p>$$K_{máx}=\frac{1}{2}mv_{máx}^2=eV_{s}$$  <a href="#ref2" class="ref">(Serway, 2005, p. 82)</a></p>
-    </div>
-    <div style="margin: auto;">
-        <img src="./img/contenido/mecanicaCuantica/lenard.PNG" style="width: 200px;"  alt="generador de ondas electromagnéticas." class="img-center"><a href="#ref2" class="ref">(Serway, 2005, p. 82)</a>
-    </div>
-    
-</div>
-
-<div class="doblecolumn">
-    <div>
-        <h3>Interpretación clásica</h3>
-        <br>
-        <p>Entonces lo que se pensaba era que los electrones absorvían energía de la luz de forma contínua, pues tenían arraigado el pensamiento clásico de la termódinamica en donde observaban el calor como un intercambio contínuo de energía. Ellos pensaban que al ser esta absorción de la energía contínua los electrones irían acumulando energía, hasta que fuera suficiente para que se pudieran desprender del átomo. Debidoa esto esperaban que pasara un intervalo de tiempo desde que se aplicaba la luz hasta que acumularan la energía suficiente.</p> 
-        <p>$$\Delta t\neq 0$$</p>
-        <p>También se esperaría desde el punto de vista clásico que la intensidad de la luz incidente diera diferentes valores para el potencial de frenado</p>
-
-
-        <br>
-        <img src="./img/contenido/mecanicaCuantica/frenadoClasico.png" style="width: 300px;"  alt="voltaje de frenado frenadoClasico." class="img-center">
-        <br>
-    </div>
-
-    <div>
-        <h3>Realidad cuántica</h3>
-        <br>
-        <p>Sin embargo los experimentos mostraban lo contrario. En primer lugar no hacía falta esperar a que los electrones acumularan suficiente energía para realizar este desprendimiento, de hecho por mucho tiempo que esperasen jamás verían al electrón salir, pues el electrón solo podría desprenderse si recibía una energía mínima en un solo paquete, y no podía acumular pequeñas porciones de dicha energía para salir. Por otro lado, una vez que recibía la cantidad de energía justa se desprendía casi de inmediato</p>
-        <p>$$\Delta t=0 $$ (aproximadamente$10^{-9}s$ pero no tiene que ver con la acumulacion de energía)</p>
-        <p>Esto hacía que solo algunas frecuencias, solo las que eran capaces de aportar esa cantidad de energía por cada fotón eran capaces de desprender el electrón.</p>
-        
-
-
-        <br>
-        <img src="./img/contenido/mecanicaCuantica/frenadoCuantico.png" style="width: 300px;"  alt="voltaje de frenado." class="img-center">
-        <br>
-        <p>Por otro lado los experimentos mostraban que el voltaje de frenado era igual para cualquier intensidad de la luz incidente, por lo que $K_{máx}$ era independiente de la intensidad. Sin embargo sí se encontró una relación entre y la frecuencia de la luz incidente</p>
-        <br>
-        
-    </div>    
-</div>
-<br>
-<p>Los experimentos mostraron una serie de conclusiones para el efecto foto eléctrico bastánte contradictorias a lo esperado, estas conclusiones fueron</p>
-<br>
-<div class="listas">
-    <ul>
-        <li>La energía máxima de los electrones $K_{máx}$ no depende de la intensidad de la luz que incide</li>
-        <li>La energía máxima $K_{máx}$ tiene una relación directa con la frecuencia $\nu$ de la luz incidente</li>
-        <li>El número de electrones liberados o fotocorriente depende de la intesnidad de la luz</li>
-        <li>Para cada material hay una frecuencia mínima por debajo de la cuál no hay efecto fotoeléctrico.</li>
-    </ul>
-
-</div>
-
-<img src="./img/contenido/mecanicaCuantica/frenadoFrecuecnia.png" style="width: 250px;"  alt="frecuencia de frenado." class="img-center">
-<p>Uno de los resultados más importantes es que el voltaje de frenado era proporcional a la frecuencia de la luz incidente, ya que esto ofreció una nueva comprobación de la constante de Planck mediante un método diferente, como veremos más adelante con el aporte de einstein, la razón entre $V_s$ y $\nu$ era $h/e$.</p>
-<br>
-
-<h2>Einstein y la explicación del efecto fotoeléctrico</h2>
-<br>
-
-<p>En 1905 el físico aleman de origen judío <b>Albert Einstein</b>, propuso una explicación novedosa al efecto foto eléctrico. Esto lo consigió basádo en sus vastos estudios sobre el comportamiento estadístico de la luz y la interpretacción de los resultados de Planck. einstein dedujo  que la energía contenida en el campo de radiación del cuerpo negro, estaba compuesta por paquetes de energía que pueden ser absorvidas o emitidas por los átomos, en 1926 a estos <b>paquetes de energía</b> serían llamados <b>fotones</b> por el físico-quimico Gilbert N. Lewis.</p><br>
-
-<p>Lo anterior permitía concluir que cuando la luz incidía sobre las placas metálicas en el efecto fotoeléctrico, cáda átomo en la placa podía absorver la energía de un solo fotón, siempre y cuando esta energía fuera igual o mayor a la energía mínima necesaria para desprenderse del entrampamiento del núcleo. A esta energía mínima se le denominó <b>función trabajo</b> $\phi$, ya que para liberarse el electrón debía realizar un trabajo. Si recibía energía mayor a este trabajo, tendría un sobrante de energía que le permitiría adquirir una energía cinética. De aquí que la $K_{máx}$ era la diferencia de energía aportada por el fotón $h\nu $ y  el trabajo que realizaba al desprenderse, es así como</p>
-
-<p>$$K_{máx}=h\nu - \phi $$</p>
-
-
-
-<div class="doblecolumn">
-    
-    <div style=" width: auto;">
-        <p>Esta función trabajo es carácterística de cada metal, y es también la energía para arrancar los electrones de las capas más externas, pero algunas veces puede aportarse también la energía suficiente para desprender electrones de capas inferiores de los átomos. La ecuación anterior permite evidenciar también que existe una frecuencia mínima por debajo de la cuál no se genera efecto fotoeléctrico, esta frecuecia es</p>
-        <p>$$\nu_0 = \frac{\phi }{h}$$</p>
-        <p>Es aquí donde pudo comprobarse, como mencionamos hace poco, la constante de Planck por un método experimental totalmente independiente al usado por Planck, como $K_{máx}=eV_s $ entonces</p>
-
-        <p>$$V_s= \left (\frac{h }{e}  \right )\nu - \frac{\phi }{e}$$</p>
-        <p>Note que $h/e$ es la pendiente de las rectas resultado de medir el voltaje de frenado para diferentes frecuencias incidentes sobre el material. Esto constituyó una nueva comprobación empírtica para el valor de la <b>constante de Planck</b></p>
-    </div>
-    <div style="margin: auto;">
-        <img src="./img/contenido/mecanicaCuantica/trabajoMetal.png" style="width: 250px;"  alt="Funcion trabajo para diferentes metales." class="img-center" ><p>Voltaje de frenado vs frecuencias para diferentes metales</p>
-    </div>
-    
-</div>
-<br>
-
-<h2 id="efectocompton">Efecto Compton</h2><br>
-<p>Einstein también planteó una innovadora visión sobre la luz, derivada de la relatividad, quien plantea la relación</p>
-<p>$$E^2=p^2c^2+(m_0c^2)^2$$</p>
-<p>de manera que aunque los fotones fueran partículas sin masa, sí podrían tener un momento asociado, ya que de la ecuación anterior permanecería la parte $p^2c^2$ del lado derecho, es decir $E_{foton}=pc$, como ya sabemos que $E=h\nu$ entonces, despejando nos queda</p>
-<p>$$p=\frac{h\nu}{c}= \frac{h}{\lambda}$$</p>
-<p>Esto abrió paso a la posibilidad de que los fotones puedan interactuar con partículas con masa como el electrón y les transfieran una parte de su momento. </p><br>
-<p>Una confirmación a este hecho se dio por el físico estadounidense  <b>Arthur Holly Compton</b> en el año 1922, al medir la <b>dispersión de rayos X</b> cuando incidían sobre electrones</p>
-
-<img src="./img/contenido/mecanicaCuantica/compton.PNG" style="width: 400px;"  alt="generador de ondas electromagnéticas." class="img-center"><a href="#ref2" class="ref">(Serway, 2005, p. 90)</a>
-<br>
-<br>
-<p>Compton pudo determinar que luego de la interacción entre los fotones y los electrones la energía de la luz era menor, por lo tanto $\lambda$ sería diferente después de la colisión, y que esta diferencia en la longitud de onda dependía únicamente del ángulo de dispersión del fotón $\theta$ de la forma</p>
-<p>$$\lambda ' - \lambda = \frac{h}{m_e c}(1-cos\theta)$$ <a href="#ref2" class="ref">(Serway, 2005, p. 90)</a></p>
-<p>De aquí también se obtiene que el factor $\frac{h}{m_e c}$ es la <b>longitud de onda de Compton del electrón</b> cuyo valor es</p>
-<p>$$\frac{h}{m_e c}= 0.0243 \overset{\circ }{A}$$ <a href="#ref2" class="ref">(Serway, 2005, p. 91)</a></p>
-<br>
-
-<h2 id="ondasdemateriadebroglie">Ondas de materia de Broglie</h2><br>
-
-<p>En el año 1923 el físico francés <b>Luis de Broglie</b> lanzó  una muy imaginativo y acertado postulado. El dedujo que así como los fotones podrían tener a su vez comportamiento ondulatorio y corpuscular, también las partículas de materia habitual podrían tener un comportamiento ondulatorio. Por tanto cada electrón debía estar acompañado de una onda piloto que conducía al electrón a través del espacio</p><br>
-
-<table>
-    <tbody>
-        <tr>
-            <th><h3>Planck</h3></th>
-            <th><h3>de Broglie</h3></th>
-        </tr>
-        <tr>
-            <td><b>Ondas:</b> Comportamiendo Corpuscular</td>
-            <td> <b>Partículas:</b> Comportamiendo Ondulatorio</td>
-        </tr>
-        <tr>
-            <td>poseen $\nu , \lambda$</td>
-            <td>poseen $E$, $p$</td>
-        </tr>
-        <tr>
-            <td>Pueden tener también: <br>$E=h\nu$, $p=\frac{h}{\lambda }$</td>
-            <td>Pueden tener también: <br> $\nu =\frac{E}{h}$ , $\lambda  =\frac{h}{p}$</td>
-        </tr>
-    </tbody>
-</table><br>
-
-
-
-<h2 id="ecuacion-independiente-tiempo">La ecuación de Schrödinger independiente del tiempo</h2><br>
-
-<p>La ecuación de Schrödinger, es una ecuación propuesta a priori como lo fue en su momento la segunda ley de Newton. Se presenta como un conjunto de soluciones conocidos como los <b>estados estacionarios</b>, que tienen una gran importancia ya que pueden ser tomados como bases para resolver el problema de forma general, por lo que <b>cualquier estado puede ser representado como una combinación lineal de los estados estacionarios</b>. dicho de otro modo, para mi ecuación general dependiente del tiempo</p>
-
-<p>$$i \hbar \frac{\partial \Psi (\vec{r},t)}{\partial t}=\frac{\hbar^{2}}{2m}\overrightarrow{\bigtriangledown}\Psi (\vec{r},t)+V (\vec{r})\Psi (\vec{r},t)$$</p>
-
-<p>De manera que si el potencial lo podemos escrbir como $V(\vec{r},t) \equiv V(\vec{r})$ independiente del tiempo, entonces podemos escribir su solución en terminos de una parte que es dependiente del tiempo y otra que no lo es, tal que</p>
-
-<p>$$\Psi (\vec{r},t)= e^{-iEt/k}\phi_E(\vec{r})$$</p>
-
-<p>Lo anterior es una forma funcional de un estado estacionario</p>
-
-
-
-
-<h2 id="algunosejercicios">Algunos ejercicios</h2><br>
-
-<h3 id="choencaptulo1ejercicio1">Cohen. Capítulo 1. Ejercicio #1</h3><br>
-
-<div class="problema">
-    
-        
-        <div class="problem">
-            <p>A beam of neutrons of mass  $M_{n}$ ($M_{n}\simeq 1.67 \times 10^{-27}kg$ ), of constant velocity and energy , is incident on a linear chain of atomic nuclei, arranged in a regular fashion as shown in the figure (these nuclei could be, for example, those of a long linear molecule). We call  $l$ the distance between two consecutive nuclei, and $d$, their size ($d\ll l$). A neutron detector $D$ is placed far away, in a direction which makes an angle of $\theta$ with the direction of the incident neutrons. </p><br>
-
-            <img src="./img/contenido/mecanicaCuantica/cohen1_1.PNG" style="width: 200px;"  alt="a beam of neutrons is incident on a chain of atomic nuclei," class="img-center"><a href="#ref4" class="ref">(Cohen, 2009, p. 83)</a>
-            <br>
-
-            <ol class="abc-list">
-                <li>Describe qualitatively the phenomena observed at $D$ when the energy $E$ of the incident neutrons is varied</li>
-                <li>The counting rate, as a function of $E$, presents a resonance about $E=E_1$. .
-                    Knowing that there are no other resonances for $E&lt;E_1$, , show that one can determine $l$. Calculate $l$ for $\theta=30^{\circ}$ and $E_1= 13 \times 10^{-20} joule$.</li>
-                <li>At about what value of $E$ must we begin to take the finite size of the nuclei into account?</li>
-            </ol>
-            <p style="text-align:right ;"><a href="#ref4" class="ref">(Cohen, 2009, p. 83)</a></p>
-
-
-        </div>
-            
-        <div >
-            <br>
-            <p>Un haz de neutrones de masa $M_{n}$ ($M_{n}\simeq 1.67 \times 10^{-27}kg$ ), con velocidad constante y energía $E$, incide en una cadena lineal de núcleos atómicos, ordenados en una forma regular como se muestra en la figura (estos núcleos podrían ser por ejemplo, los de una molécula lineal larga. Llamamos $l$ a la distancia entre dos núcleos consecutivos, y $d$, su tamaño ($d\ll l$). Un detector de neutrones $D$ se ubica lejos, en una dirección que forma un ángulo de $\theta$ con la dirección de los neutrones incidentes.</p><br>
-
-            <img src="./img/contenido/mecanicaCuantica/cohen1_1.PNG" style="width: 300px;"  alt="a beam of neutrons is incident on a chain of atomic nuclei," class="img-center"><a href="#ref4" class="ref">(Cohen, 2009, p. 83)</a>
-            <br>
-
-            <ol class="abc-list">
-                <li>Describa cualitativamente el fenómeno observado en D cuando la energía $E$ de los neutrones incidentes varia.</li>
-                <li>La tasa de conteo, como una función de E, presenta una resonancia sobre $E=E_1$. Sabiendo que no hay otras resonancias para $E&lt;E_1$, muestre que se puede determinar $l$. Calcule $l$ para $\theta=30^{\circ}$ y $E_1= 13 \times 10^{-20} Julios$</li>
-                <li>¿Aproximadamente a qué valor de $E$ debemos comenzar a tomar en cuenta el tamaño finito de los núcleos.</li>
-            </ol>
-
-        </div>
-        <br>
-        <h3>Solución.</h3><br>
-        <div class="solucion">
-            
-            <p><b>a.</b>    Lo primero que podemos tener en cuenta es que se podrá observar un fenómeno de difracción solo cuando la longitud de onda de broglie de los neutrones es del mismo orden de magnitud de la distancia entre los átomos $l$. Si los neutrones poseen baja energía, como para considerarse partículas no relativistas entonces $E= \frac{p^2}{2m} = \frac{(h/\lambda )^2}{2m}$ con lo que la longitud de onda de Broglie de los neutrones se relaciona de forma inversa con la raiz cuadrada de la energía $\lambda= \frac{h}{\sqrt{2mE}}$. Por tanto lo que podríamos esperar para energías muy pequeñas los neutrones se comportarán como partículas por lo que el detector en $D$ va a detectar un comportamiento no ondulatorio, con picos máximos de detección centrados en el centro de los espacios interatómicos. Cuando se alcanzan energías que hacen comparable $\lambda$ con $l$ se comienza a observar un patrón de interferencia en donde  el ángulo de apertura de los picos máximos decrecerá a medida que aumente la energía.</p>
-
-        </div>
-
-    
-</div>
-
-
-
-
-
-
-
-
-<!--120,331-->
-
-<br><br><br>
-<div class="bibliografia">
-    <h2>Referencias</h2>
+    <br><br>
+    <p>Para ver nacer a la mecánica cuántica fue necesario abandonar el arraigo a muchas ideas viejas sobre la concepción de la materia y la energía, a demás de cambiar principios bien establecidos para la la época. Hubo que convencerse de la existencia de un mundo microscópico, que planteaba una nueva realidad física para la estructura inerna de la materia, su estructura atómica; se debió dejarle a Newton solo el mundo macroscópico, pero dejarlo atrás en el mundo microscópico, pues la mecánica newtoniana no puede ser aplicada en el estudio del átomo; también la electrodinámica de Maxwel debió cuestionarse, para conocer la verdadera interacción entre los átomos y el campo de radiación; así como muchas otras reformulaciones establecidas por el modelo clásico.</p>
     <br>
-    <ul>
-        <li id="ref1"><a href="#">H. Hayt (1991), <span style="font-style: italic;">Teoría electromagnética</span> . 2nd Edicion en español, McGraw-Hill, México.</a></li>
-        <br>
-        <li id="ref2"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">A. Serway, J.Moses, A. Moyer (2005) <span style="font-style: italic;">Modern Physics</span>, Third Edition.</a></li>
-        <br>
-        <li id="ref3"><a href="#">F. Reif, <span style="font-style: italic;">Fundamentos de física estadistica y térmica</span>. Ed. del Castillo, S.A, Madrid; 1968.</a></li>
-        <br>
-        <li id="ref4"><a href="https://libgen.rocks/ads.php?md5=BA60B76C22DEF1AE734B55470AA20453">C. Cohen-Tannoudji, B. Diu , F. Laloë, <span style="font-style: italic;">Quantum Mechanics Volume 1</span>, 2nd Edition, Wiley; 2019</a></li>
-        <br>
-        <li id="ref5"><a href="#">K. Cheng, <span style="font-style: italic;">Fundamentos de electromagnetismo para ingeniería</span>. Ed. Addison W. Iberoamericana de México; 1998</a></li>
-        <br>
-        <li id="ref6"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">L. de la Peña (2014) <span style="font-style: italic;">Introducción a la mecánica cuántica</span>, 3nd Edición, UNAM, México</a></li>
-        <br>
-        <li id="ref7"><a href="https://culturacientifica.com/2016/08/09/la-primera-confirmacion-experimental-la-teoria-maxwell/">C. López(2016) <span style="font-style: italic;">La primera confirmación experimental de la teoría de Maxwell</span>, Tomado de https://culturacientifica.com/2016/08/09/la-primera-confirmacion-experimental-la-teoria-maxwell/ , el 16 de octubre de 2022.</a></li>
-        <br>
-    
-        
+    <h2>Radiación de cuerpo negro.</h2>
+    <br>
+    <p>Un cuerpo negro es un objeto absorve toda la radiación que recibe. Si se encuentra en equilibrio térmico y si se abre un pequeño orificio podrá su vez emitir por allí una radiación característica que depende de la temperatura de equilibrio del cuerpo negro. </p>
+    <br>
+    <img src="./img/contenido/mecanicaCuantica/cuerpoNegro.jpeg" style="width: 300px;"  alt="Radiación del cuerpo Negro." class="img-center">
+    <br>
 
+    <p>La potencia radiada de un cuerpo negro es proporcional a $T^4$, esto se supo gracias a que en 1897 el físico austriaco Josef Stefan, enontró experimentalmente la potencia total emitida por unidad de area para todas las frecuencias $u _A= \int _{0}^{\infty } u _f df = \sigma T^4$ <a href="#ref1" class="ref">(Serway, Moses, Moyer, 2005, p. 69)</a> donde $\sigma =5,67 \times  10^{-8}\frac{W}{m^2K^4}$ es la constante de Stefan-Boltzmann. Este hecho experimental fue confirmado solo cinco años después por el físico austriaco Ludwig E. Boltzman teóricamente, quien lo dedujo de la termodinámica y las ecuaciones de Maxwel, por lo que hoy es conocida como la ley de Stefan-Boltzmann. </p>
+
+    <br>
+    <h2>La catástrofe Ultravioleta</h2>
+    <br>
+
+    <div class="doblecolumn">
+        
+        <div style=" width: auto;">
+            <p>Un concepto importante en el nacimiento de la mecánica clásica fue el de la <b>densidad de energía espectral de radiación</b> o  densidad de energía por unidad de volumen por unidad de frecuencia de readiación, para la radiación contenidad dentro de un cuerpo negro, la cuál denominaremos como</p>
+
+            <p >$$\rho = \rho (\nu , T)$$</p>
+
+            <p>en donde $\nu$ es la frecuencia de las ondas de radiación contenidas en el cuerpo negro y $T$ es la temperatura de equilibrio del cuerpo negro. Cuando aplicamos el concepto de resonancia en la teoría undulatoria, podemos saber que hay un <b>numero de modos</b> de estas ondas que cumplen las condiciones de frontera de la cavidad, esto es $N=\frac{8\pi }{c^{3}}\nu ^{2}$. Ahora bien, si de alguna manera consiguieramos conocer la energía promedio de esta radiación contenida en la cavidad bastaría por multiplicarlo con el numero de modos para obtener nuestra densidad energética</p> 
+
+            <p>$$ \rho (\nu , T)=N\left \langle E \right \rangle$$</p>
+        </div>
+        <div style="margin: auto;">
+            <img src="./img/contenido/mecanicaCuantica/densidadEspectral.PNG" style="width: 350px;"  alt="Densidad de energía espectral." class="img-center">
+        </div>
+        
+    </div>
+
+
+    <p></p>
+
+
+    <p>Nos queda por lo tanto la tarea de hallar el valor de la energía promedio del espectro contenido en el cuerpo negro a determinada temperatura. Una forma de abordar este problema es por medio de los grados de libertad y el <b>teoréma de equipartición</b>; para ello revisaremos la teoría electromagnética de Maxwel, en donde la expresión $\int _{vol} (\frac{\epsilon E^2}{2}+\frac{\mu  H^2}{2})dv$ representa la energía total almacenada en los campos magnéticos y eléctricos <a href="#ref1" class="ref">(Hayt, 1991, p.395-396)</a>, sabemos que $B=\mu H$ entonces $U = \int _{vol} (\frac{\epsilon E^2}{2}+\frac{  B^2}{\mu2})dv$  de esta manera obtenemos una expresión para la energía almacenada por unidad de volumen $\frac{dU}{dv}= u = \frac{\epsilon E^2}{2}+\frac{  B^2}{\mu 2}$. Podemos ver así, que la energía de una onda puede ser proporcional a la intensidad del campo eléctrico y magnético.  </p>
+    <br>
+
+    <p>Como vimos en el párrafo anterior, según la teoría electromagnética clásica, la energía de una onda se encuentra almacenada en los campos eléctricos y magnéticos por lo que podemos plantear un hamiltoniano de la forma</p> 
+            
+    <p>$$H = \frac{ \epsilon E^2}{2}+\frac{  B^2}{\mu 2}$$</p>
+
+    <p>De esta manera, la equipartición de la energía, también llamado <b>teorema de equipartición</b>  de la energía mecánica clásica, propone que al calcular la energía media de la onda $\left \langle E \right \rangle$, se adicionará $\frac{ 1}{2}\kappa T$ por cada grado de libertad<a href="#ref1" class="ref">(Serway, 2005, p. 343)</a>, donde $\kappa = 1,380649 \times 10^{-23} \: J/K$ es la <b>constante de Boltzmann</b>; en este caso, para la onda los grados de libertad son 2, uno para $E$ y otro para $B$, lo que es</p> 
+
+    <p>$$\left \langle E \right \rangle = \frac{ 1}{2}\kappa T+\frac{ 1}{2}\kappa T = \kappa T$$</p>
+
+    <p>De aquí se puede interpretar que "todos los osciladores deben tener la misma energía media en equilibrio, cualquiera que sea su frecuencia" <a href="#ref1" class="ref">(L. de la Peña, 2014, p. 3)</a>  y su valor será $\left \langle E \right \rangle = \kappa T$. Sin embargo esto no es aplicable a nuestro estudio de la densidad de energía por unidad de frecuencia, dicha aplicación nos llevará a la muy conocida <b>Catrástofe ultravioleta</b> como veremos acontinuación.</p> 
+    <br>
+    <p>De la física estadísitca podemos tomar el valor promedio de una variable $X$, para un arreglo de $m$ estados probables como $\left \langle X \right \rangle = \frac{\sum_{n=1}^{m} X_nP(X_n)}{\sum_{n=1}^{m} P(X_n)}$, para nuestro caso $X=E$, por lo que  $\left \langle E \right \rangle =\frac{\sum_{n=1}^{\infty } E_nP(E_n)}{\sum_{n=1}^{m} P(E_n)}$ y $m\rightarrow \infty $.</p><br>
+    <div class="doblecolumn">
+        <div>
+            <h3>Distribución Continua</h3>
+            <br>
+            <p>Pensemos por un momento en que la energía contenida en la cavidad resonante es contínua y que los osciladores allí intercambian energía de forma contínua con la radiación de su entorno, esto nos lleva a proponer una distribución de probabilidad contínua, por lo que en la expresión para la energía promedio, las sumatorias deberán ser intercambiadas por integrales</p>
+
+            <p>$$\left \langle E \right \rangle = \frac{\int_{0}^{\infty }E e ^{-E/\kappa T}dE}{\int_{0}^{\infty }e ^{-E/\kappa T}dE}=\kappa T$$ <a href="#ref1" class="ref">(Serway,2005, p. 78)</a></p>
+            <br>
+
+            <p>Con lo cual hemos llegado al mismo resultado planteado por el teorema de Equipartición. Si aplicamos este valor medio en nuestra ecuación de densidad espectral obtenemos</p>
+
+            <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}} \nu^{2}  \kappa T $$</p>
+
+            <p>Este resultado es conocido como la <strong>Ley de Rayleigh-Jeans</strong>. Se puede ver claramente que el término cuadrádo de la frecuencia hace tender el resultado rápidamente al infinito y si comparamos con el resultado experimental vemos que da una buena aproximación para bajas frecuencias, pero un resultado erróneo para frecuencias mas grandes. A este resultado es al que s ele conoce como la <strong>Catástrofe ultravioleta</strong>.</p>
+            <br>
+
+            <img src="./img/contenido/mecanicaCuantica/densidadEnergiaClasica.PNG" style="width: 300px;"  alt="Densidad de energía clásica." class="img-center">
+            <br>
+
+            <p>La gráfica anterior, con valores arbitrarios, unicamente ilustrativos, nos muestra cómo la gráfica se ajusta muy bien para valores de frecuencia pepqueños, pero a medida que aumentan tiende hacia infinito, en la dirección creciente de las frecuencias encontramos el orden de la luz ultravioleta que se presenta al rededor de $10^{15}Hz$ a $10^{17} Hz$ aproximadamente, por eso el nombre de "Catástrofe ultravioleta".</p><br>
+        </div>
+
+        <div>
+            <h3>Distribución Discreta</h3>
+            <br>
+            <p>El gran acierto de <b>Max Planck</b> fue pensar en que los osciladores intercambiaban energía con el medio en pequeños paquetes y no de forma continua, estos paquetes debían ser un número entero de una energía fundamental $E_1=h \nu$, proporcional a la frecuencia del oscilador,  de forma que $E_n=nE_1=nh \nu$  con $n=1,2,3,...$. Para esto se valió de la <b>distribución de probabilidad de Boltzman</b> $P(E_n)=P_1e ^{-(E_n-E_1)/\kappa T}$, con $P_1$ como la probabilidad de encontrar al oscilador en su estado fundamental . De esta manera obtubo la expresión para la energía media como</p>
+
+            <p>$$\left \langle E \right \rangle = \frac{ \sum_{n=1}^{\infty }E_n e ^{-E_n/\kappa T}}{\sum_{n=1}^{\infty } e ^{-E_n/\kappa T}}$$ </p>
+    
+            <p>$$\left \langle E \right \rangle =  \frac{ \sum_{n=1}^{\infty } nh\nu  e^{-nh \nu / \kappa T}}{\sum_{n=1}^{\infty } e^{-nh \nu / \kappa T}}$$</p>
+
+            <p>$$\left \langle E \right \rangle =  \frac{ h\nu}{e^{h \nu / \kappa T}-1}$$</p>
+            <br>
+
+            <p>Esta expresion, al ser introducida en la densidad de de energía de radiación tenemos</p>
+
+            <p>$$ \rho (\nu,T) = \frac{ 8\pi }{c^{3}}\frac{ h\nu^{3}}{e^{h \nu / \kappa T}-1}$$</p>
+
+            <p>Este resultado proporciona de forma inmediata una función que se ajusta muy bien a los valores experimentales. </p>
+            <br>
+            <img src="./img/contenido/mecanicaCuantica/densidadEnergia.PNG" style="width: 300px;"  alt="Densidad de energía cuántica." class="img-center">
+            <br>
+
+            <p>Ahora solo hacía falta ajustar de forma manual el valor de la constante $h$, la cual conocemos ahora como la <b>constante de Planck</b> y tiene un valor experimental de $h=6,626 \times 10^{-34} J.s$. </p>
+            <br>
+            <p>Observe que la constante de Planck tiene unidades de $J.s$, esto en mecánica clásica son unidades de acción $\boldsymbol{S}=\int \mathscr{L}(q_1,q_2,...,q_N;t) \:  dt  $, de aquí se puede sacar una conclusión importante y es que podemos conocer cuándo en un sistema los fenómenos cuánticos llegan a ser apreciables, o cuándo estamos hablando de un sistema cuántico y no clásico; esto es cuando la acción que representa al sistema es proporcional en ordenes de magnitud al valor de la constante de Planck.</p>
+            
+        </div>    
+    </div>
+    <br><br>
+
+    <h2>El efecto fotoeléctrico</h2>
+
+    <br>
+
+    <h3 >Heinrich Hertz y los fotoelectrones</h2><br>
+    <p>En el año 1887, el fisico alemán Heinrich Rudolf Hertz intentó con éxito demostrar los resultados de la teoría de Máxwel de la luz, este había planteado que al haber una dependencia mutua entre los campos eléctricos y magnéticos, es decir, bajo ciertas condicione sun campo eléctrico puede inducir un campo magnético y bisceversa, esto daría origen a una onda electromagnética que se propagaría por el espacio a una velocidad igual a $c=299\; 792\; 458\; m/s$. </p>
+
+    <br>
+
+    <div class="doblecolumn">
+        
+        <div style=" width: auto;">
+            <p>Para esto Hertz construyó un generador de ondas electromagnéticas que consistía en un arreglo de dos varillas en cuyos extremos externos poseían unas esféras metálicas que servían como capacitores para concentrar la carga, y en sus extremos internos unas esferas pequeñas, cercanas entre sí desde las cuales saltarían las cargas eléctricas de un lado al otro. Conectó a este circuito una bobina de Ruhmkorff, la cual se encargaba de generar un voltaje muy alto suficiente para estos saltos, una vez se acumlara la suficienta carga en los condensadores los electrónes saltarían de un extremo al otro, esto generaría en la región del salto un campo eléctrico variable, el cual a su vez induciría un campo magnético igualmente variable, estas perturvaciónes se propagarían a través del espacio como una onda electromagnética. Para poder detectar estas ondas diseñó diferentes detectores, que en esencia era un montaje similar al emisor, uno de ellos consistía en un aro de un material conductor con una ligera separación en sus terminales. Cuando la onda alcanzaba el receptor, inducía una corriente igualmente alterna que saltaba entre las terminales.</p>
+        </div>
+        <div style="margin: auto;">
+            <img src="./img/contenido/mecanicaCuantica/hertz.jpg" style="width: 350px;"  alt="potencial de frenado Lenard." class="img-center"><a href="#ref7" class="ref">(C. López,2016)</a>
+        </div>
+        
+    </div>
+    <br>
+
+    <p>Hertz apartir de entonces diseño diversos experimentos que le permitieron mostrar distintas propiedades de la luz, como su frecuancia a tra véz del calculo de la oscilación de la corriente en el circuito, la difracción a travéz de rendijas, la reflexión, logró crear ondas estacionarias entre cavidades que le permitieron a su vez medir la longitud de las distintas ondas que generaba, distintas ondas. Una vez conocida la longitud y la frecuencia de las ondas, logró comprobar experimentalmente la velocidad de la luz mediante el cálculo de $c= \nu  \lambda $.</p>
+    <br>
+    <p>Fue una observación en particular en medio de sus experimentos la que desembocó en grandes aportes para la mecánica cuántica. Hertz se dio cuenta que cuando luz ultravioleta era dirigida a la superficie metálica del receptor, aumentaba la sensibilidad de este al momento de detectar las ondas recibidas; más adelante adelante estudió este fenómeno más a detalle, observando que se producía cierto voltaje en una placa metálica sobre la cual se incidía luz ultravioleta. Fue <b>J. J. Thompson</b> quien dedujo que de alguna manera la luz que incidía sobre el metal permitía que más cargas estuvieran disponibles al momento de recibir la onda producida por el emisor, y esto lo hacía porque la luz incidente lograba arrancar electrones del metal, en 1899 logró demostrar esto, encontrando la razon entre carga y masa del electrón $\frac{e}{m_e}$ mediante el tubo de rayos catódicos.</p>
+
+    <br>
+
+    <h3 >Philip Lenard y el potencial de frenado</h2><br>
+
+
+    <br>
+
+    <div class="doblecolumn">
+        
+        <div style=" width: auto;">
+            <p>El fisico hungaro, Philipp Eduard Anton von Lenard, galardonado en 1905 con el premio Nobel por sus estudios sobre los rayos catódicos, en el año 1902, estudiando el efecto fotoeléctrico, descubrió dos propiedades importantes de estos rayos. El experimento consistía en que en el interior de un tubo de vacío se colocaban dos plácas metálicas, un coleector y un emisor, ambas sometidas a una diferencia de potencial ajustable. Cuando se hacía incidir luz sobre el emisor aparecían una especie de rayos entre ambas placas, estos eran en realidad electrones que se desprendían de los átomos en la placa del emisor y saltaban al receptor. Al aplicar cierto potencial negativo entre las placas lograba evitar que los electrones alcanzaran el emisor, a este potencial se le llamó <b>potencial de frenado</b>. No todos los electrones salen con la misma energía de la pláca, aquellos con energía cinética más alta logran llegar más lejos a pesar del voltaje de frenado, por ello son los últimos electrones en ser frenados cuando se aplica este potencial, la energía cinética que poseen estos electrones más positivos se la energía cinética máxima $K_{máx}$ en donde </p>
+            <p>$$K_{máx}=\frac{1}{2}mv_{máx}^2=eV_{s}$$  <a href="#ref2" class="ref">(Serway, 2005, p. 82)</a></p>
+        </div>
+        <div style="margin: auto;">
+            <img src="./img/contenido/mecanicaCuantica/lenard.PNG" style="width: 200px;"  alt="generador de ondas electromagnéticas." class="img-center"><a href="#ref2" class="ref">(Serway, 2005, p. 82)</a>
+        </div>
+        
+    </div>
+
+    <div class="doblecolumn">
+        <div>
+            <h3>Interpretación clásica</h3>
+            <br>
+            <p>Entonces lo que se pensaba era que los electrones absorvían energía de la luz de forma contínua, pues tenían arraigado el pensamiento clásico de la termódinamica en donde observaban el calor como un intercambio contínuo de energía. Ellos pensaban que al ser esta absorción de la energía contínua los electrones irían acumulando energía, hasta que fuera suficiente para que se pudieran desprender del átomo. Debidoa esto esperaban que pasara un intervalo de tiempo desde que se aplicaba la luz hasta que acumularan la energía suficiente.</p> 
+            <p>$$\Delta t\neq 0$$</p>
+            <p>También se esperaría desde el punto de vista clásico que la intensidad de la luz incidente diera diferentes valores para el potencial de frenado</p>
+
+
+            <br>
+            <img src="./img/contenido/mecanicaCuantica/frenadoClasico.png" style="width: 300px;"  alt="voltaje de frenado frenadoClasico." class="img-center">
+            <br>
+        </div>
+
+        <div>
+            <h3>Realidad cuántica</h3>
+            <br>
+            <p>Sin embargo los experimentos mostraban lo contrario. En primer lugar no hacía falta esperar a que los electrones acumularan suficiente energía para realizar este desprendimiento, de hecho por mucho tiempo que esperasen jamás verían al electrón salir, pues el electrón solo podría desprenderse si recibía una energía mínima en un solo paquete, y no podía acumular pequeñas porciones de dicha energía para salir. Por otro lado, una vez que recibía la cantidad de energía justa se desprendía casi de inmediato</p>
+            <p>$$\Delta t=0 $$ (aproximadamente$10^{-9}s$ pero no tiene que ver con la acumulacion de energía)</p>
+            <p>Esto hacía que solo algunas frecuencias, solo las que eran capaces de aportar esa cantidad de energía por cada fotón eran capaces de desprender el electrón.</p>
+            
+
+
+            <br>
+            <img src="./img/contenido/mecanicaCuantica/frenadoCuantico.png" style="width: 300px;"  alt="voltaje de frenado." class="img-center">
+            <br>
+            <p>Por otro lado los experimentos mostraban que el voltaje de frenado era igual para cualquier intensidad de la luz incidente, por lo que $K_{máx}$ era independiente de la intensidad. Sin embargo sí se encontró una relación entre y la frecuencia de la luz incidente</p>
+            <br>
+            
+        </div>    
+    </div>
+    <br>
+    <p>Los experimentos mostraron una serie de conclusiones para el efecto foto eléctrico bastánte contradictorias a lo esperado, estas conclusiones fueron</p>
+    <br>
+    <div class="listas">
+        <ul>
+            <li>La energía máxima de los electrones $K_{máx}$ no depende de la intensidad de la luz que incide</li>
+            <li>La energía máxima $K_{máx}$ tiene una relación directa con la frecuencia $\nu$ de la luz incidente</li>
+            <li>El número de electrones liberados o fotocorriente depende de la intesnidad de la luz</li>
+            <li>Para cada material hay una frecuencia mínima por debajo de la cuál no hay efecto fotoeléctrico.</li>
+        </ul>
+
+    </div>
+
+    <img src="./img/contenido/mecanicaCuantica/frenadoFrecuecnia.png" style="width: 250px;"  alt="frecuencia de frenado." class="img-center">
+    <p>Uno de los resultados más importantes es que el voltaje de frenado era proporcional a la frecuencia de la luz incidente, ya que esto ofreció una nueva comprobación de la constante de Planck mediante un método diferente, como veremos más adelante con el aporte de einstein, la razón entre $V_s$ y $\nu$ era $h/e$.</p>
+    <br>
+
+    <h2>Einstein y la explicación del efecto fotoeléctrico</h2>
+    <br>
+
+    <p>En 1905 el físico aleman de origen judío <b>Albert Einstein</b>, propuso una explicación novedosa al efecto foto eléctrico. Esto lo consigió basádo en sus vastos estudios sobre el comportamiento estadístico de la luz y la interpretacción de los resultados de Planck. einstein dedujo  que la energía contenida en el campo de radiación del cuerpo negro, estaba compuesta por paquetes de energía que pueden ser absorvidas o emitidas por los átomos, en 1926 a estos <b>paquetes de energía</b> serían llamados <b>fotones</b> por el físico-quimico Gilbert N. Lewis.</p><br>
+
+    <p>Lo anterior permitía concluir que cuando la luz incidía sobre las placas metálicas en el efecto fotoeléctrico, cáda átomo en la placa podía absorver la energía de un solo fotón, siempre y cuando esta energía fuera igual o mayor a la energía mínima necesaria para desprenderse del entrampamiento del núcleo. A esta energía mínima se le denominó <b>función trabajo</b> $\phi$, ya que para liberarse el electrón debía realizar un trabajo. Si recibía energía mayor a este trabajo, tendría un sobrante de energía que le permitiría adquirir una energía cinética. De aquí que la $K_{máx}$ era la diferencia de energía aportada por el fotón $h\nu $ y  el trabajo que realizaba al desprenderse, es así como</p>
+
+    <p>$$K_{máx}=h\nu - \phi $$</p>
+
+
+
+    <div class="doblecolumn">
+        
+        <div style=" width: auto;">
+            <p>Esta función trabajo es carácterística de cada metal, y es también la energía para arrancar los electrones de las capas más externas, pero algunas veces puede aportarse también la energía suficiente para desprender electrones de capas inferiores de los átomos. La ecuación anterior permite evidenciar también que existe una frecuencia mínima por debajo de la cuál no se genera efecto fotoeléctrico, esta frecuecia es</p>
+            <p>$$\nu_0 = \frac{\phi }{h}$$</p>
+            <p>Es aquí donde pudo comprobarse, como mencionamos hace poco, la constante de Planck por un método experimental totalmente independiente al usado por Planck, como $K_{máx}=eV_s $ entonces</p>
+
+            <p>$$V_s= \left (\frac{h }{e}  \right )\nu - \frac{\phi }{e}$$</p>
+            <p>Note que $h/e$ es la pendiente de las rectas resultado de medir el voltaje de frenado para diferentes frecuencias incidentes sobre el material. Esto constituyó una nueva comprobación empírtica para el valor de la <b>constante de Planck</b></p>
+        </div>
+        <div style="margin: auto;">
+            <img src="./img/contenido/mecanicaCuantica/trabajoMetal.png" style="width: 250px;"  alt="Funcion trabajo para diferentes metales." class="img-center" ><p>Voltaje de frenado vs frecuencias para diferentes metales</p>
+        </div>
+        
+    </div>
+    <br>
+
+    <h2 id="efectocompton">Efecto Compton</h2><br>
+    <p>Einstein también planteó una innovadora visión sobre la luz, derivada de la relatividad, quien plantea la relación</p>
+    <p>$$E^2=p^2c^2+(m_0c^2)^2$$</p>
+    <p>de manera que aunque los fotones fueran partículas sin masa, sí podrían tener un momento asociado, ya que de la ecuación anterior permanecería la parte $p^2c^2$ del lado derecho, es decir $E_{foton}=pc$, como ya sabemos que $E=h\nu$ entonces, despejando nos queda</p>
+    <p>$$p=\frac{h\nu}{c}= \frac{h}{\lambda}$$</p>
+    <p>Esto abrió paso a la posibilidad de que los fotones puedan interactuar con partículas con masa como el electrón y les transfieran una parte de su momento. </p><br>
+    <p>Una confirmación a este hecho se dio por el físico estadounidense  <b>Arthur Holly Compton</b> en el año 1922, al medir la <b>dispersión de rayos X</b> cuando incidían sobre electrones</p>
+
+    <img src="./img/contenido/mecanicaCuantica/compton.PNG" style="width: 400px;"  alt="generador de ondas electromagnéticas." class="img-center"><a href="#ref2" class="ref">(Serway, 2005, p. 90)</a>
+    <br>
+    <br>
+    <p>Compton pudo determinar que luego de la interacción entre los fotones y los electrones la energía de la luz era menor, por lo tanto $\lambda$ sería diferente después de la colisión, y que esta diferencia en la longitud de onda dependía únicamente del ángulo de dispersión del fotón $\theta$ de la forma</p>
+    <p>$$\lambda ' - \lambda = \frac{h}{m_e c}(1-cos\theta)$$ <a href="#ref2" class="ref">(Serway, 2005, p. 90)</a></p>
+    <p>De aquí también se obtiene que el factor $\frac{h}{m_e c}$ es la <b>longitud de onda de Compton del electrón</b> cuyo valor es</p>
+    <p>$$\frac{h}{m_e c}= 0.0243 \overset{\circ }{A}$$ <a href="#ref2" class="ref">(Serway, 2005, p. 91)</a></p>
+    <br>
+
+    <h2 id="ondasdemateriadebroglie">Ondas de materia de Broglie</h2><br>
+
+    <p>En el año 1923 el físico francés <b>Luis de Broglie</b> lanzó  una muy imaginativo y acertado postulado. El dedujo que así como los fotones podrían tener a su vez comportamiento ondulatorio y corpuscular, también las partículas de materia habitual podrían tener un comportamiento ondulatorio. Por tanto cada electrón debía estar acompañado de una onda piloto que conducía al electrón a través del espacio</p><br>
+
+    <table>
+        <tbody>
+            <tr>
+                <th><h3>Planck</h3></th>
+                <th><h3>de Broglie</h3></th>
+            </tr>
+            <tr>
+                <td><b>Ondas:</b> Comportamiendo Corpuscular</td>
+                <td> <b>Partículas:</b> Comportamiendo Ondulatorio</td>
+            </tr>
+            <tr>
+                <td>poseen $\nu , \lambda$</td>
+                <td>poseen $E$, $p$</td>
+            </tr>
+            <tr>
+                <td>Pueden tener también: <br>$E=h\nu$, $p=\frac{h}{\lambda }$</td>
+                <td>Pueden tener también: <br> $\nu =\frac{E}{h}$ , $\lambda  =\frac{h}{p}$</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+
+
+    <h2 id="ecuacion-independiente-tiempo">La ecuación de Schrödinger independiente del tiempo</h2><br>
+
+    <p>La ecuación de Schrödinger, es una ecuación propuesta a priori como lo fue en su momento la segunda ley de Newton. Se presenta como un conjunto de soluciones conocidos como los <b>estados estacionarios</b>, que tienen una gran importancia ya que pueden ser tomados como bases para resolver el problema de forma general, por lo que <b>cualquier estado puede ser representado como una combinación lineal de los estados estacionarios</b>. dicho de otro modo, para mi ecuación general dependiente del tiempo</p>
+
+    <p>$$i \hbar \frac{\partial \Psi (\vec{r},t)}{\partial t}=\frac{\hbar^{2}}{2m}\overrightarrow{\bigtriangledown}\Psi (\vec{r},t)+V (\vec{r})\Psi (\vec{r},t)$$</p>
+
+    <p>De manera que si el potencial lo podemos escrbir como $V(\vec{r},t) \equiv V(\vec{r})$ independiente del tiempo, entonces podemos escribir su solución en terminos de una parte que es dependiente del tiempo y otra que no lo es, tal que</p>
+
+    <p>$$\Psi (\vec{r},t)= e^{-iEt/k}\phi_E(\vec{r})$$</p>
+
+    <p>Lo anterior es una forma funcional de un estado estacionario</p>
+
+
+
+
+    <h2 id="algunosejercicios">Algunos ejercicios</h2><br>
+
+    <h3 id="choencaptulo1ejercicio1">Cohen. Capítulo 1. Ejercicio #1</h3><br>
+
+    <div class="problema">
+        
+            
+            <div class="problem">
+                <p>A beam of neutrons of mass  $M_{n}$ ($M_{n}\simeq 1.67 \times 10^{-27}kg$ ), of constant velocity and energy , is incident on a linear chain of atomic nuclei, arranged in a regular fashion as shown in the figure (these nuclei could be, for example, those of a long linear molecule). We call  $l$ the distance between two consecutive nuclei, and $d$, their size ($d\ll l$). A neutron detector $D$ is placed far away, in a direction which makes an angle of $\theta$ with the direction of the incident neutrons. </p><br>
+
+                <img src="./img/contenido/mecanicaCuantica/cohen1_1.PNG" style="width: 200px;"  alt="a beam of neutrons is incident on a chain of atomic nuclei," class="img-center"><a href="#ref4" class="ref">(Cohen, 2009, p. 83)</a>
+                <br>
+
+                <ol class="abc-list">
+                    <li>Describe qualitatively the phenomena observed at $D$ when the energy $E$ of the incident neutrons is varied</li>
+                    <li>The counting rate, as a function of $E$, presents a resonance about $E=E_1$. .
+                        Knowing that there are no other resonances for $E&lt;E_1$, , show that one can determine $l$. Calculate $l$ for $\theta=30^{\circ}$ and $E_1= 13 \times 10^{-20} joule$.</li>
+                    <li>At about what value of $E$ must we begin to take the finite size of the nuclei into account?</li>
+                </ol>
+                <p style="text-align:right ;"><a href="#ref4" class="ref">(Cohen, 2009, p. 83)</a></p>
+
+
+            </div>
+                
+            <div >
+                <br>
+                <p>Un haz de neutrones de masa $M_{n}$ ($M_{n}\simeq 1.67 \times 10^{-27}kg$ ), con velocidad constante y energía $E$, incide en una cadena lineal de núcleos atómicos, ordenados en una forma regular como se muestra en la figura (estos núcleos podrían ser por ejemplo, los de una molécula lineal larga. Llamamos $l$ a la distancia entre dos núcleos consecutivos, y $d$, su tamaño ($d\ll l$). Un detector de neutrones $D$ se ubica lejos, en una dirección que forma un ángulo de $\theta$ con la dirección de los neutrones incidentes.</p><br>
+
+                <img src="./img/contenido/mecanicaCuantica/cohen1_1.PNG" style="width: 300px;"  alt="a beam of neutrons is incident on a chain of atomic nuclei," class="img-center"><a href="#ref4" class="ref">(Cohen, 2009, p. 83)</a>
+                <br>
+
+                <ol class="abc-list">
+                    <li>Describa cualitativamente el fenómeno observado en D cuando la energía $E$ de los neutrones incidentes varia.</li>
+                    <li>La tasa de conteo, como una función de E, presenta una resonancia sobre $E=E_1$. Sabiendo que no hay otras resonancias para $E&lt;E_1$, muestre que se puede determinar $l$. Calcule $l$ para $\theta=30^{\circ}$ y $E_1= 13 \times 10^{-20} Julios$</li>
+                    <li>¿Aproximadamente a qué valor de $E$ debemos comenzar a tomar en cuenta el tamaño finito de los núcleos.</li>
+                </ol>
+
+            </div>
+            <br>
+            <h3>Solución.</h3><br>
+            <div class="solucion">
+                
+                <p><b>a.</b>    Lo primero que podemos tener en cuenta es que se podrá observar un fenómeno de difracción solo cuando la longitud de onda de broglie de los neutrones es del mismo orden de magnitud de la distancia entre los átomos $l$. Si los neutrones poseen baja energía, como para considerarse partículas no relativistas entonces $E= \frac{p^2}{2m} = \frac{(h/\lambda )^2}{2m}$ con lo que la longitud de onda de Broglie de los neutrones se relaciona de forma inversa con la raiz cuadrada de la energía $\lambda= \frac{h}{\sqrt{2mE}}$. Por tanto lo que podríamos esperar para energías muy pequeñas los neutrones se comportarán como partículas por lo que el detector en $D$ va a detectar un comportamiento no ondulatorio, con picos máximos de detección centrados en el centro de los espacios interatómicos. Cuando se alcanzan energías que hacen comparable $\lambda$ con $l$ se comienza a observar un patrón de interferencia en donde  el ángulo de apertura de los picos máximos decrecerá a medida que aumente la energía.</p>
+
+            </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+    <!--120,331-->
+
+    <br><br><br>
+    <div class="bibliografia">
+        <h2>Referencias</h2>
+        <br>
+        <ul>
+            <li id="ref1"><a href="#">H. Hayt (1991), <span style="font-style: italic;">Teoría electromagnética</span> . 2nd Edicion en español, McGraw-Hill, México.</a></li>
+            <br>
+            <li id="ref2"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">A. Serway, J.Moses, A. Moyer (2005) <span style="font-style: italic;">Modern Physics</span>, Third Edition.</a></li>
+            <br>
+            <li id="ref3"><a href="#">F. Reif, <span style="font-style: italic;">Fundamentos de física estadistica y térmica</span>. Ed. del Castillo, S.A, Madrid; 1968.</a></li>
+            <br>
+            <li id="ref4"><a href="https://libgen.rocks/ads.php?md5=BA60B76C22DEF1AE734B55470AA20453">C. Cohen-Tannoudji, B. Diu , F. Laloë, <span style="font-style: italic;">Quantum Mechanics Volume 1</span>, 2nd Edition, Wiley; 2019</a></li>
+            <br>
+            <li id="ref5"><a href="#">K. Cheng, <span style="font-style: italic;">Fundamentos de electromagnetismo para ingeniería</span>. Ed. Addison W. Iberoamericana de México; 1998</a></li>
+            <br>
+            <li id="ref6"><a href="https://libgen.rocks/ads.php?md5=ef0b8e59fdd808188b24038435db61e0">L. de la Peña (2014) <span style="font-style: italic;">Introducción a la mecánica cuántica</span>, 3nd Edición, UNAM, México</a></li>
+            <br>
+            <li id="ref7"><a href="https://culturacientifica.com/2016/08/09/la-primera-confirmacion-experimental-la-teoria-maxwell/">C. López(2016) <span style="font-style: italic;">La primera confirmación experimental de la teoría de Maxwell</span>, Tomado de https://culturacientifica.com/2016/08/09/la-primera-confirmacion-experimental-la-teoria-maxwell/ , el 16 de octubre de 2022.</a></li>
+            <br>
+        
+            
+
+        </ul>
+
+    </div>
+    <br><br>
+
+    <h2>Lecturas recomendadas</h2><br>
+    <ul  class="bibliografia">
+        <li><a href="https://eltamiz.com/2010/06/16/premios-nobel-fisica-1905-philipp-lenard/">https://eltamiz.com/2010/06/16/premios-nobel-fisica-1905-philipp-lenard/</a></li>
     </ul>
 
-</div>
-<br><br>
-
-<h2>Lecturas recomendadas</h2><br>
-<ul  class="bibliografia">
-    <li><a href="https://eltamiz.com/2010/06/16/premios-nobel-fisica-1905-philipp-lenard/">https://eltamiz.com/2010/06/16/premios-nobel-fisica-1905-philipp-lenard/</a></li>
-</ul>
+</body>
+</html>
