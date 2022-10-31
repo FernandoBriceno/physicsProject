@@ -246,12 +246,14 @@
   height: 100vh;
   margin: auto;
   left: 260px;
-  width: calc(100% - 260px);
+  /*
+  width: calc(100% - 260px);*/
   transition: all 0.5s ease;
 }
 .sidebar.close ~ .home-section{
   left: 78px;
-  width: calc(100% - 78px);
+  /*
+  width: calc(100% - 78px);*/
 }
 .home-section .home-content{
   /*height: 60px;*/

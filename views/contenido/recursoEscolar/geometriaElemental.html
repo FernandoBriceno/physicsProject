@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometría | PhysicsProject</title>
+    <meta name="description" content="Aprende a calcular el comportamiento de diferentes figurass geométricas, como la recta, la parábola, el círculo, la elipse y más, sus significados y aplicaciones">
+    <meta name="keywords" content="Geometría, recta, curva, distancia, puntos, recta, parábola">
+
+
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="../../../css/menu.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta property="og:image" content="https://physicsproject.org/img/logo/previsualizationLogo.png">
+    <meta property="og:title" content="PhysicsProject"/>
+    <!-- <title>PhysicsProject</title>-->
+    <link rel="shortcut icon" href="../../../img/logo/GatoBlancoIcon.png">
+    <link rel="stylesheet" href="../../../css/estilo.css">
+
+    <script src="../../../js/menu.js" defer></script>
+    <script src="../../../js/insertar.js" defer></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+    <!--  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+    <script id="MathJax-script" async src="./js/mathJax/tex-mml-chtml.js"></script>
+    -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+    
+    <!-- To UNDOCenter MATHJAX -->
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <!-- To UNDOCenter MATHJAX -->
+
+</head>
+
+<body>
+    <img src="../../../img/logo/physicsLogo.png" class="marcaDeAgua">
+
+    <div class="sidebar close">
+
+        <div class="logo-details">
+            <div class="gato_estirado">
+                <img class='bx bxl-c-plus-plus'  src="../../../img/logo/physicsLogoGatoBlanco.png" style="margin: 14px;">
+    
+            </div>
+            <div class="gato_sentado">
+                <img class='bx bxl-c-plus-plus'  src="../../../img/logo/gatoSentadoBlanco.png" style="margin: 14px;">
+            </div>
+            
+          <img class='logo_name'  src="../../../img/logo/physicsLogoTextoBlanco.png" style="margin: -7px;">
+        </div>
+    
+    
+        <ul class="nav-links">
+            <!-- HOME -->
+          <li>
+            <a href="https://physicsproject.org/">
+                <i class='bx bxs-home'></i>
+                <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://physicsproject.org/">Home</a></li>
+            </ul>
+          </li>
+          <!-- ESCOLAR -->
+          <li>
+            <div class="iocn-link">
+              <a href="https://physicsproject.org/content.html?/recursoEscolar">
+                <i class='bx bx-book-reader'></i>
+                <span class="link_name">Recurso Escolar</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://physicsproject.org/content.html?/recursoEscolar">Recurso Escolar</a></li>
+              <li><a href="https://physicsproject.org/content.html?/recursoEscolar/geometria">Geometría</a></li>
+              <li><a href="https://physicsproject.org/content.html?/recursoEscolar/gravitacion">Gravitación</a></li>
+              <li><a href="https://physicsproject.org/content.html?/recursoEscolar/hidrostatica">Hidrostatica</a></li>
+            </ul>
+          </li>
+          <!-- UNIVERSITARIA -->
+          <li>
+            <div class="iocn-link">
+              <a href="https://physicsproject.org/content.html?/recursoUniversitario">
+                <i class='bx bxs-graduation' ></i>
+                <span class="link_name">Recurso Universitario</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://physicsproject.org/content.html?/recursoUniversitario">Recurso Universitario</a></li>
+              <li><a href="https://physicsproject.org/content.html?/recursoUniversitario/metodosMatematicosII">Métodos Matemáticos II</a></li>
+              <li><a href="https://physicsproject.org/content.html?/recursoUniversitario/mecanicaClasica">Mecánica Clásica</a></li>
+              <li><a href="https://physicsproject.org/content.html?/recursoUniversitario/mecanicaCuantica">Mecánica Cuántica</a></li>
+            </ul>
+          </li>
+          <!-- UNIVERSITARIA -->
+          <li>
+            <a href="#">
+              <i class='bx bxs-book-bookmark'></i> <!--<i class='bx bx-library'></i>-->
+              <span class="link_name">Bibliografía</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Bibliografía</a></li>
+            </ul>
+          </li>
+    
+          <li>
+            <a href="https://physicsproject.org/content.html?/contacto">
+                <i class='bx bxs-contact'></i> <!--<i class='bx bx-user-voice'></i> <i class='bx bxs-user-voice' ></i> <i class='bx bxs-face'></i> <i class='bx bxs-user-circle' ></i>-->
+              <span class="link_name">Contacto</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://physicsproject.org/content.html?/contacto">Contacto</a></li>
+            </ul>
+          </li>
+          
+      </li>
+    </ul>
+      </div>
+    
+    <section class="home-section">
+    <div class="home-content">
+        
+        <i class='bx bxs-chevron-right'></i>
+        <i class='bx bxs-chevron-left' ></i>
+        
+    </div>
+    </section>
+
+    <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e)=>{
+    let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+    arrowParent.classList.toggle("showMenu");
+        });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarOpen = document.querySelector(".bxs-chevron-right");
+    let sidebarClose = document.querySelector(".bxs-chevron-left");
+    console.log(sidebarOpen);
+    sidebarOpen.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+    });
+    console.log(sidebarClose);
+    sidebarClose.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+    });
+    </script>
+
+    <div class="page-content" >
+        <br>
+        <h1>Geometría</h1><br>
+
+        <h2>La Distancia entre dos puntos.</h2><br>
+
+        <p>Cuando caminas en linea recta, es fácil determinar la distancia si vas desde un punto inicial  $P_i$ a un punto final $P_f$. Basta con poner una cinta métrica en el suelo, y contar cuántos centímetros avanzas al ir de un punto al otro. O también, bastaría con saber el valor marcado en la cinta métrica cuando te encuentras en cada punto y restarle el punto final al punto inicial.</p>
+
+        <img src="../../../img/contenido/geometria/distancia1.png" style="width: 400px;"  alt="Distancia en una dimensión" class="img-center" >
+        <br>
+        <p>Sin embargo, realicemos el cálculo de la distancia si nos regresamos al punto de partida. Podemos observar que la diferencia, al ser el puntoo final, menor que el punto inicial, tenemos un valor negativo. Esto nos indica que nos hace falta algo, ya que debemos convenir que las distancias que medimos son siempre valores positivos, las distancias no tienen en cuenta la dirección en la que ocurre el desplazamiento, únicamente la magnitud de este desplazamiento.</p>
+
+        <img src="../../../img/contenido/geometria/distancia2.png" style="width: 400px;"  alt="Distancia en dos dimensiones" class="img-center" >
+        <br>
+        <p>Por esto debemos asignarle algo más a nuestra ecuación para el cálculo de la distancia. Y es el valor absoluto del resultado.</p>
+
+        <p>$$d = \left |P_f-P_i  \right |$$</p>
+
+        <p>El valor absoluto de un número, es una operación que me permite "convertir" siempre el número contenido, o el resultado de la operación al interior de las plecas un valor positivo.(el símbolo | se llama pleca). Así el valor absoluto del número $-7$ es $\left |-7  \right |= 7$, el de $-4,765$ es $\left | -4,765 \right |= +4,765$ o en general para cualquier número $x$ su valor absoluto es $\left |\pm x \right |= +x $. Esto es útil porque el valor absoluto también puede definirse como la raíz cuadrada de cualquier número al cuadrado, es decir $\left |\pm x \right |= \sqrt{x^2}$. De esta manera podemos dar una nueva definición para la distancia entre dos puntos.</p>
+
+        
+        <p>$$d(P_f,P_i) = \sqrt{ (P_f-P_i)^2  }$$</p>
+
+        <p>Si ahora nuestra intención es calcular la distancia de dos punto, ubicados en dos dimensiones espaciales, bastará con extender la ecuación anterior a dos dimensiones. </p>
+        <img src="../../../img/contenido/geometria/distancia3.png" style="width: 400px;"  alt="Empuje generado debido al principio de Arquímides y volumen del liquido depslazado" class="img-center" >
+        <br>
+        <p>Para esto debemos calcular la diferencia de cada corrdenada y esta diferencia elevarla al cuadrado, en $x$ sería $(x_f-x_i)^2$ y en $y$ sería $(y_f-y_i)^2$, la suma de estos cuadrados deben ir dentro de la raíz cuadrada. De forma que para dos dimensiones la distancia entre dos puntos $Pi=(x_i, y_i)$ y $Pf=(x_f, y_f)$ se define por la ecuación</p><br>
+
+        <p class="ec-final">$$d(P_f,P_i) = \sqrt{ (x_f-x_i)^2 +  (y_f-y_i)^2}$$</p><br>
+
+        <p>Da igual el nombre que le asignes a los puntos o a tus cordenadas en lus puntos iniciales y finales, la ecuación de la distancia tendrá siempre la misma forma. Por ejemplo si ahora el punto inicial es $A=(x_1, y_1)$ y el punto final es $B=(x_2, y_2)$</p>
+
+        <p>$$d(A,B) = \sqrt{ (x_2-x_1)^2 +  (y_2-y_1)^2}$$</p>
+
+        <p>es fácil intuir que en un espacio de 3 dimensiones la ecuación que define la distancia estará dada por</p>
+
+        <p>$$d(P_f,P_i) = \sqrt{ (x_f-x_i)^2 +  (y_f-y_i)^2  +  (z_f-z_i)^2}$$</p><br>
+
+        <h2>El punto medio de dos puntos.</h2><br>
+        
+        <img src="../../../img/contenido/geometria/puntoMedio.png" style="width: 200px;"  alt="Punto medio" class="img-center" >
+        <br>
+
+        <p>El <b>punto medio</b> entre dos puntos, es el  punto geométrico cuya distancia a cada uno de los dos puntos es igual. Para calcularlo es necesario conocer las coordenadas del punto $A=(x_1, y_1)$ y del otro punto $B=(x_2, y_2)$, y la ecuación que me determinará las coordenadas del punto medio serán</p><br>
+
+        <p>$$x_m = \frac{x_1+x_2}{2}$$</p><br>
+        <p>$$y_m = \frac{y_1+y_2}{2}$$</p><br>
+
+        <p>Así el punto medio queda definido como</p>
+
+        
+        <p class="ec-final">$$P_m = \left (\frac{x_1+x_2}{2}\: ,\: \frac{y_1+y_2}{2}  \right )$$</p><br>
+
+        <h2 id="recta">Ecuación de la recta</h2><br>
+
+        <p>Una <b>recta</b> es una figura formada por una línea recta, es decir, una suceción de puntos que se extienden en forma recta.  La recta puede cortar con uno o los dos ejes coordenados $x$ y $y$. Los puntos de corte se pueden hallar igualando la coordenada en donde no se calcula el corte a cero, es decir, si queremos hallar el punto de corte en el eje $x$ entonces $P_{corteX}=(a,0)$, donde $a$ es el valor para el eje $x$ donde la linea corta, y $P_{corteY}=(0,b)$, donde $a$ es el valor para el eje $y$ donde la linea corta.</p>
+
+        <img src="../../../img/contenido/geometria/recta.png" style="width: 200px;"  alt="La recta" class="img-center" >
+        <br>
+
+        <p>De esta manera se establece la ecuación para la recta, en donde todos los puntos $(x,y)$ satisfacen dicha relación. La forma <b>canónica</b> de la ecuación de la recta que corta el eje $x$ en $a$ y  corta el eje $y$ en $b$  es</p>
+
+        <p class="ec-final">$$\frac{x}{a}+\frac{y}{b} = 1$$</p><br>
+
+        <p>Si hacemos un par de operaciones algebráicas para despejar y, podemos ver que podemos representar a la recta también como una función de $y$ que depende de $x$ de la forma $y=y(x)$</p>
+        
+        <p >$$y = -\frac{b}{a}x +b$$</p><br>
+
+        <p>el término $-\frac{b}{a} = m$ se conoce como la <b>pendiente</b> de la recta, y puede ser positiva o negativa, según sean los valores $a$ y $b$. Así la segunda forma, conocida como la forma general de presentar la ecuación de la recta es</p>
+
+        <p class="ec-final">$$y = mx +b$$</p><br>
+
+        <h3>El cálculo de la pendiente</h3>
+        <br>
+
+        
+        
+        <div class="doblecolumn">
+            
+            <div style=" width: auto;">
+                <p>El valor $m$ conocido como un pendiente me indica el grado de inclinación  de la recta, un número grande de m mostrará una recta muy empinada, en cambio un valor muy pequeño de la pendiente, mostrará una recta poco inclinada. Si $m$ es un número infinitamente grande, se dice que la pendiente es indeterminada, esto representa una recta totalmente vertical.</p><br>
+
+                <p>Hay una forma alternativa de calcular la pendiente sin conocer los puntos de corte, y es que si conoces dos puntos que pertenecen a la recta  $A=(x_1, y_1)$ y del otro punto $B=(x_2, y_2)$, entonces la ecuación que determinará el valor de la pendiente será</p>
+
+                <p class="ec-final">$$m = \frac{y_2-y_1}{x_2-x_1}$$</p><br>            
+            </div>
+            
+            <div style="margin: auto;" >
+                <img src="../../../img/contenido/geometria/pendiente.png" style="width: 400px;"  alt="Pendiente de una recta" class="img-center" >
+
+            <br>
+            </div>
+        </div><br>
+
+        <h2 id="circunferencia">La Circunferencia</h2><br>
+
+        <p>La circunferencia, es una figura geométrica compuesta por una línea curva, en la cual todos los puntos contenidos en la curva están a igual distancia de un punto llamado centro, habitualmente los valores de las <b>coordenadas del centro</b> se les dan los nombres $(h,k)$. La distancia desde el centro hasta cualquiera de los puntos se le conoce como <b>radio</b> y se representa con la letra $r$</p><br>
+
+        <div class="doblecolumn">
+            
+            <div style=" width: auto;">   
+                <p>La forma <b>canónica</b> de la ecuación de una circunferencia con centro en $(h,k)$ y cuyo radio es $r$ es</p>
+                
+                <p class="ec-final">$$ \left ( x-h \right )^2 + \left ( y-k \right )^2 = r^2 $$</p><br>    
+                
+                <p>Si hacemos un par de operaciones algebráicas, abriendo los cuadrados de la ecuación de la siguiente forma</p><br>
+
+                <p>$x^2 + 2hx + h^2 + y^2 + 2ky + k^2 = r^2$</p>
+                <p>$x^2 + y^2 + 2hx  +  2ky + h^2 + k^2 -r^2 = 0$</p><br>
+                
+                <p>Si hacemos $A=2h$, $B=2k$ y $C=h^2 + k^2 -r^2$ entonces podemos describir la forma <b>general</b> de la ecuación de una circunferencia con centro en $(h,k)$ y cuyo radio es $r$ de la forma</p>
+                
+                <p class="ec-final">$$ x^2 + y^2 + Ax  +  By + C = 0$$</p><br> 
+                <p>Observe, que si se sigue el proceso algebráico anterior en el sentido inverso, se puede llegar a la ecuación canónica de la circunferencia</p>
+            </div>
+            
+            <div style="margin: auto;">
+                <img src="../../../img/contenido/geometria/circunferencia.png" style="width: 300px"  alt="Pendiente de una recta" class="img-center" >
+
+            <br>
+            </div>
+        </div><br>
+
+        <p>Si despejamos el radio de la expresión anterior, encontramos una expresión para calcular el radio de la circunferencia, basta con conocer un punto $P=(x_p,y_p)$ que pertenezca a la circunferencia, y las coordenadas del centro $(h,k)$, de esta manera el la ecuación del radio será</p><br>
+
+        <p>$$ r=\sqrt{ \left ( x_p-h \right )^2 + \left ( y_p-k \right )^2} $$</p><br>  
+
+
+
+        <h2 id="parabola">La parábola</h2><br>
+
+        <div class="doblecolumn">
+            <div style="margin: auto;">
+
+                <img src="../../../img/contenido/geometria/parabola.png" style="width: 300px"  alt="Parabola" class="img-center" >
+
+            <br>
+            </div>
+            <div style=" width: auto;">   
+                <p>La parábola es una figura geométrica que relaciona de forma cuadrática las dos coordenadas $x$ y $y$. Está formada por una línea curva, en la cual todos los puntos tienen la misma distancia a un punto llamado <b>foco</b> y a una recta llamada <b>directriz</b></p><br>
+            </div>
+        </div><br>
+
+        <p>Las parábolas pueden representarse de dos formas distintas según el eje de simetría. Cada eje de simetría puede mostrar dos tipos de parábolas. Las parabolas cuyo eje de simetría es vertical, abren hacia la izquierda y hacia la derecha. Las parabolas cuyo eje de simetría es horizontal, abren hacia arriba y abajo.</p>
+
+        
+        <img src="../../../img/contenido/geometria/parabolas.png" style="width: 400px"  alt="Ecuaciones de una parabola" class="img-center" ><br>
+
+
+
+        <div class="doblecolumn">
+            
+            <div> 
+                <h3>Parabolas con eje de simetría horizontal.</h3><br>  
+
+                <p>Estas parábolas abren hacia arriba o hacia abajo y tienen una <b>ecuación canónica</b> de la forma</p>
+
+                <p>$$(x-h)^2 = 4p(y-k)$$</p>
+
+                <p>También pueden ser representadas por una <b>ecuación general</b>  de la forma</p>
+
+                <p>$$x^2+Dx+Ey+F=0$$</p><br>
+
+                <h4>Coordenadas del foco</h4><br>
+                <p>Las coordenadas del punto llamado foco para una parábola está dado por</p>
+                <p>$$(h,k+p)$$</p>
+
+                <h4>Ecuación de la directriz.</h4><br>
+                <p>La ecuación de la recta que conocemos como directriz está dada por</p>
+                <p>$$y= k - p$$</p>
+
+                <h4>La distancia focal.</h4><br>
+                <p>La distancia que hay entre el vértice de la parábola y el foco, está dada por el valor absoluto de $p$</p>
+                <p>$$\left |p  \right |$$</p>
+
+                <h4>Longitud del lado recto.</h4><br>
+                <p>Es la distancia que hay entre los dos puntos ubicados a la altura del foco, y está dada por</p>
+                <p>$$\left |4p  \right |$$</p>
+                
+            
+            </div>
+            
+            <div> 
+                <h3>Parabolas con eje de simetría vertical.</h3><br>  
+
+                <p>Estas parábolas abren hacia la izquierda o hacia la derecha y tienen una <b>ecuación canónica</b> de la forma</p>
+
+                <p>$$(y-k)^2 = 4p(x-h)$$</p>
+
+                <p>También pueden ser representadas por una <b>ecuación general</b>  de la forma</p>
+
+                <p>$$y^2+Dy+Ex+F=0$$</p>
+
+                <h4>Coordenadas del foco</h4><br>
+                <p>Las coordenadas del punto llamado foco para una parábola está dado por</p>
+                <p>$$(h+p,k)$$</p>
+                
+                <h4>Ecuación de la directriz.</h4><br>
+                <p>La ecuación de la recta que conocemos como directriz está dada por</p>
+                <p>$$x= k - p$$</p>
+
+                
+                <h4>La distancia focal.</h4><br>
+                <p>La distancia que hay entre el vértice de la parábola y el foco, está dada por el valor absoluto de $p$</p>
+                <p>$$\left |p  \right |$$</p>
+
+                <h4>Longitud del lado recto.</h4><br>
+                <p>Es la distancia que hay entre los dos puntos ubicados a la altura del foco, y está dada por</p>
+                <p>$$\left |4p  \right |$$</p>
+                
+
+            <br>
+            </div>
+        </div><br>
+    </div>
+
+</body>
+</html>
