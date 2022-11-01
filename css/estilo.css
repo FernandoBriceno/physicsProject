@@ -71,6 +71,11 @@ body{
     margin: 10px 10px 10px 100px;
 }
 
+.creator {
+    margin: auto;/*
+    align-items: center;
+    text-align: center;*/
+}
 .creator img{
     display: block;
     margin: auto;
@@ -260,4 +265,14 @@ li::marker {
     background-color: antiquewhite;
     margin: 0;
     padding: 1px;
+}
+
+.contact-form {
+    background-color: #9fb6e7;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    
+    border-radius:5%;
 }
