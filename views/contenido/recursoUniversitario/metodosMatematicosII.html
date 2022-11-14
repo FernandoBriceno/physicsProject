@@ -116,6 +116,7 @@
     </div><br>
 
     <h2>Cambiando el intervalo</h2><br>
+
     <p>Convengamos en que de forma más general, para una función $f(x)$ cuyo período es $T$ su representación en serie de Fourier está dada por la expresión</p>
 
     <p>$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( \frac{n2\pi x}{T} \right ) + b_{n}sin\left ( \frac{n2\pi x}{T} \right )  \right ]$$</p>
@@ -129,7 +130,26 @@
     <p>$$b_n= \frac{2}{T } \int_{-\frac{T }{2}}^{\frac{T }{2} } f(x) sin\left ( \frac{n2\pi x}{T} \right )dx$$</p>
     <br>
 
-    <h2>Serie de Fourier compleja.</h2><br> 
+    <p>Si tomamos como convención que $T=2L$ entonces tendremos</p>
+
+    <p></p>
+
+    
+
+    <div class="doblecolumn">
+        <div style="margin: auto;">
+            <p class="ec-final">$$f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty }\left [ a_{n}cos\left ( \frac{n\pi x}{L} \right ) + b_{n}sin\left ( \frac{n\pi x}{L} \right )  \right ]$$</p>
+        </div>
+        
+        <div class="ec-final">
+
+            <p>$$a_n= \frac{1}{L } \int_{-L}^{L} f(x) cos\left ( \frac{n\pi x}{L}  \right )dx$$</p>
+            <p>$$b_n= \frac{1}{L }  \int_{-L}^{L} f(x) sin\left ( \frac{n\pi x}{L}  \right )dx$$</p>
+            <br>
+        </div>
+    </div><br><br>
+
+    <h2 id="fourier-compleja">Serie de Fourier compleja.</h2><br> 
     <!-- https://www.tamps.cinvestav.mx/~wgomez/diapositivas/FIC/FIC-03.pdf -->
     <!-- http://www.sc.ehu.es/sbweb/fisica3/ondas/fourier/fourier.html -->
 
